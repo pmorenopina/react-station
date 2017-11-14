@@ -1,0 +1,53 @@
+
+.item_full {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    &:hover {
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    }
+}
+.item_four_columns {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 60px;
+    @media (min-width: 425px){
+        width: 48%;
+    }
+    @media (min-width: 768px){
+        width: 22.5%;
+        &:not(:first-child) {
+            margin-left: 3.33%;
+        }
+    }
+    .day {
+        font-size: 18px;
+        font-weight: 600;
+        @media (min-width: 425px){
+            font-size: 20px;
+        }
+    }
+    .location {
+        font-size: 14px;
+        font-weight: 500;
+        @media (min-width: 425px){
+            font-size: 16px;
+        }
+    }
+    .city {
+        font-size: 12px;
+        @media (min-width: 425px){
+            font-size: 14px;
+        }
+    }
+}
+.item_img {
+    width: 100%;
+    height: 100%;
+}

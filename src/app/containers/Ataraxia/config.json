@@ -1,0 +1,28 @@
+{
+  "NEXT_EVENT": {
+    "description": "",
+    "landscape": "/assets/images/ataraxia/next_event.png",
+    "portrait": "/assets/images/ataraxia/last_event.png",
+    "date": ""
+  },
+  "LAST_EVENTS": [
+    {
+      "description": "",
+      "landscape": "/assets/images/ataraxia/next_event.png",
+      "portrait": "/assets/images/ataraxia/last_event.png",
+      "date": ""
+    },
+    {
+      "description": "",
+      "landscape": "/assets/images/ataraxia/next_event.png",
+      "portrait": "/assets/images/ataraxia/last_event.png",
+      "date": ""
+    },
+    {
+      "description": "",
+      "landscape": "/assets/images/ataraxia/next_event.png",
+      "portrait": "/assets/images/ataraxia/last_event.png",
+      "date": ""
+    }
+  ]
+}

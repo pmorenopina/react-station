@@ -1,0 +1,54 @@
+@import '../../styles/base.css';
+
+.ataraxia_container{
+    left: 0;
+    top: 0;
+}
+
+.container_next_events{
+    margin: 0 auto;
+    margin-bottom: 60px;
+    @media (min-width: 1024px){
+        padding: 0;
+        max-width: 1024px;
+    }
+    .title_container {
+        padding-left: 0;
+        margin: 30px 0;
+        @media (min-width: 768px){
+            padding-left: 20px;
+        }
+        @media (min-width: 1024px){
+            padding-left: 0;
+        }
+    }
+}
+
+.container_last_events{
+    padding: 0 10px;
+    margin: 0 auto;
+    @media (min-width: 425px){
+        padding: 0 20px;
+    }
+    @media (min-width: 1024px){
+        padding: 0;
+        max-width: 1024px;
+    }
+    .title_container {
+        margin: 30px 0;
+    }
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+    @media (min-width: 425px){
+        font-size: 45px;
+    }
+    @media (min-width: 768px){
+        font-size: 60px;
+        text-align: left;
+    }
+}

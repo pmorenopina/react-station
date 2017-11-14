@@ -1,0 +1,12 @@
+.container_full{
+}
+
+.container_four_columns{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (min-width: 768px){
+        justify-content: normal;
+    }
+}
