@@ -26,7 +26,7 @@
             margin-left: 3.33%;
         }
     }
-    .day {
+    .date {
         font-size: 18px;
         font-weight: 600;
         @media (min-width: 425px){

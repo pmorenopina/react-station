@@ -1,6 +1,5 @@
 import React from 'react'
 import { PropTypes } from 'prop-types'
-import classNames from 'classnames/bind'
 
 // Subcomponents
 import Item from './subs/Item/'
@@ -8,14 +7,8 @@ import Item from './subs/Item/'
 // Styles
 import styles from './styles.css'
 
-const cx = classNames.bind(styles)
-
 const Grid = ({ elements }) => {
   
-
-  //eliminar, ira con api
-  let tag = (elements && elements.length > 1) ? "last_event" : "next_event"
-
   const styleTag = (elements && elements.length > 1) ? styles.container_four_columns : styles.container_full
   const elementsTag = elements.map((item, index) => {
     return (
@@ -23,7 +16,6 @@ const Grid = ({ elements }) => {
         key={ index } 
         fourElements={ (elements && elements.length > 1) ? true : false } 
         item={ item } 
-        tag={ tag } 
       />
     )
   })

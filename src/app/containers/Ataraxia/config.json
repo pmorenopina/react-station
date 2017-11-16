@@ -1,28 +1,36 @@
 {
-  "NEXT_EVENT": {
-    "description": "",
-    "landscape": "/assets/images/ataraxia/next_event.png",
-    "portrait": "/assets/images/ataraxia/last_event.png",
-    "date": ""
-  },
-  "LAST_EVENTS": [
+    "events": [
     {
       "description": "",
-      "landscape": "/assets/images/ataraxia/next_event.png",
-      "portrait": "/assets/images/ataraxia/last_event.png",
-      "date": ""
+      "landscape": "/assets/images/ataraxia/flyers/092017/landscape.png",
+      "portrait": "/assets/images/ataraxia/flyers/092017/portrait.png",
+      "date": "23/09/2017",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
     },
     {
       "description": "",
-      "landscape": "/assets/images/ataraxia/next_event.png",
-      "portrait": "/assets/images/ataraxia/last_event.png",
-      "date": ""
+      "landscape": "/assets/images/ataraxia/flyers/072017/landscape.png",
+      "portrait": "/assets/images/ataraxia/flyers/072017/portrait.png",
+      "date": "01/07/2017",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
     },
     {
       "description": "",
-      "landscape": "/assets/images/ataraxia/next_event.png",
-      "portrait": "/assets/images/ataraxia/last_event.png",
-      "date": ""
+      "landscape": "/assets/images/ataraxia/flyers/052017/landscape.png",
+      "portrait": "/assets/images/ataraxia/flyers/052017/portrait.png",
+      "date": "18/05/2017",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
+      "description": "",
+      "landscape": "/assets/images/ataraxia/flyers/042017/landscape.png",
+      "portrait": "/assets/images/ataraxia/flyers/042017/portrait.png",
+      "date": "06/04/2017",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
     }
   ]
 }

@@ -11,13 +11,14 @@ const cx = classNames.bind(styles)
 class Item extends Component {
 
   render() {
-    const { fourElements, item, tag } = this.props
+    const { fourElements, item } = this.props
+    const typeImage = (fourElements) ? 'portrait' : 'landscape'
 
     const infoTag = (fourElements) ? (
       <div className={ styles.info_container }>
-        <div className={ styles.day }>21/10/2017</div>
-        <div className={ styles.location }>Café La Palma</div>
-        <div className={ styles.city }>Madrid España</div>
+        <div className={ styles.date }>{ item.date }</div>
+        <div className={ styles.location }>{ item.location }</div>
+        <div className={ styles.city }>{ item.city }</div>
         <div className={ styles.more_info_icon } />
       </div>
     ) : ''
@@ -31,7 +32,7 @@ class Item extends Component {
       <div 
         className={ styleContainerTag }
       >
-        <img className={ styles.item_img } src={ `/assets/images/ataraxia/${ tag }.png` } />
+        <img className={ styles.item_img } src={ item[typeImage] } />
         { infoTag }
       </div>
 

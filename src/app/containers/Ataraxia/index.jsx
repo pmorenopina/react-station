@@ -12,23 +12,53 @@ import styles from './styles.css'
 export class Ataraxia extends Component {
 
   render () {
-    return (
-      <div className={ styles.ataraxia_container }>
-        <div className={ styles.container_next_events }>
-          <div className={ styles.title_container }>
-            <div className={ styles.title } >PRÓXIMOS</div>
-            <div className={ styles.title } >EVENTOS</div>
-          </div>
-          <GridComponent elements={ [''] } />
+
+    const nextEventGridTag = (CONFIG.events) ? (
+      <div className={ styles.container_next_events }>
+        <div className={ styles.title_container }>
+          <div className={ styles.title } >PRÓXIMOS</div>
+          <div className={ styles.title } >EVENTOS</div>
         </div>
+        <GridComponent key={ 0 } elements={ [CONFIG.events[0]] } />
+      </div>
+    ) : ''
+
+    let lastEventsGridTag = ''
+    if (CONFIG.events && CONFIG.events.length > 1) {
+      let arrayGridItems = []
+      const arrayGridItemsTag = CONFIG.events.map((item, index) => {
+        if (index !== 0) {
+          arrayGridItems.push(item)
+          if (arrayGridItems.length === 4) {
+            let elements = arrayGridItems
+            arrayGridItems = []
+            return (
+              <GridComponent key={ index }elements={ elements } />
+            )
+          } else if (CONFIG.events.length === (index + 1)) {
+            let elements = arrayGridItems
+            arrayGridItems = []
+            return (
+              <GridComponent key={ index } elements={ elements } />
+            )
+          }
+        }
+      })
+      lastEventsGridTag = (
         <div className={ styles.container_last_events }>
           <div className={ styles.title_container }>
             <div className={ styles.title } >EVENTOS</div>
             <div className={ styles.title } >PASADOS</div>
           </div>
-          <GridComponent elements={ ['', '', '', ''] } />
-          <GridComponent elements={ ['', ''] } />
+          { arrayGridItemsTag }
         </div>
+      )
+    }
+
+    return (
+      <div className={ styles.ataraxia_container }>
+        { nextEventGridTag }
+        { lastEventsGridTag }
       </div>
     )
   }
