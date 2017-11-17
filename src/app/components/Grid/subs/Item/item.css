@@ -4,11 +4,6 @@
     display: flex;
     width: 100%;
     height: 100%;
-    &:hover {
-        filter: gray; /* IE6-9 */
-        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-    }
 }
 .item_four_columns {
     display: flex;
@@ -17,10 +12,10 @@
     height: 100%;
     width: 100%;
     margin-bottom: 60px;
-    @media (min-width: 425px){
+    @media (min-width: 426px){
         width: 48%;
     }
-    @media (min-width: 768px){
+    @media (min-width: 769px){
         width: 22.5%;
         &:not(:first-child) {
             margin-left: 3.33%;
@@ -29,20 +24,20 @@
     .date {
         font-size: 18px;
         font-weight: 600;
-        @media (min-width: 425px){
+        @media (min-width: 426px){
             font-size: 20px;
         }
     }
     .location {
         font-size: 14px;
         font-weight: 500;
-        @media (min-width: 425px){
+        @media (min-width: 426px){
             font-size: 16px;
         }
     }
     .city {
         font-size: 12px;
-        @media (min-width: 425px){
+        @media (min-width: 426px){
             font-size: 14px;
         }
     }

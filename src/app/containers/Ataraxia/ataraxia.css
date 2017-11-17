@@ -1,24 +1,49 @@
 @import '../../styles/base.css';
 
-.ataraxia_container{
+.ataraxia_container {
     left: 0;
     top: 0;
+}
+
+.container_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 56px;
+    width: 100%;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    a {
+        display: flex;
+        align-self: center;
+    }
+    .logo {
+        height: 28px;
+    }
+}
+
+.container_footer {
+    height: 120px;
+    background-color: black;
+    width: 100%;
 }
 
 .container_next_events{
     margin: 0 auto;
     margin-bottom: 60px;
-    @media (min-width: 1024px){
+    @media (min-width: 1025px){
         padding: 0;
-        max-width: 1024px;
+        max-width: 1025px;
     }
     .title_container {
         padding-left: 0;
         margin: 30px 0;
-        @media (min-width: 768px){
+        @media (min-width: 769px){
             padding-left: 20px;
         }
-        @media (min-width: 1024px){
+        @media (min-width: 1025px){
             padding-left: 0;
         }
     }
@@ -27,10 +52,10 @@
 .container_last_events{
     padding: 0 10px;
     margin: 0 auto;
-    @media (min-width: 425px){
+    @media (min-width: 426px){
         padding: 0 20px;
     }
-    @media (min-width: 1024px){
+    @media (min-width: 1025px){
         padding: 0;
         max-width: 1024px;
     }
@@ -44,10 +69,10 @@
     text-align: center;
     font-weight: bold;
     line-height: 1;
-    @media (min-width: 425px){
+    @media (min-width: 426px){
         font-size: 45px;
     }
-    @media (min-width: 768px){
+    @media (min-width: 769px){
         font-size: 60px;
         text-align: left;
     }

@@ -7,7 +7,7 @@ import GridComponent from '../../components/Grid'
 import CONFIG from './config.json'
 
 // Styles
-import styles from './styles.css'
+import styles from './ataraxia.css'
 
 export class Ataraxia extends Component {
 
@@ -55,10 +55,24 @@ export class Ataraxia extends Component {
       )
     }
 
+    const headerTag = (
+      <div className={ styles.container_header }>
+        <a href={ '/ataraxia' }>
+          <img className={ styles.logo } src={ '/assets/icons/ataraxia/logo_ataraxia.png' }/>
+        </a> 
+      </div>
+    )
+
+    const footerTag = (
+      <div className={ styles.container_footer } />
+    )
+
     return (
       <div className={ styles.ataraxia_container }>
+        { headerTag }
         { nextEventGridTag }
         { lastEventsGridTag }
+        { footerTag }
       </div>
     )
   }

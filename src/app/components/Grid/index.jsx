@@ -5,7 +5,7 @@ import { PropTypes } from 'prop-types'
 import Item from './subs/Item/'
 
 // Styles
-import styles from './styles.css'
+import styles from './grid.css'
 
 const Grid = ({ elements }) => {
   

@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types'
 import classNames from 'classnames/bind'
 
 // Styles
-import styles from './styles.css'
+import styles from './item.css'
 
 const cx = classNames.bind(styles)
 
