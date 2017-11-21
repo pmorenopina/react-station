@@ -57,7 +57,7 @@ export class Events extends Component {
     }
 
     return (
-      <div>
+      <div className={ styles.container }>
         { nextEventGridTag }
         { lastEventsGridTag }
       </div>

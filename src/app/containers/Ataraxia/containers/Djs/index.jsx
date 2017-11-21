@@ -53,7 +53,7 @@ export class Djs extends Component {
       </div>
     )
     return (
-      <div>
+      <div className={ styles.container }>
         <div className={ styles.container_dj }>
           <div className={ styles.title_container }>
             <div className={ styles.title } >DJ'S</div>
