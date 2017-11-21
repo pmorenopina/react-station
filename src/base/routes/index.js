@@ -14,6 +14,7 @@ const routes = (
     <Route path="/main" component={ Main } />
     <Route path="/weatherstations" component={ WeatherStations } />
     <Route path="/ataraxia" component={ Ataraxia } />
+    <Route path="/ataraxia/:section" component={ Ataraxia } /> 
   </Route>
 )
 

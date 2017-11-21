@@ -1,0 +1,21 @@
+.container_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 56px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    a {
+        display: flex;
+        align-self: center;
+    }
+    .logo {
+        height: 25px;
+        &:hover{
+            opacity: 0.7;    
+        }
+    }
+}

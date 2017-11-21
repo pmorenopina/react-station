@@ -15,7 +15,7 @@ export default function renderPage(routeMatch, container, store) {
 
   let template;
   let route = routeMatch.substring(1).split('/');
-  if (route.length === 1) template = templates[route];
+  if (route.length <= 2) template = templates[route[0]];
   else {
     if (route[0] === 'post') template = templates.post;
     else template = templates.tag;
