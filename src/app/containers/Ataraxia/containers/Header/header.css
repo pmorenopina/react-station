@@ -28,9 +28,10 @@
             }
         }
         a {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
+            position: absolute;
+            left: 50%;
+            display: flex;
+            transform: translate(-50%, 0);
         }
         .logo {
             height: 25px;
