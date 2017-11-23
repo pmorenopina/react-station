@@ -7,14 +7,14 @@ import Item from './subs/Item/'
 // Styles
 import styles from './grid.css'
 
-const Grid = ({ elements }) => {
+const Grid = ({ elements,  oneElement}) => {
   
-  const styleTag = (elements && elements.length > 1) ? styles.container_four_columns : styles.container_full
+  const styleTag = (!oneElement) ? styles.container_four_columns : styles.container_full
   const elementsTag = elements.map((item, index) => {
     return (
       <Item 
         key={ index } 
-        fourElements={ (elements && elements.length > 1) ? true : false } 
+        fourElements={ (!oneElement) ? true : false } 
         item={ item } 
       />
     )

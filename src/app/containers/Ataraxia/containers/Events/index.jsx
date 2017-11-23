@@ -20,7 +20,7 @@ export class Events extends Component {
           <div className={ styles.title } >PRÓXIMOS</div>
           <div className={ styles.title } >EVENTOS</div>
         </div>
-        <GridComponent key={ 0 } elements={ [CONFIG.events[0]] } />
+        <GridComponent key={ 0 } elements={ [CONFIG.events[0]] } oneElement= { true } />
       </div>
     ) : ''
 
@@ -34,7 +34,7 @@ export class Events extends Component {
             let elements = arrayGridItems
             arrayGridItems = []
             return (
-              <GridComponent key={ index }elements={ elements } />
+              <GridComponent key={ index } elements={ elements } />
             )
           } else if (CONFIG.events.length === (index + 1)) {
             let elements = arrayGridItems

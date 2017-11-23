@@ -8,14 +8,36 @@
     z-index: 1;
     display: flex;
     justify-content: center;
-    a {
+    .bar {
         display: flex;
-        align-self: center;
-    }
-    .logo {
-        height: 25px;
-        &:hover{
-            opacity: 0.7;    
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 1024px;
+        .icon_menu {
+            height: 45px;
+            width: 45px;
+            cursor: pointer;
+            margin-left: 10px;
+            @media (min-width: 1025px){
+                margin-left: 0px;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        a {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        }
+        .logo {
+            height: 25px;
+            &:hover{
+                opacity: 0.7;    
+            }
         }
     }
+
 }
