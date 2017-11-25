@@ -11,15 +11,14 @@ const devStatics = [
   {route: '/dlls', dir: path.join(__dirname, '../../dist/')},
   {route: '/ataraxia/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
   {route: '/ataraxia/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')},
-  {route: '/', dir: path.join(__dirname, '../../src/app')},
+  {route: '/', dir: path.join(__dirname, '../../src/app')}
 ];
 
 const prodStatics = [
   {route: '/', dir: path.join(__dirname, '../../dist')},
-  {route: '/ataraxia/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
-  {route: '/ataraxia/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')},
   {route: '/assets', dir: path.join(__dirname, '../../dist/assets')},
-  {route: '/ataraxia/assets', dir: path.join(__dirname, '../../dist/assets')},
+  {route: '/ataraxia/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
+  {route: '/ataraxia/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')}
 ];
 
 const envStatics = (base.env === 'development') ? commonStatics.concat(devStatics) : commonStatics.concat(prodStatics);
