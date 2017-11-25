@@ -65,15 +65,15 @@ export class Djs extends Component {
               <div className={ styles.title }>MARTINEZ</div>
               <div className={ styles.social_networks }>
                 <a className={ styles.icon } href={ 'https://www.facebook.com/ricomartinezdj' } target={ '_blank' }>
-                  <img src={ 'assets/icons/ataraxia/facebook.svg' } />
+                  <img src={ '/assets/icons/ataraxia/facebook.svg' } />
                 </a>
                 <a className={ styles.icon } href={ 'https://www.beatport.com/artist/rico-martinez/104454' } target={ '_blank' }>
-                  <img src={ 'assets/icons/ataraxia/beatport.svg' } />
+                  <img src={ '/assets/icons/ataraxia/beatport.svg' } />
                 </a>
               </div>
             </div>
             <div className={ styles.photo_container }>
-              <img src={ 'assets/images/ataraxia/djs/rico_martinez.png'} />
+              <img src={ '/assets/images/ataraxia/djs/rico_martinez.png'} />
             </div>
           </div>
           { descriptionRico }
@@ -85,15 +85,15 @@ export class Djs extends Component {
               <div className={ styles.title }>DE LA VEGA</div>
               <div className={ styles.social_networks }>
                 <a className={ styles.icon } href={ 'https://www.facebook.com/javierdelavega.1990' } target={ '_blank' }>
-                  <img src={ 'assets/icons/ataraxia/facebook.svg' } />
+                  <img src={ '/assets/icons/ataraxia/facebook.svg' } />
                 </a>
                 <a className={ styles.icon } href={ 'https://www.beatport.com/artist/javier-de-la-vega/636438' } target={ '_blank' }>
-                  <img src={ 'assets/icons/ataraxia/beatport.svg' } />
+                  <img src={ '/assets/icons/ataraxia/beatport.svg' } />
                 </a>
               </div>
             </div>
             <div className={ styles.photo_container }>
-              <img src={ 'assets/images/ataraxia/djs/javier_de_la_vega.png'} />
+              <img src={ '/assets/images/ataraxia/djs/javier_de_la_vega.png'} />
             </div>
           </div>
           { descriptionJavi }
@@ -105,15 +105,15 @@ export class Djs extends Component {
               <div className={ styles.title }>MARTINEZ</div>
               <div className={ styles.social_networks }>
                 <a className={ styles.icon } href={ 'https://www.facebook.com/julio.martinezdelgado.5' } target={ '_blank' }>
-                  <img src={ 'assets/icons/ataraxia/facebook.svg' } />
+                  <img src={ '/assets/icons/ataraxia/facebook.svg' } />
                 </a>
                 <a className={ styles.icon } href={ 'https://www.beatport.com/artist/julio-martinez/610717' } target={ '_blank' }>
-                  <img src={ 'assets/icons/ataraxia/beatport.svg' } />
+                  <img src={ '/assets/icons/ataraxia/beatport.svg' } />
                 </a>
               </div>
             </div>
             <div className={ styles.photo_container }>
-              <img src={ 'assets/images/ataraxia/djs/julio_martinez.png'} />
+              <img src={ '/assets/images/ataraxia/djs/julio_martinez.png'} />
             </div>
           </div>
           { descriptionJulio }

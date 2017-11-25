@@ -8,7 +8,7 @@ export class Working extends Component {
   render () {
     return (
       <div className={ styles.container_working }>
-        <img src={ 'assets/images/ataraxia/ataraxia.png' } />
+        <img src={ '/assets/images/ataraxia/ataraxia.png' } />
         <div className={ styles.text }>Coming soon...</div>
       </div>
     )

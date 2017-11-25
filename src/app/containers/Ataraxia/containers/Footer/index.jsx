@@ -9,7 +9,7 @@ export class Footer extends Component {
     return (
       <div className={ styles.container_footer }>
         <div className={ styles.text }>By</div>
-        <img src={ 'assets/images/ataraxia/logo_pmorenopina.png' } />
+        <img src={ '/assets/images/ataraxia/logo_pmorenopina.png' } />
       </div>
     )
   }

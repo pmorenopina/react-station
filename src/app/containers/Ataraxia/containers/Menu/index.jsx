@@ -12,7 +12,7 @@ export class Menu extends Component {
       <div className={ styles.container_menu }>
         <img 
           className={ styles.icon }
-          src={ 'assets/icons/close.svg' } 
+          src={ '/assets/icons/close.svg' } 
           onClick={ () => handleMenu() }
         />
         <lu>
