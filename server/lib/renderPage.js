@@ -21,7 +21,5 @@ export default function renderPage(routeMatch, container, store) {
     else template = templates.tag;
   }
 
-  if (routeMatch === '/' || !template) return templates.main(params);
-  else return template(params);
-
+  return template(params)
 }
