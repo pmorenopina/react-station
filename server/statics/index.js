@@ -18,7 +18,7 @@ const prodStatics = [
   {route: '/', dir: path.join(__dirname, '../../dist')},
   {route: '/ataraxia/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
   {route: '/ataraxia/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')},
-  {route: '/ataraxia/assets', dir: path.join(__dirname, '../../dist/assets')},
+  {route: '/assets', dir: path.join(__dirname, '../../dist/assets')},
 ];
 
 const envStatics = (base.env === 'development') ? commonStatics.concat(devStatics) : commonStatics.concat(prodStatics);
