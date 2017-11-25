@@ -15,8 +15,8 @@ const devStatics = [
 ];
 
 const prodStatics = [
-  {route: '/', dir: path.join(__dirname, '../../dist')},
-  {route: '/assets', dir: path.join(__dirname, '../../dist/assets')},
+  {route: '/ataraxia', dir: path.join(__dirname, '../../dist')},
+  {route: '/ataraxia/assets', dir: path.join(__dirname, '../../dist/assets')},
   {route: '/ataraxia/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
   {route: '/ataraxia/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')}
 ];
