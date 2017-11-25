@@ -21,5 +21,7 @@ export default function renderPage(routeMatch, container, store) {
     else template = templates.tag;
   }
 
-  return template(params)
+  if (routeMatch === '/' || !template) return templates.ataraxia(params);
+  else return template(params);
+
 }
