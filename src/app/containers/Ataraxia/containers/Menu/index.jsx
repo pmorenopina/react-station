@@ -6,7 +6,8 @@ import styles from './menu.css'
 export class Menu extends Component {
 
   render () {
-    const { handleMenu } = this.props
+    const { handleMenu, section } = this.props
+    
     return (
       <div className={ styles.container_menu }>
         <img 
@@ -16,16 +17,16 @@ export class Menu extends Component {
         />
         <lu>
           <li>
-            <a href={ '/ataraxia/' }> HOME </a>
+            <a className={ (section === 'home') ? styles.active : '' } href={ '/ataraxia/' }> HOME </a>
           </li>
           <li>
-            <a href={ '/ataraxia/events' }> EVENTOS </a>
+            <a className={ (section === 'events') ? styles.active : '' } href={ '/ataraxia/events/' }> EVENTOS </a>
           </li>
           <li>
-            <a href={ '/ataraxia/djs' }> DJ'S </a>
+            <a className={ (section === 'djs') ? styles.active : '' } href={ '/ataraxia/djs/' }> DJ'S </a>
           </li>
           <li>
-            <a href={ '/ataraxia/media' }> MEDIA </a>
+            <a className={ (section === 'media') ? styles.active : '' } href={ '/ataraxia/media/' }> MEDIA </a>
           </li>
         </lu>
       </div>

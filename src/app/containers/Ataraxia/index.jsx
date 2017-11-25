@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import classNames from 'classnames/bind';
+import classNames from 'classnames/bind'
 
 // Containers 
 import Header from './containers/Header'
@@ -7,6 +7,7 @@ import Footer from './containers/Footer'
 import Events from './containers/Events'
 import Menu from './containers/Menu'
 import Djs from './containers/Djs'
+import Working from './containers/Working'
 
 // Styles
 import styles from './ataraxia.css'
@@ -17,7 +18,7 @@ export class Ataraxia extends Component {
     super(props)
     this.state = {
       section: (this.props.params && this.props.params.section) ? (this.props.params.section) : 'home',
-      isOpenMenu: false
+      isOpenMenu: false,
     }
   }
 
@@ -39,31 +40,28 @@ export class Ataraxia extends Component {
         bodyTag = <Djs />
       } else {
         bodyTag = (
-          <div className={ styles.container_working }>
-            <img src={ '/assets/images/ataraxia/ataraxia.png' } />
-            <div className={ styles.text }>Coming soon...</div>
-          </div>
+          <Working />
         )
       }
     } else {
       bodyTag = (
-        <div className={ styles.container_working }>
-          <img src={ '/assets/images/ataraxia/ataraxia.png' } />
-          <div className={ styles.text }>Coming soon...</div>
-        </div>
+        <Working />
       )
     }
 
     const menuTag = (isOpenMenu) ? (
-      <Menu handleMenu={ this.handleMenuOpenClose } />
+      <Menu 
+        handleMenu={ this.handleMenuOpenClose } 
+        section= { this.state.section }
+      />
     ) : ''
 
-    const cx = classNames.bind(styles);
+    const cx = classNames.bind(styles)
 
     const styleClass = cx({
       ataraxia_container : true,
       menuOpen: (isOpenMenu)
-    });
+    })
 
     return (
       <div className={ styleClass }>

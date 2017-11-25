@@ -11,21 +11,3 @@
 .menuOpen {
     position: fixed;
 }
-
-.container_working {
-    height: calc(100vh - 120px - 56px);
-    background-color: black;
-    margin-top: 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .text {
-        color: white;
-        font-size: 45px;
-    }
-    img {
-        max-width: 450px;
-        max-height: 350px;
-    }
-}
