@@ -3,11 +3,11 @@ export default function main(params) {
   const state = JSON.stringify(params.state)
   let title = 'ΔTΔRΔXIΔ'
 
-  if (params.routeMatch === '/ataraxia/events/' || params.routeMatch === '/ataraxia/events') {
+  if (params.routeMatch === '/events/' || params.routeMatch === '/events') {
     title += ' - Eventos'
-  } else if (params.routeMatch === '/ataraxia/djs/' || params.routeMatch === '/ataraxia/djs') {
+  } else if (params.routeMatch === '/djs/' || params.routeMatch === '/ataraxia/djs') {
     title += ' - Djs'
-  } else if (params.routeMatch === '/ataraxia/media/' || params.routeMatch === '/ataraxia/media') {
+  } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
     title += ' - Media'
   }
 

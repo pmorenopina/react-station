@@ -1,13 +1,13 @@
 import React from 'react'
-import { Route } from 'react-router'
+import { Route, IndexRoute } from 'react-router'
 
 import App from 'containers/App/'
 import Ataraxia from 'containers/Ataraxia'
 
 const routes = (
   <Route path="/" component={ App } >
-    <Route path="/ataraxia" component={ Ataraxia } />
-    <Route path="/ataraxia/:section" component={ Ataraxia } /> 
+    <IndexRoute component={ Ataraxia } />
+    <Route path="/:section" component={ Ataraxia } /> 
   </Route>
 )
 
