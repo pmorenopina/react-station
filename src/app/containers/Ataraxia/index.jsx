@@ -68,7 +68,7 @@ export class Ataraxia extends Component {
         { menuTag }
         <Header handleMenu={ this.handleMenuOpenClose } />
         { bodyTag }
-        <Footer />
+        <Footer section= { this.state.section } />
       </div>
     )
   }
