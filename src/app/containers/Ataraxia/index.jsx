@@ -5,6 +5,7 @@ import classNames from 'classnames/bind'
 import Header from './containers/Header'
 import Footer from './containers/Footer'
 import Events from './containers/Events'
+import Main from './containers/Main'
 import Menu from './containers/Menu'
 import Djs from './containers/Djs'
 import Working from './containers/Working'
@@ -33,11 +34,14 @@ export class Ataraxia extends Component {
   render () {
     const { isOpenMenu } = this.state
     let bodyTag = ''
+
     if (this.props.params && this.props.params.section) {
       if (this.props.params.section === 'events') {
         bodyTag = <Events />
       } else if (this.props.params.section === 'djs') {
         bodyTag = <Djs />
+      } else if (this.props.params.section === 'media') {
+        bodyTag = <Working />
       } else {
         bodyTag = (
           <Working />
@@ -45,7 +49,7 @@ export class Ataraxia extends Component {
       }
     } else {
       bodyTag = (
-        <Working />
+        <Main />
       )
     }
 
