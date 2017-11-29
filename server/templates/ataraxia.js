@@ -31,10 +31,8 @@ export default function main(params) {
             animation: google.maps.Animation.DROP
           })
           document.getElementById('mapFake').style.display = 'none'
-          document.getElementById('map').style.visibility = 'visible'              
         } catch(err) {
           document.getElementById('mapFake').style.display = 'block'    
-          document.getElementById('map').style.visibility = 'hidden'                    
         }
       }
     </script>
@@ -83,10 +81,10 @@ export default function main(params) {
     </head>
     <body>
       <div id="root">${ params.container }</div>
+      ${ scriptInitMaps }      
+      ${ scriptMaps } 
       <script>window.$REACTBASE_STATE = ${ state }</script>
       ${ params.appScript }
-      ${ scriptInitMaps }      
-      ${ scriptMaps }      
     </body>
   </html>
   `
