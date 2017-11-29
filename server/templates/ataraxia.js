@@ -11,30 +11,32 @@ export default function main(params) {
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
     title += ' - Media'
   } else {
-    scriptMaps = '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1g2Qt-GYi0xpUVkrH_RFB5EX2dr-1dR8&callback=initMap"></script>'
+    scriptMaps = '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1g2Qt-GYi0xpUVkrH_RFB5EX2dr-1dR8"></script>'
     scriptInitMaps = `
     <script>
-      function initMap() {
+      function initMapFuction() {
         try {
-          var cafeLaPalma = { lat: 40.426857, lng: -3.707992 }
+          var cafeLaPalma = { lat: 40.426857, lng: -3.707992 };
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 18,
             center: cafeLaPalma,
             disableDefaultUI: true,
             zoomControl: true,
             scaleControl: true          
-          })
+          });
           var marker = new google.maps.Marker({
             position: cafeLaPalma,
             map: map,
             draggable: false,
             animation: google.maps.Animation.DROP
-          })
-          document.getElementById('mapFake').style.display = 'none'
+          });
+          document.getElementById('mapFake').style.display = 'none';
         } catch(err) {
-          document.getElementById('mapFake').style.display = 'block'    
+          document.getElementById('mapFake').style.display = 'block';    
         }
       }
+
+      window.initMap = initMapFuction;
     </script>
     `
   }
