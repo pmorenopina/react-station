@@ -22,7 +22,9 @@ export default function main(params) {
             center: cafeLaPalma,
             disableDefaultUI: true,
             zoomControl: true,
-            scaleControl: true          
+            scaleControl: true,
+            fullscreenControl: true,
+            clickableIcons: false          
           });
           var marker = new google.maps.Marker({
             position: cafeLaPalma,
