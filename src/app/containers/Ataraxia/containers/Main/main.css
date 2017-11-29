@@ -96,6 +96,9 @@
             img {
                 width: 100%;
             }
+            div:empty {
+                display: none;
+            }
             div {
                 @media (min-width: 769px){
                     height: 100%;

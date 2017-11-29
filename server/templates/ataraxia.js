@@ -31,9 +31,10 @@ export default function main(params) {
             animation: google.maps.Animation.DROP
           })
           document.getElementById('mapFake').style.display = 'none'
+          document.getElementById('map').style.visibility = 'visible'              
         } catch(err) {
           document.getElementById('mapFake').style.display = 'block'    
-          document.getElementById('map').style.display = 'none'                    
+          document.getElementById('map').style.visibility = 'hidden'                    
         }
       }
     </script>
