@@ -2,7 +2,8 @@ export default function main(params) {
 
   const state = JSON.stringify(params.state)
   let title = 'ΔTΔRΔXIΔ'
-  let scriptMaps, scriptInitMaps = ''
+  let scriptMaps = '<script></script>'
+  let scriptInitMaps = '<script></script>'
 
   if (params.routeMatch === '/events/' || params.routeMatch === '/events') {
     title += ' - Eventos'
@@ -18,7 +19,7 @@ export default function main(params) {
         try {
           var cafeLaPalma = { lat: 40.426857, lng: -3.707992 };
           var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 18,
+            zoom: 15,
             center: cafeLaPalma,
             disableDefaultUI: true,
             zoomControl: true,
