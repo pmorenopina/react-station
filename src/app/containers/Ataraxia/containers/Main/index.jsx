@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { scroller } from 'react-scroll' //Imports scroller mixin, can use as scroller.scrollTo()
 
 // Components 
 import GridComponent from '../../../../components/Grid'
@@ -31,8 +32,9 @@ class Main extends Component {
             <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home_video.mp4' } />
           </video>
           <img src={ '/assets/images/ataraxia/ataraxia.png' } />
+          <img className={ styles.icon } src={ '/assets/icons/arrow_down.svg' } onClick={ () => scroller.scrollTo('main_event', { duration: 1000, delay: 100, smooth: true, offset: -136 }) }/>
         </div>
-        <div className={ styles.container_next_events }>
+        <div name={ 'main_event' } className={ styles.container_next_events }>
           <div className={ styles.title_container }>
             <div className={ styles.title } >NO TE</div>
             <div className={ styles.title } >PIERDAS</div>
