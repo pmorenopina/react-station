@@ -32,6 +32,7 @@
     }
     .icon {
         width: 60px;
+        z-index: 2;
         &:hover {
             opacity: 0.7;
         }
