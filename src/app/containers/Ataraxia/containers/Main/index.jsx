@@ -26,10 +26,11 @@ class Main extends Component {
             ref={ (video) => { this.videoTag = video } }
             autoPlay={ true } 
             muted={ true } 
-            playsInline={ true } 
+            playsInline={ true }
           >
-            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
+            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home_video.mp4' } />
           </video>
+          <img src={ '/assets/images/ataraxia/ataraxia.png' } />
         </div>
         <div className={ styles.container_next_events }>
           <div className={ styles.title_container }>
