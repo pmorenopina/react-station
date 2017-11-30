@@ -64,7 +64,7 @@ export default function main(params) {
       <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/ataraxia/favicon-16x16.png">
       <meta property="og:title" content="${ title }">
       <meta property="og:description" content="Sesión de música electrónica">
-      <meta property="og:image" content="/assets/favicon/ataraxia/apple-icon-180x180.png">
+      <meta property="og:image" content="/assets/favicon/ataraxia/favicon-96x96.png">
       <meta property="og:url" content="http://www.ataraxiaclub.com">
       <meta name="viewport" content="width=device-width" />
       <meta name="msapplication-TileColor" content="#ffffff">

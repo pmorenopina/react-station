@@ -12,6 +12,15 @@ import CONFIG from '../../config.json'
 const Main = () => {
   return (
     <div className={ styles.container }>
+      <div className={ styles.container_full_screen }>
+        <video 
+          autoPlay={ true } 
+          muted={ true } 
+          playsInline={ true } 
+          loop={ true }
+          src={ '/assets/videos/ataraxia/home_video.mp4' } 
+        />
+      </div>
       <div className={ styles.container_next_events }>
         <div className={ styles.title_container }>
           <div className={ styles.title } >NO TE</div>

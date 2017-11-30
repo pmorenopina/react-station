@@ -5,7 +5,7 @@
     background-color: black;
     height: 56px;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     .bar {
