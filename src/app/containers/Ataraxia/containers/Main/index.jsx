@@ -27,9 +27,10 @@ class Main extends Component {
             autoPlay={ true } 
             muted={ true } 
             playsInline={ true } 
-            loop={ false }
             src={ '/assets/videos/ataraxia/home_video.mp4' } 
-          />
+          >
+            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home_video.mp4' } />
+          </video>
         </div>
         <div className={ styles.container_next_events }>
           <div className={ styles.title_container }>
