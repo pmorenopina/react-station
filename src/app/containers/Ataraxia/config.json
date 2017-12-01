@@ -2,14 +2,22 @@
     "remember": [
       {
         "description": "",
-        "landscape": "/assets/images/ataraxia/flyers/112017/landscape.jpg",
-        "portrait": "/assets/images/ataraxia/flyers/112017/portrait.jpg",
-        "date": "18/11/2017",
+        "landscape": "/assets/images/ataraxia/flyers/122017/landscape.png",
+        "portrait": "/assets/images/ataraxia/flyers/122017/portrait.png",
+        "date": "24/12/2017",
         "location": "Café La Palma",
         "city": "Madrid, España"
       }
     ],
     "events": [
+      {
+        "description": "",
+        "landscape": "/assets/images/ataraxia/flyers/122017/landscape.png",
+        "portrait": "/assets/images/ataraxia/flyers/122017/portrait.png",
+        "date": "24/12/2017",
+        "location": "Café La Palma",
+        "city": "Madrid, España"
+      },
       {
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/112017/landscape.jpg",

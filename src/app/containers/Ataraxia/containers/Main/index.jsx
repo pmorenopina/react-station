@@ -44,15 +44,34 @@ class Main extends Component {
         <div className={ styles.container_dj }>
           <div className={ styles.container_grid }>
             <div className={ styles.description }>
-              En esta ocasión, contaremos con los djs residentes para amenizaros una noche especial, en la que uno de ellos cumple años.
+              🥂24 de Diciembre... NOCHEBUENA  ⛄🎄✨
               <br/>
-              Rico Martinez estará desde primera hora calentando la sala de máquinas con sus últimos tracks ya introducidos en el top 100 de Beatport. 
+              Desde CAFE LA PALMA presentamos una fiesta especial en navidades hasta las 07:00 de la mañana. ‼️‼️‼️
               <br/>
-              Javier De La Vega & Julio Martinez Delgado pondrán el broche final en un b2b en el que la contundencia en pista no faltará para que gastes zapatilla.
-              <br/><br/>
-              Que no te lo cuenten !!! 
+              Contaremos con una cabina formada por:
               <br/>
-              ENTRADA GRATUITA
+              <br/>
+              🔷LOS RESIDENTES🔷
+              <br/>
+              🎧 Rico Martinez - Premiado en 2006 con un DJ Mag, nominado varias veces por la revista #Dj_One como “Mejor Dj de su categoría Dj Oners”. Sus tracks son sinónimo de top 100 en Beatport
+              <br/>
+              🎧 Javier De La Vega - Fundador de Ataraxia, con más de 10 años de experiencia pinchando en sesiones como The Reverse World, SUPERMARTXÉ o Amazing Summer Festiv. Ciudad Real
+              <br/>
+              🎧 Julio MartineZ - Fundador de Ataraxia, trabaja para el sello discográfico #Sellsmuzik. Ha pinchado para festivales como Bay Day
+              <br/>
+              <br/>
+              🔶LOS INVITADOS🔶
+              <br/>
+              🎧Aram Cejudo - Responsable de "Clown Madrid" participando en diversas sesiones como Smiley Club, Comba o The warehouse :: Madrid
+              <br/> 
+              🎧 Abel Suarez - De la sierra norte de Madrid, es uno de los creadores del sello Clepsidria Productions. 
+              <br/>
+              🎧 Omar Ortiz - Miembro del colectivo Zoundplay Music
+              <br/>
+              <br/>
+              ⬛ENTRADAS ANTICIPADAS⬛ 15€ x 2 copas
+              <br/>
+              Una fiesta cuidada al detalle para que pases una noche especial por NAVIDAD🎶
               <br/>
               <br/>
               Café La Palma (Calle La Palma nº 62, Madrid)
