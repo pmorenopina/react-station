@@ -1,7 +1,5 @@
-
-require ('newrelic')
-
 import express from 'express';
+
 import base from 'base';
 import httpServer from './httpServer';
 import applyStaticsPaths from './statics';
@@ -24,17 +22,16 @@ const launchServer = () => {
       base.console.info(`Setting up server...`);
       httpServer(app);
     })
-    /*
     .then(() => {
       var http = require("http");
       setInterval(function() {
           base.console.info(`Setting awake server...`);
           http.get("http://react-station.herokuapp.com");
-      }, 1000000);
+      }, 1500000);
     })
     .catch((e) => {
       base.console.error(`Server Error ${e}...`);
-    });*/
+    });
 };
 
 launchServer();
