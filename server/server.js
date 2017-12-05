@@ -1,7 +1,7 @@
-import express from 'express';
 
 require ('newrelic')
 
+import express from 'express';
 import base from 'base';
 import httpServer from './httpServer';
 import applyStaticsPaths from './statics';
