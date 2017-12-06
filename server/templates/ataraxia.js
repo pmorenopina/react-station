@@ -19,7 +19,7 @@ export default function main(params) {
         try {
           var cafeLaPalma = { lat: 40.426857, lng: -3.707992 };
           var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
+            zoom: 16,
             center: cafeLaPalma,
             disableDefaultUI: true,
             zoomControl: true,
