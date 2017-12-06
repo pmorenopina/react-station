@@ -12,27 +12,89 @@ import CONFIG from '../../config.json'
 
 class Main extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      playVideo: false,
+      mutedVideo: false
+    }
+  }
+
   componentDidMount() {
     this.videoTag.addEventListener("ended", () => {
       this.videoTag.currentTime=0.1
       this.videoTag.play()
-    })
+      this.videoTag.volume = 0
+      this.setState({
+        mutedVideo: true
+      })       
+    }) 
+  }
+
+  handlePlayPauseVideo = () => {
+    if (!this.state.playVideo) {
+      this.videoTag.play() 
+      this.setState({
+        playVideo: true
+      })                       
+    } else {
+      this.videoTag.pause()   
+      this.setState({
+        playVideo: false
+      })                                   
+    }
+  }
+
+  handleMutedVideo = () => {
+    if (!this.state.mutedVideo) {
+      this.videoTag.volume = 0
+      this.setState({
+        mutedVideo: true
+      })                       
+    } else {
+      this.videoTag.volume = 1     
+      this.setState({
+        mutedVideo: false
+      })                                   
+    }
   }
 
   render() {
+
+    const iconPlayPause = (this.state.playVideo === false) ? (
+      <img 
+        className={ styles.iconPlay }
+        src={ '/assets/icons/play.svg' }
+        onClick={ this.handlePlayPauseVideo } 
+      />
+    ) : (
+      <div className={ styles.iconBarVolume }>
+        <img 
+          className={ styles.iconPause }      
+          src={ '/assets/icons/pause.svg' } 
+          onClick={ this.handlePlayPauseVideo }         
+        />
+        <img 
+          className={ styles.iconVolume }      
+          src={ (!this.state.mutedVideo) ? '/assets/icons/volume.svg' : '/assets/icons/mute.svg' } 
+          onClick={ this.handleMutedVideo }                   
+        />
+      </div>
+    )
+
     return (
       <div className={ styles.container }>
         <div className={ styles.container_full_screen }>
           <video 
             ref={ (video) => { this.videoTag = video } }
-            autoPlay={ true } 
-            muted={ true } 
-            playsInline={ true }
+            autoPlay={ true }
+            preload= { 'auto' }
+            poster={ '/assets/videos/ataraxia/home-poster.png' }
           >
-            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home_video.mp4' } />
+            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
+            <source type={ 'video/webm' } src={ '/assets/videos/ataraxia/home-video.webm' } />
           </video>
-          <img src={ '/assets/images/ataraxia/ataraxia.png' } />
-          <img className={ styles.icon } src={ '/assets/icons/arrow_down.svg' } onClick={ () => scroller.scrollTo('main_event', { duration: 1000, delay: 100, smooth: true, offset: -136 }) }/>
+          { iconPlayPause }
         </div>
         <div name={ 'main_event' } className={ styles.container_next_events }>
           <div className={ styles.title_container }>

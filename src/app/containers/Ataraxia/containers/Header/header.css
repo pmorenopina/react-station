@@ -16,10 +16,14 @@
         width: 100%;
         max-width: 1024px;
         .icon_menu {
-            height: 45px;
-            width: 45px;
+            height: 35px;
+            width: 35px;
             cursor: pointer;
             margin-left: 10px;
+            @media (min-width: 426px){
+                width: 45px;
+                height: 45px;     
+            }
             @media (min-width: 1025px){
                 margin-left: 0px;
             }
