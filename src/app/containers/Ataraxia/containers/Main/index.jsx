@@ -77,7 +77,11 @@ class Main extends Component {
               Café La Palma (Calle La Palma nº 62, Madrid)
             </div>
             <div className={ styles.photo_container }>
-              <img id={ 'mapFake' } src={ '/assets/images/ataraxia/location.png' } />
+              <img 
+                id={ 'mapFake' } 
+                src={ '/assets/images/ataraxia/location.png' }
+                alt={ 'ΔTΔRΔXIΔ | GoogleMaps' }                
+              />
               <div id={ 'map' } />
             </div>
           </div>

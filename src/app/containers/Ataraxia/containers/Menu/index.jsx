@@ -14,6 +14,7 @@ export class Menu extends Component {
           className={ styles.icon }
           src={ '/assets/icons/close.svg' } 
           onClick={ () => handleMenu() }
+          alt={ 'ΔTΔRΔXIΔ | HambugerMenuIcon' }          
         />
         <lu>
           <li>
@@ -29,14 +30,23 @@ export class Menu extends Component {
             <a className={ (section === 'media') ? styles.active : '' } href={ '/media/' }> MEDIA </a>
           </li>
           <li className={ styles.container_networks }>
-            <a className={ `${ styles.icon_social } ${ styles.first }` } href={ 'https://www.facebook.com/groups/1903029973318856/' } target={ '_blank' }>
-              <img src={ '/assets/icons/ataraxia/facebook_white.svg' } />
+            <a className={ `${ styles.icon_social } ${ styles.first }` } href={ 'https://www.facebook.com/ataraxiaclub/' } target={ '_blank' }>
+              <img 
+                src={ '/assets/icons/ataraxia/facebook_white.svg' } 
+                alt={ 'ΔTΔRΔXIΔ | FacebookIcon' }                
+              />
             </a>
             <a className={ styles.icon_social } href={ 'https://www.instagram.com/ataraxia_club/' } target={ '_blank' }>
-              <img src={ '/assets/icons/ataraxia/instagram_white.svg' } />
+              <img 
+                src={ '/assets/icons/ataraxia/instagram_white.svg' } 
+                alt={ 'ΔTΔRΔXIΔ | InstagramIcon' }                
+              />
             </a>
             <a className={ styles.icon_social } href={ 'https://www.youtube.com/user/JavyDeejay' } target={ '_blank' }>
-              <img src={ '/assets/icons/ataraxia/youtube_white.svg' } />
+              <img 
+                src={ '/assets/icons/ataraxia/youtube_white.svg' } 
+                alt={ 'ΔTΔRΔXIΔ | YoutubeIcon' }                
+              />
             </a>
           </li>
         </lu>

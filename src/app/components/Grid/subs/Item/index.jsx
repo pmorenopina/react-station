@@ -1,4 +1,3 @@
-import { connect } from 'react-redux'
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import classNames from 'classnames/bind'
@@ -32,7 +31,11 @@ class Item extends Component {
       <div 
         className={ styleContainerTag }
       >
-        <img className={ styles.item_img } src={ item[typeImage] } />
+        <img 
+          className={ styles.item_img } 
+          src={ item[typeImage] } 
+          alt={ `ΔTΔRΔXIΔ | ${ item.date }` } 
+        />
         { infoTag }
       </div>
 
