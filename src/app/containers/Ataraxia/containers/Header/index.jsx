@@ -27,15 +27,27 @@ const Header = ({ socialNetworks, handleMenu }) => {
           className={ styles.icon_menu }  
           src={ '/assets/icons/hamburger_menu.svg' } 
           onClick={ () => handleMenu() } 
-          alt={ 'ΔTΔRΔXIΔ | HambugerMenuIcon' }                            
+          alt={ 'ΔTΔRΔXIΔ | hambugerMenuIcon' }                            
         />
-        { networksTag }
+        <div className={ styles.container_social }>
+          { networksTag }
+        </div>
         <a className={ styles.container_logo } href={ '/' }>
           <img 
             className={ styles.logo } 
             src={ '/assets/icons/ataraxia/logo.svg' } 
-            alt={ 'ΔTΔRΔXIΔ | MainLogo' }              
+            alt={ 'ΔTΔRΔXIΔ | mainLogo' }              
           />
+        </a> 
+        <a className={ styles.container_cart } href={ '/events/' }>
+          <div className={ styles.backcart }>
+            <img 
+              className={ styles.cart } 
+              src={ '/assets/icons/shopping-cart.svg' } 
+              alt={ 'ΔTΔRΔXIΔ | cartLogo' }              
+            />
+            <span>TICKETS</span>
+          </div>
         </a> 
       </div>
     </div>
