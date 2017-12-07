@@ -81,9 +81,15 @@ export class Ataraxia extends Component {
     return (
       <div className={ styleClass }>
         { menuTag }
-        <Header handleMenu={ this.handleMenuOpenClose } />
+        <Header 
+          socialNetworks={ CONFIG.socialNetworks }
+          handleMenu={ this.handleMenuOpenClose } 
+        />
         { bodyTag }
-        <Footer section= { this.state.section } />
+        <Footer 
+          socialNetworks={ CONFIG.socialNetworks }                  
+          section= { this.state.section } 
+        />
       </div>
     )
   }

@@ -117,5 +117,22 @@
 
       ]
     }
+  ],
+  "socialNetworks": [
+    {
+      "network": "facebook",
+      "url": "https://www.facebook.com/ataraxiaclub/",
+      "icon": "/assets/icons/ataraxia/facebook_white.svg"
+    },
+    {
+      "network": "instagram",
+      "url": "https://www.instagram.com/ataraxia_club/",
+      "icon": "/assets/icons/ataraxia/instagram_white.svg"
+    },
+    {
+      "network": "youtube",
+      "url": "https://www.youtube.com/user/JavyDeejay",
+      "icon": "/assets/icons/ataraxia/youtube_white.svg"
+    }
   ]
 }

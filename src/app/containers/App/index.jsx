@@ -1,7 +1,5 @@
-import { PropTypes } from 'prop-types';
-import React, { Component } from 'react';
-
-import styles from './app.css'
+import { PropTypes } from 'prop-types'
+import React, { Component } from 'react'
 
 class App extends Component {
 
@@ -12,14 +10,14 @@ class App extends Component {
   render() {
 
 
-    const children = this.props.children;
+    const children = this.props.children
     return (
       <div>
         <main>
           { children }
         </main>
       </div>
-    );
+    )
   }
 }
 

@@ -29,7 +29,7 @@ const Djs = ({ djs }) => {
       </div>
     ) : ''
 
-    return(        
+    return (        
       <div 
         key={ index }
         className={ styles.container_dj }
