@@ -16,8 +16,10 @@ class Main extends Component {
     super(props)
     this.state = {
       playVideo: false,
-      mutedVideo: false
+      mutedVideo: false,
+      counter: 0
     }
+
   }
 
   componentDidMount() {
@@ -29,6 +31,18 @@ class Main extends Component {
         mutedVideo: true
       })       
     }) 
+
+    setInterval(() => {
+      if (this.state.counter > 3) {
+        this.setState({
+          counter: 1
+        })
+      } else {
+        this.setState({
+          counter: this.state.counter + 1
+        })
+      }
+    }, 400)
   }
 
   handlePlayPauseVideo = () => {
@@ -42,6 +56,24 @@ class Main extends Component {
       this.setState({
         playVideo: false
       })                                   
+    }
+  }
+
+  handlePlay = () => {
+    this.setState({
+      playVideo: true
+    })   
+  }
+
+  handleVolume = () => {
+    if (this.videoTag.volume > 0) {
+      this.setState({
+        mutedVideo: false
+      })   
+    } else {
+      this.setState({
+        mutedVideo: true
+      }) 
     }
   }
 
@@ -62,11 +94,25 @@ class Main extends Component {
   render() {
 
     const iconPlayPause = (this.state.playVideo === false) ? (
-      <img 
-        className={ styles.iconPlay }
-        src={ '/assets/icons/play.svg' }
-        onClick={ this.handlePlayPauseVideo } 
-      />
+      <div className={ styles.container_play }>
+        <img 
+          className={ styles.iconPlay }
+          src={ '/assets/icons/play.svg' }
+          onClick={ this.handlePlayPauseVideo } 
+        />
+        <img 
+          className={ (this.state.counter >= 1) ? (`${ styles.iconExpand } ${ styles.active }`) : (styles.iconExpand) }
+          src={ '/assets/icons/expand-button.svg' }
+        />
+        <img 
+          className={ (this.state.counter >= 2) ? (`${ styles.iconExpand_second } ${ styles.active }`) : (styles.iconExpand_second) }
+          src={ '/assets/icons/expand-button.svg' }
+        />
+        <img 
+          className={ (this.state.counter >= 3) ? (`${ styles.iconExpand_third } ${ styles.active }`) : (styles.iconExpand_third) }
+          src={ '/assets/icons/expand-button.svg' }
+        />
+      </div>
     ) : (
       <div className={ styles.iconBarVolume }>
         <img 
@@ -90,6 +136,8 @@ class Main extends Component {
             autoPlay={ true }
             preload= { 'auto' }
             poster={ '/assets/videos/ataraxia/home-poster.png' }
+            onPlay={ this.handlePlay }
+            onVolumeChange={ this.handleVolume }
           >
             <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
             <source type={ 'video/webm' } src={ '/assets/videos/ataraxia/home-video.webm' } />

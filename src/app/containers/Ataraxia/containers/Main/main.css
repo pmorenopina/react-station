@@ -30,14 +30,64 @@
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
     }
-    .iconPlay {
-        position: absolute;
-        z-index: 5;
-        height: 120px;
-        width: 120px;
-        top: calc(50vh - 110px);
-        @media (min-width: 769px){
+    .container_play {
+        display: flex;
+        justify-content: center;
+        .iconPlay {
+            position: absolute;
+            z-index: 5;
+            height: 120px;
+            width: 120px;
+            top: calc(50vh - 110px);
+            opacity: 0.5;
+            @media (min-width: 769px){
+                display: none;
+            }
+        }
+        .iconExpand {
+            position: absolute;
+            z-index: 5;
+            height: 15px;
+            width: 15px;
+            top: calc(87vh - 110px);
+            opacity: 0.5;
             display: none;
+            &.active {
+                display: block;
+            }
+            @media (min-width: 769px){
+                display: none;
+            }
+        }
+        .iconExpand_second {
+            position: absolute;
+            z-index: 5;
+            height: 30px;
+            width: 30px;
+            top: calc(89vh - 110px);
+            opacity: 0.5;
+            display: none;
+            &.active {
+                display: block;
+            }
+            @media (min-width: 769px){
+                display: none;
+            }
+        }
+        .iconExpand_third {
+            position: absolute;
+            z-index: 5;
+            height: 50px;
+            width: 50px;
+            top: calc(91vh - 110px);
+            opacity: 0.5;
+            display: none;
+            &.active {
+                display: block;
+            }
+            @media (min-width: 769px){
+                display: none;
+            }
         }
     }
     .iconBarVolume{
@@ -45,16 +95,23 @@
         z-index: 5;
         top: calc(90vh - 120px);
         @media (min-width: 769px){
-            display: none;
-        }
+            top: calc(95vh - 120px);       
+            right: 100px;     
+        }            
         .iconPause {
             height: 40px;
             width: 40px;
             margin-right: 15px;
+            opacity: 0.5;       
+            @media (min-width: 769px){
+                display: none;
+                margin-right: 0px;                
+            }     
         }
         .iconVolume {
             height: 40px;
             width: 40x;
+            opacity: 0.5;            
         }
     }
 }
