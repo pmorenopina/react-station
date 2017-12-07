@@ -10,6 +10,9 @@ import Menu from './containers/Menu'
 import Djs from './containers/Djs'
 import Working from './containers/Working'
 
+// Config
+import CONFIG from './config.json'
+
 // Styles
 import styles from './ataraxia.css'
 
@@ -47,7 +50,7 @@ export class Ataraxia extends Component {
       if (this.props.params.section === 'events') {
         bodyTag = <Events />
       } else if (this.props.params.section === 'djs') {
-        bodyTag = <Djs />
+        bodyTag = <Djs djs={ CONFIG.djs } />
       } else if (this.props.params.section === 'media') {
         bodyTag = <Working />
       } else {
