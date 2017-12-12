@@ -10,16 +10,13 @@
     right: 0;
     overflow: hidden;
     z-index: 1;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 56px);
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: black;
-    @media (min-width: 769px){
-        min-height: calc(100vh - 55px);
-    }
     video { 
         position: absolute;
         z-index: 1;
@@ -33,6 +30,7 @@
     .container_play {
         display: flex;
         justify-content: center;
+        align-items: center;
         .iconPlay {
             position: absolute;
             z-index: 5;

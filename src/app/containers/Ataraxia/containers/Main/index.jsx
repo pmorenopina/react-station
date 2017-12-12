@@ -23,6 +23,8 @@ class Main extends Component {
   }
 
   componentDidMount() {
+    this.videoTag.play()
+    
     this.videoTag.addEventListener("ended", () => {
       this.videoTag.currentTime=0.1
       this.videoTag.play()
@@ -31,7 +33,7 @@ class Main extends Component {
         mutedVideo: true
       })       
     }) 
-
+    
     setInterval(() => {
       if (this.state.counter > 3) {
         this.setState({
@@ -133,14 +135,12 @@ class Main extends Component {
         <div className={ styles.container_full_screen }>
           <video 
             ref={ (video) => { this.videoTag = video } }
-            autoPlay={ true }
             preload= { 'auto' }
             poster={ '/assets/videos/ataraxia/home-poster.png' }
             onPlay={ this.handlePlay }
             onVolumeChange={ this.handleVolume }
           >
             <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
-            <source type={ 'video/webm' } src={ '/assets/videos/ataraxia/home-video.webm' } />
           </video>
           { iconPlayPause }
         </div>

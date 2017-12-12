@@ -64,12 +64,12 @@ export class Ataraxia extends Component {
       )
     }
 
-    const menuTag = (isOpenMenu) ? (
+    /*const menuTag = (isOpenMenu) ? (
       <Menu 
         handleMenu={ this.handleMenuOpenClose } 
         section= { this.state.section }
       />
-    ) : ''
+    ) : ''*/
 
     const cx = classNames.bind(styles)
 
@@ -80,10 +80,9 @@ export class Ataraxia extends Component {
 
     return (
       <div className={ styleClass }>
-        { menuTag }
         <Header 
           socialNetworks={ CONFIG.socialNetworks }
-          handleMenu={ this.handleMenuOpenClose } 
+          handleMenu={ this.props.handleMenuOpen } 
         />
         { bodyTag }
         <Footer 

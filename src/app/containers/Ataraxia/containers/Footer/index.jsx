@@ -36,10 +36,12 @@ const Footer = ({ socialNetworks, section }) => {
       </div>
       <div className={ styles.container_logos }>
         <div className={ styles.text }>By</div>
-        <img 
-          src={ '/assets/images/ataraxia/logo_pmorenopina.png' } 
-          alt={ 'ΔTΔRΔXIΔ | MorenoPina' }            
-        />
+        <a href="mailto:pmorenopina@gmail.com">
+          <img 
+            src={ '/assets/images/ataraxia/logo_pmorenopina.png' } 
+            alt={ 'ΔTΔRΔXIΔ | MorenoPina' }            
+          />
+        </a>
       </div>
     </div>
   )

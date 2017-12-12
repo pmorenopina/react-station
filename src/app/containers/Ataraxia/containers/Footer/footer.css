@@ -107,12 +107,19 @@
         @media (min-width: 769px){
             margin-top: 0px;
         }
-        img {
+        a {
             max-width: 120px;
             margin-top: 5px;
             margin-left: 2px;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent;
             &:hover {
                 opacity: 0.7;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                margin-top: 5px;
             }
         }
     }

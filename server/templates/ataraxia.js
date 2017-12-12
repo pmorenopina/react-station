@@ -75,13 +75,26 @@ export default function main(params) {
       <meta property="og:description" content="Sesión de música electrónica. Entradas e información de eventos | ΔTΔRΔXIΔ" />
       <meta property="og:image" content="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-96x96.png" />
       <meta property="og:url" content="http://www.ataraxiaclub.com" />
-      <meta name="viewport" content="width=device-width" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="http://www.ataraxiaclub.com/assets/favicon/ataraxia/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
       <meta http-equiv="Content-Type" content="text/html; ISO-8859-1" />
       <meta name="DC.Language" scheme="RFC1766" content="Spanish" />
       <title>${ title }</title>
+      <style type="text/css">
+        .bm-cross-button  {
+          width: 35px !important;
+          height: 35px !important;
+          top: 15px !important;
+          right: 15px !important;
+          cursor: pointer !important;
+          @media (min-width: 769px){
+            top: 30px !important;
+            right: 30px !important;
+          }            
+        }
+      </style>
       ${ params.vendorScript }
       ${ params.style }
     </head>

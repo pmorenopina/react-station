@@ -26,7 +26,7 @@ const Header = ({ socialNetworks, handleMenu }) => {
         <img 
           className={ styles.icon_menu }  
           src={ '/assets/icons/hamburger_menu.svg' } 
-          onClick={ () => handleMenu() } 
+          onClick={ () => handleMenu(true) } 
           alt={ 'ΔTΔRΔXIΔ | hambugerMenuIcon' }                            
         />
         <div className={ styles.container_social }>
