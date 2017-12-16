@@ -52,6 +52,13 @@ export class Ataraxia extends Component {
       this.setState({
         isCookieInfoOpen: true
       })
+
+      window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop >= 300) {
+          this.cookiesAccepted()
+          window.removeEventListener('scroll', null)
+        }
+      })
     }
   }
 
@@ -71,14 +78,6 @@ export class Ataraxia extends Component {
     }
 
     this.checkIfCookiesAccepted()
-
-    window.addEventListener("scroll", () => {
-      console.log('scroll')
-      if (document.documentElement.scrollTop >= 300) {
-        console.log('20%')
-        this.cookiesAccepted()
-      }
-    })
   }
   
 
