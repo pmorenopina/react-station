@@ -1,0 +1,45 @@
+.container_cookies{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    width: 100%;
+    @media (min-width: 1025px){
+        padding: 0;
+        max-width: 1025px;
+    }
+    .title_container {
+        padding-left: 0;
+        margin: 30px 0;
+        @media (min-width: 769px){
+            padding-left: 20px;
+        }
+        @media (min-width: 1025px){
+            padding-left: 0;
+        }
+        .title{
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1;
+            @media (min-width: 426px){
+                font-size: 45px;
+            }
+            @media (min-width: 769px){
+                font-size: 60px;
+                text-align: left;
+            }
+        }
+    }
+    .description {
+        padding: 20px 10px 0px 10px;
+        text-align: justify;
+        font-size: 14px;
+        font-weight: 500;
+        @media (min-width: 426px){
+            font-size: 16px;
+        }
+        @media (min-width: 1025px){
+            padding: 20px 0;
+        }
+    }
+}

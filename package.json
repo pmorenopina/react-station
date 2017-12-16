@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "babel-core": "6.24.1",
+    "browser-cookies": "^1.1.0",
     "compression": "1.6.2",
     "cross-env": "^4.0.0",
     "css-modules-require-hook": "4.0.6",
