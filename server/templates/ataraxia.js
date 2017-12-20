@@ -48,7 +48,21 @@ export default function main(params) {
   <!doctype html>
   <html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
     <head>
-      <link rev="made" href="mailto:pmorenopina@gmail.com" />
+      <title>${ title }</title>
+
+      <meta name="robots" content="index, follow" />
+      <meta name="description" content="Sesión de música electrónica. Entradas e información de eventos." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ΔTΔRΔXIΔ" />
+      <meta property="og:image" content="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-96x96.png" />
+      <meta property="og:title" content="ΔTΔRΔXIΔ" />
+      <meta property="og:url" content="https://www.ataraxiaclub.com" />
+      <meta property="og:description" content="Sesión de música electrónica. Entradas e información de eventos." />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="X-Ua-Compatible" content="IE=edge" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      
       <link rel="manifest" href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/manifest.json" />      
       <link rel="apple-touch-icon" sizes="57x57" href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/apple-icon-57x57.png" />
       <link rel="apple-touch-icon" sizes="72x72" href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/apple-icon-72x72.png" />
@@ -61,27 +75,13 @@ export default function main(params) {
       <link rel="icon" type="image/png" sizes="192x192"  href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/android-icon-192x192.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="96x96" href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-96x96.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-16x16.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-16x16.png" /> 
+
       <meta name="author" content="Pablo Moreno" />
       <meta name="reply-to" content="pmorenopina@gmail.com" />
-      <meta name="description" content="Sesión de música electrónica. Entradas e información de eventos | ΔTΔRΔXIΔ" />
-      <meta name="keywords" content="ataraxia,club,session,sesion,musica,music,ataraxia,techno,deep,house,electronica,electronic,madrid,spain,javier,de la vega,rico,martinez,julio,cafe,la palma" />
-      <meta name="DateCreated" content="Mon, 20 November 2017 17:00:00 GMT+1" />
-      <meta name="Revisit-after" content="7 days" />
-      <meta name="robots" content="index, follow" />
-      <meta property="og:type" content="website" />      
-      <meta property="og:site_name" content="ΔTΔRΔXIΔ" />      
-      <meta property="og:title" content="${ title }" />
-      <meta property="og:description" content="Sesión de música electrónica. Entradas e información de eventos | ΔTΔRΔXIΔ" />
-      <meta property="og:image" content="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-96x96.png" />
-      <meta property="og:url" content="http://www.ataraxiaclub.com" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="http://www.ataraxiaclub.com/assets/favicon/ataraxia/ms-icon-144x144.png" />
-      <meta name="theme-color" content="#ffffff" />
-      <meta http-equiv="Content-Type" content="text/html; ISO-8859-1" />
-      <meta name="DC.Language" scheme="RFC1766" content="Spanish" />
-      <title>${ title }</title>
+      <link rev="made" href="mailto:pmorenopina@gmail.com" />
+      <meta name="keywords" content="ΔTΔRΔXIΔ, ataraxia, club" />
+
       <style type="text/css">
         .bm-cross-button  {
           width: 35px !important;
@@ -104,7 +104,7 @@ export default function main(params) {
       ${ scriptMaps } 
       <script>window.$REACTBASE_STATE = ${ state }</script>
       ${ params.appScript }
-      <div style='display:none;'>Proyect started by <a href="https://github.com/atSistemas/react-base" title="React-Base">React-Base</a></div>   
+      <div style='display:none;'>Project started by <a href="https://github.com/atSistemas/react-base" title="React-Base">React-Base</a></div>   
       <div style='display:none;'>Using library <a href="https://github.com/negomi/react-burger-menu" title="react-burger-menu">react-burger-menu</a> by negomi</div>         
       <div style='display:none;'>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       <div style='display:none;'>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

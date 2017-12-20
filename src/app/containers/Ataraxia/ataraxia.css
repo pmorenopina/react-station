@@ -21,20 +21,26 @@
     padding: 5px;
     background-color: black;
     color: white;
-    font-size: 10px;
+    font-size: 0.9em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    .info{
+    line-height: 16px;
+    .info {
         text-decoration: none;
         font-weight: bold;
         color: #1c8fc7;
         cursor: pointer;
-        margin-left: 20px;
         margin-top: 10px;
         @media (min-width: 1025px){
             margin-top: 0;
+        }
+        &.first {
+            margin-right: 20px;
+            @media (min-width: 769px){
+                margin-left: 20px;
+            }            
         }            
     }
 }

@@ -92,6 +92,7 @@
         position: absolute;
         z-index: 5;
         top: calc(90vh - 120px);
+        cursor: pointer;
         @media (min-width: 769px){
             top: calc(95vh - 120px);       
             right: 100px;     

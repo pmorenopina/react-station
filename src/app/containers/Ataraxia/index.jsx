@@ -121,19 +121,18 @@ export class Ataraxia extends Component {
 
     const cookiesInfoTag = (isCookieInfoOpen) ? (
       <div className={ styles.contanier_cookieInfo }>
-        Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
-        Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+        <span>Usamos cookies para personalizar su experiencia. Si sigue navegando estará aceptando su uso.</span>
+        <a href="/cookies/" 
+          target={ "_blank" } 
+          className={ `${ styles.info } ${ styles.first }` }
+        >
+          Más información
+        </a>
         <a
           onClick={ () => this.cookiesAccepted() } 
           className={ styles.info }
         >
           OK
-        </a>
-        <a href="/cookies/" 
-          target={ "_blank" } 
-          className={ styles.info }
-        >
-          Más información
         </a>
       </div>
     ) : ''
