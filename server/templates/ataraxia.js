@@ -51,13 +51,13 @@ export default function main(params) {
       <title>${ title }</title>
 
       <meta name="robots" content="index, follow" />
-      <meta name="description" content="Sesión de música electrónica. Entradas e información de eventos." />
+      <meta name="description" content="Sesión de música electrónica. Entradas e información de eventos | ΔTΔRΔXIΔ" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ΔTΔRΔXIΔ" />
       <meta property="og:image" content="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-96x96.png" />
       <meta property="og:title" content="ΔTΔRΔXIΔ" />
       <meta property="og:url" content="https://www.ataraxiaclub.com" />
-      <meta property="og:description" content="Sesión de música electrónica. Entradas e información de eventos." />
+      <meta property="og:description" content="Sesión de música electrónica. Entradas e información de eventos | ΔTΔRΔXIΔ" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta http-equiv="X-Ua-Compatible" content="IE=edge" />
       <meta charset="UTF-8" />
@@ -80,7 +80,7 @@ export default function main(params) {
       <meta name="author" content="Pablo Moreno" />
       <meta name="reply-to" content="pmorenopina@gmail.com" />
       <link rev="made" href="mailto:pmorenopina@gmail.com" />
-      <meta name="keywords" content="ΔTΔRΔXIΔ, ataraxia, club" />
+      <meta name="keywords" content="ΔTΔRΔXIΔ" />
 
       <style type="text/css">
         .bm-cross-button  {
