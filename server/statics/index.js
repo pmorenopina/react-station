@@ -11,6 +11,7 @@ const devStatics = [
   {route: '/dlls', dir: path.join(__dirname, '../../dist/')},
   {route: '/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
   {route: '/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')},
+  {route: '/google8d64cfb74512a9c0.html', dir: path.join(__dirname, '../../src/app/google/ataraxia/google.html')},  
   {route: '/', dir: path.join(__dirname, '../../src/app')}
 ];
 
@@ -18,6 +19,7 @@ const prodStatics = [
   {route: '/', dir: path.join(__dirname, '../../dist')},
   {route: '/assets', dir: path.join(__dirname, '../../dist/assets')},
   {route: '/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
+  {route: '/google8d64cfb74512a9c0.html', dir: path.join(__dirname, '../../src/app/google/ataraxia/google.html')},    
   {route: '/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')}
 ];
 
