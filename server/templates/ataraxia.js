@@ -11,7 +11,7 @@ export default function main(params) {
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
     title += ' - Media'
   } else {
-    scriptMaps = '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1g2Qt-GYi0xpUVkrH_RFB5EX2dr-1dR8"></script>'
+    scriptMaps = '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfHCHvMbM7oG2epkqveo4-12_IxElpzbw&callback=initMap"></script>'
     scriptInitMaps = `
     <script>
       function initMapFuction() {
