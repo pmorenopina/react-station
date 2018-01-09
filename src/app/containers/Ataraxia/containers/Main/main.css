@@ -93,6 +93,8 @@
         z-index: 5;
         top: calc(90vh - 120px);
         cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
         @media (min-width: 769px){
             top: calc(95vh - 120px);       
             right: 100px;     
