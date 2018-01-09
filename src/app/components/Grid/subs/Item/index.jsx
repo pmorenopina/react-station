@@ -40,7 +40,18 @@ class Item extends Component {
       'item_four_columns' : fourElements
     })
 
-    const hoverElement = (this.state.hoverState && !fourElements) ? (
+    const buyTag = (false) ? (
+      <a 
+        href={ 'http://www.cafelapalma.com/evento/ataraxia-especial-nochebuena/' } 
+        target={ '_blank' } 
+        className={ styles.buy }
+      >
+        Comprar
+      </a>
+    ) : ''
+
+    //const hoverElement = (this.state.hoverState && !fourElements) ? (
+    const hoverElement = (false) ? (
       <div className={ styles.container_hover }>
         <div className={ styles.photo }>
           <img 
@@ -52,23 +63,13 @@ class Item extends Component {
           <div className={ styles.date }>{ item.date }</div>
           <div className={ styles.location }>{ item.location }</div>
           <div className={ styles.city }>{ item.city }</div>
-          <a 
-            href={ 'http://www.cafelapalma.com/evento/ataraxia-especial-nochebuena/' } 
-            target={ '_blank' } 
-            className={ styles.buy }
-          >
-            Comprar
-          </a>
+          { buyTag }
         </div>
       </div>      
     ) : ''
 
     const portraitMobile = (!fourElements) ? (
-      <div 
-        className={ styles.item_full_mobile }
-        onMouseEnter={ (!fourElements) ? this.handleHoverElement : '' }
-        onMouseLeave={ (!fourElements) ? this.handleHoverElement : '' }        
-      >
+      <div className={ styles.item_full_mobile }>
         <img 
           className={ styles.item_img } 
           src={ item['portrait'] } 
@@ -78,13 +79,7 @@ class Item extends Component {
           <div className={ styles.date }>{ item.date }</div>
           <div className={ styles.location }>{ item.location }</div>
           <div className={ styles.city }>{ item.city }</div>
-          <a 
-            href={ 'http://www.cafelapalma.com/evento/ataraxia-especial-nochebuena/' } 
-            target={ '_blank' } 
-            className={ styles.buy }
-          >
-            Comprar
-          </a>
+          { buyTag }
         </div>
       </div>
     ) : ''
@@ -92,8 +87,8 @@ class Item extends Component {
     const resultTag = (fourElements) ? (
       <div 
         className={ styleContainerTag }
-        onMouseEnter={ (!fourElements) ? this.handleHoverElement(true) : '' }
-        onMouseLeave={ (!fourElements) ? this.handleHoverElement(false) : '' }        
+        onMouseEnter={ (!fourElements) ? () => this.handleHoverElement(true) : null }
+        onMouseLeave={ (!fourElements) ? () => this.handleHoverElement(false) : null }        
       >
         { hoverElement }
         <img 
@@ -107,8 +102,8 @@ class Item extends Component {
       <div>
         <div 
           className={ styleContainerTag }
-          onMouseEnter={ (!fourElements) ? this.handleHoverElement : '' }
-          onMouseLeave={ (!fourElements) ? this.handleHoverElement : '' }        
+          onMouseEnter={ (!fourElements) ? () => this.handleHoverElement(true) : null }
+          onMouseLeave={ (!fourElements) ? () => this.handleHoverElement(false) : null }        
         >
           { hoverElement }
           <img 

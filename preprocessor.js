@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const babel = require('babel-core');
-const jestPreset = require('babel-preset-jest');
+const babel = require('babel-core')
+const jestPreset = require('babel-preset-jest')
 
 module.exports = {
   process(src, filename) {
@@ -10,8 +10,8 @@ module.exports = {
         filename,
         presets: [jestPreset],
         retainLines: true,
-      }).code;
+      }).code
     }
-    return src;
+    return src
   },
-};
+}

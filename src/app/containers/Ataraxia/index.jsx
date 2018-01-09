@@ -1,5 +1,5 @@
+import { PropTypes } from 'prop-types'
 import React, { Component } from 'react'
-import classNames from 'classnames/bind'
 import cookies from 'browser-cookies'
 
 // Containers 
@@ -8,15 +8,19 @@ import Header from './containers/Header'
 import Footer from './containers/Footer'
 import Events from './containers/Events'
 import Main from './containers/Main'
-import Menu from './containers/Menu'
 import Djs from './containers/Djs'
 import Working from './containers/Working'
+
+// Components
+import CookiesInfo from '../../components/CookiesInfo'
 
 // Config
 import CONFIG from './config.json'
 
 // Styles
 import styles from './ataraxia.css'
+
+// Poner propTypes
 
 export class Ataraxia extends Component {
 
@@ -27,14 +31,6 @@ export class Ataraxia extends Component {
       isOpenMenu: false,
       isCookieInfoOpen: false
     }
-  }
-
-  handleMenuOpenClose = () => {
-    const { isOpenMenu } = this.state
-
-    this.setState({
-      isOpenMenu: !isOpenMenu
-    })
   }
 
   checkIfCookiesAccepted = () => {
@@ -82,7 +78,7 @@ export class Ataraxia extends Component {
   
 
   render () {
-    const { isOpenMenu, isCookieInfoOpen } = this.state
+    const { isCookieInfoOpen, toggleOpenCloseMenu } = this.props
     let bodyTag = ''
 
     if (this.props.params && this.props.params.section) {
@@ -105,53 +101,29 @@ export class Ataraxia extends Component {
       )
     }
 
-    /*const menuTag = (isOpenMenu) ? (
-      <Menu 
-        handleMenu={ this.handleMenuOpenClose } 
-        section= { this.state.section }
-      />
-    ) : ''*/
-
-    const cx = classNames.bind(styles)
-
-    const styleClass = cx({
-      ataraxia_container : true,
-      menuOpen: (isOpenMenu)
-    })
-
-    const cookiesInfoTag = (isCookieInfoOpen) ? (
-      <div className={ styles.contanier_cookieInfo }>
-        <span>Usamos cookies para personalizar su experiencia. Si sigue navegando estará aceptando su uso.</span>
-        <a href="/cookies/" 
-          target={ "_blank" } 
-          className={ `${ styles.info } ${ styles.first }` }
-        >
-          Más información
-        </a>
-        <a
-          onClick={ () => this.cookiesAccepted() } 
-          className={ styles.info }
-        >
-          OK
-        </a>
-      </div>
-    ) : ''
-
     return (
-      <div className={ styleClass }>
+      <div className={ styles.ataraxia_container }>
         <Header 
           socialNetworks={ CONFIG.socialNetworks }
-          handleMenu={ this.props.handleMenuOpen } 
+          toggleOpenCloseMenu={ toggleOpenCloseMenu } 
         />
         { bodyTag }
         <Footer 
+          menuItems={ CONFIG.menuItems }
           socialNetworks={ CONFIG.socialNetworks }                  
           section= { this.state.section } 
         />
-        { cookiesInfoTag }
+        <CookiesInfo isCookieInfoOpen={ isCookieInfoOpen } />
       </div>
     )
   }
+
+  static propTypes = {
+    params: PropTypes.object,
+    isCookieInfoOpen: PropTypes.bool,
+    toggleOpenCloseMenu: PropTypes.func
+  }
 }
+
 
 export default Ataraxia

@@ -1,6 +1,5 @@
 export default function main(params) {
 
-  const state = JSON.stringify(params.state)
   let title = 'ΔTΔRΔXIΔ'
   let scriptMaps = '<script></script>'
   let scriptInitMaps = '<script></script>'
@@ -57,7 +56,7 @@ export default function main(params) {
       <meta property="og:image" content="http://www.ataraxiaclub.com/assets/favicon/ataraxia/favicon-96x96.png" />
       <meta property="og:title" content="ΔTΔRΔXIΔ" />
       <meta property="og:url" content="https://www.ataraxiaclub.com" />
-      <meta property="og:description" content="Sesión de música electrónica. Entradas e información de eventos | ΔTΔRΔXIΔ | Ataraxia" />
+      <meta property="og:description" content="Sesión de música electrónica. Entradas e información de eventos | Ataraxia" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta http-equiv="X-Ua-Compatible" content="IE=edge" />
       <meta charset="UTF-8" />
@@ -80,7 +79,7 @@ export default function main(params) {
       <meta name="author" content="Pablo Moreno" />
       <meta name="reply-to" content="pmorenopina@gmail.com" />
       <link rev="made" href="mailto:pmorenopina@gmail.com" />
-      <meta name="keywords" content="ΔTΔRΔXIΔ, Ataraxia" />
+      <meta name="keywords" content="ΔTΔRΔXIΔ,Ataraxia,club" />
 
       <style type="text/css">
         .bm-cross-button  {
@@ -102,7 +101,6 @@ export default function main(params) {
       <div id="root">${ params.container }</div>
       ${ scriptInitMaps }      
       ${ scriptMaps } 
-      <script>window.$REACTBASE_STATE = ${ state }</script>
       ${ params.appScript }
       <div style='display:none;'>Project started by <a href="https://github.com/atSistemas/react-base" title="React-Base">React-Base</a></div>   
       <div style='display:none;'>Using library <a href="https://github.com/negomi/react-burger-menu" title="react-burger-menu">react-burger-menu</a> by negomi</div>         
@@ -111,4 +109,4 @@ export default function main(params) {
     </body>
   </html>
   `
-}
+}  

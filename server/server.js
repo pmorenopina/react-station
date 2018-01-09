@@ -1,4 +1,5 @@
 import express from 'express'
+
 import base from 'base'
 import httpServer from './httpServer'
 import applyStaticsPaths from './statics'
@@ -20,6 +21,9 @@ const launchServer = () => {
     .then(() => {
       base.console.info(`Setting up server...`)
       httpServer(app)
+    })
+    .catch((e) => {
+      base.console.error(`Server Error ${e}...`)
     })
 }
 

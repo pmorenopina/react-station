@@ -1,17 +1,17 @@
-import webpack from 'webpack';
-import * as common from './webpack.common.config';
+import webpack from 'webpack'
+import * as common from './webpack.common.config'
 
-export const cache = true;
-export const devtool = 'cheap-module-eval-source-map';
-export const context = common.context;
-export const resolve = common.resolve;
+export const cache = true
+export const devtool = 'cheap-module-eval-source-map'
+export const context = common.context
+export const resolve = common.resolve
 export const entry = {
   app: [
     common.clientPath,
     'webpack/hot/dev-server',
     'webpack-hot-middleware/client'
   ],
-};
+}
 
 export const output = {
   path: common.buildPath,
@@ -20,7 +20,7 @@ export const output = {
   filename: '[name].js',
   sourceMapFilename: '[name].map',
   chunkFilename: '[name].chunk.js',
-};
+}
 
 export const module = {
   rules: common.module.rules.concat([
@@ -46,19 +46,19 @@ export const module = {
           options: {
             modules: true,
             importLoaders: 1,
-            localIdentName: '[name]__[local]-[hash:base64:4]'
+            localIdentName: '[local]-[hash:base64:4]'
           }
         },
         {
           loader: 'postcss-loader',
           options: {
-            plugins: (loader) => common.postcss
+            plugins: () => common.postcss
           }
         }
       ]
     }
   ])
-};
+}
 
 export const plugins = [
   new webpack.DefinePlugin({'process.env': {'NODE_ENV': '"development"'}}),
@@ -68,4 +68,4 @@ export const plugins = [
     manifest: require(`${common.dllPath}/vendor-manifest.json`)
   }),
 ]
-  .concat(common.plugins);
+  .concat(common.plugins)

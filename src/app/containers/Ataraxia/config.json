@@ -2,14 +2,22 @@
   "remember": [
     {
       "description": "",
-      "landscape": "/assets/images/ataraxia/flyers/122017/landscape.png",
-      "portrait": "/assets/images/ataraxia/flyers/122017/portrait.png",
-      "date": "24/12/2017",
+      "landscape": "/assets/images/ataraxia/flyers/012018/landscape.png",
+      "portrait": "/assets/images/ataraxia/flyers/012018/portrait.png",
+      "date": "20/01/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
   ],
   "events": [
+    {
+      "description": "",
+      "landscape": "/assets/images/ataraxia/flyers/012018/landscape.png",
+      "portrait": "/assets/images/ataraxia/flyers/012018/portrait.png",
+      "date": "20/01/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
     {
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/122017/landscape.png",
@@ -19,12 +27,12 @@
       "city": "Madrid, España"
     },
     {
-    "description": "",
-    "landscape": "/assets/images/ataraxia/flyers/112017/landscape.jpg",
-    "portrait": "/assets/images/ataraxia/flyers/112017/portrait.jpg",
-    "date": "18/11/2017",
-    "location": "Café La Palma",
-    "city": "Madrid, España"
+      "description": "",
+      "landscape": "/assets/images/ataraxia/flyers/112017/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/112017/portrait.jpg",
+      "date": "18/11/2017",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
     },
     {
       "description": "",
@@ -134,5 +142,30 @@
       "url": "https://www.youtube.com/user/JavyDeejay",
       "icon": "/assets/icons/ataraxia/youtube_white.svg"
     }
-  ]
+  ],
+  "menuItems": [
+    {
+      "title": "HOME",
+      "url": "/",
+      "icon": "/assets/icons/home-button.svg"
+    },
+    {
+      "title": "EVENTS",
+      "url": "/events/",
+      "icon": "/assets/icons/rate-star-button.svg"
+    },
+    {
+      "title": "DJ'S",
+      "url": "/djs/",
+      "icon": "/assets/icons/play-arrow.svg"
+    },
+    {
+      "title": "MEDIA",
+      "url": "/media/",
+      "icon": "/assets/icons/compact-disc.svg"
+    }
+  ],
+  "contactInfo": {
+    "email": "info@ataraxiaclub.com"
+  }
 }

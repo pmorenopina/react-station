@@ -1,14 +1,10 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { RouterContext } from 'react-router';
-import { renderToStaticMarkup } from 'react-dom/server';
+import React from 'react'
+import { RouterContext } from 'react-router'
+import { renderToString } from 'react-dom/server'
 
-export default function renderContainer(store, renderProps) {
+export default function renderContainer(renderProps) {
 
-  return renderToStaticMarkup(
-    
-    <Provider store={ store }>
-      <RouterContext { ...renderProps } />
-    </Provider>
+  return renderToString(
+    <RouterContext { ...renderProps } />
   );
 }
