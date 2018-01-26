@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types'
 // Styles
 import styles from './cookiesInfo.css'
 
-const CookiesInfo = ({ isCookieInfoOpen }) => {
+const CookiesInfo = ({ isCookieInfoOpen, cookiesAccepted }) => {
 
   const cookiesInfoTag = (isCookieInfoOpen) ? (
     <div className={ styles.contanier_cookieInfo }>
@@ -16,7 +16,7 @@ const CookiesInfo = ({ isCookieInfoOpen }) => {
         Más información
       </a>
       <a
-        onClick={ () => this.cookiesAccepted() } 
+        onClick={ () => cookiesAccepted() } 
         className={ styles.info }
       >
         OK

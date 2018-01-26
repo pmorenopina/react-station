@@ -78,7 +78,8 @@ export class Ataraxia extends Component {
   
 
   render () {
-    const { isCookieInfoOpen, toggleOpenCloseMenu } = this.props
+    const { isCookieInfoOpen } = this.state
+    const { toggleOpenCloseMenu } = this.props
     let bodyTag = ''
 
     if (this.props.params && this.props.params.section) {
@@ -113,7 +114,10 @@ export class Ataraxia extends Component {
           socialNetworks={ CONFIG.socialNetworks }                  
           section= { this.state.section } 
         />
-        <CookiesInfo isCookieInfoOpen={ isCookieInfoOpen } />
+        <CookiesInfo 
+          isCookieInfoOpen={ isCookieInfoOpen } 
+          cookiesAccepted={ this.cookiesAccepted }
+        />
       </div>
     )
   }
