@@ -2,13 +2,14 @@ import React from 'react'
 
 // Components
 import { elastic as Menu } from 'react-burger-menu'
+import IconSVG from '../IconSVG'
 
 // Styles
 import styles from './menu.css'
 
 
 
-const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems, socialNetworks }) => {
+const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems, socialNetworks, section }) => {
 
   let stylesMenu = {
     bmMenuWrap: {
@@ -21,10 +22,12 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems,
       <a 
         key={ index }
         href={ item.url }
+        className={ (section === item.title.toLowerCase().replace(/'/g, '')) ? styles.active : '' }
       >
-        <img
-          src={ item.icon } 
-          alt={ `ΔTΔRΔXIΔ | ${ item.title.toLowerCase() }Icon` }              
+        <IconSVG
+          type={ 'menu' } 
+          icon={ item.title.toLowerCase().replace(/'/g, '') }
+          classNames={ styles.iconSVG }              
         />
         <span>{ item.title }</span>
       </a>
@@ -57,7 +60,15 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems,
       menuClassName={ styles.bm_menu }
       onStateChange={ handlerBugerMenuState }
     >
-      { menuItemTag }
+      <div className={ styles.container_icon }>
+        <img 
+          alt={ 'ΔTΔRΔXIΔ | mainLogo' }              
+          src={ '/assets/images/ataraxia/ataraxia.png' } 
+        />
+      </div>
+      <div className={ styles.container_menu_items }>
+        { menuItemTag }
+      </div> 
       <div className={ styles.container_logo }>
         <img 
           className={ styles.logo } 

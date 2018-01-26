@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types'
 import React, { Component } from 'react'
 
 // Containers
-import BurgerMenu from '../Ataraxia/containers/Menu'
+import BurgerMenu from '../Ataraxia/containers/BurguerMenu'
 
 // Styles 
 import styles from './app.css'
@@ -55,6 +55,7 @@ class App extends Component {
           contactInfo={ CONFIG.contactInfo }
           menuItems={ CONFIG.menuItems }
           socialNetworks={ CONFIG.socialNetworks }
+          section={ (this.props.params.section) ? this.props.params.section : 'home' }
         />
         <main id={ 'page-wrap' }>
           { childrenWithProps }

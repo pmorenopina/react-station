@@ -21,6 +21,7 @@
             margin-bottom: 10px;
             margin-top: 10px;
             margin-left: 10px;
+            font-weight: 500;
             justify-content: center;            
             @media (min-width: 769px){
                 flex: 1;                
@@ -45,6 +46,7 @@
                 color: white;
                 -webkit-tap-highlight-color: rgba(0,0,0,0);
                 -webkit-tap-highlight-color: transparent;
+                font-weight: 700;
                 &.active {
                     color: #1c8fc7;
                 }

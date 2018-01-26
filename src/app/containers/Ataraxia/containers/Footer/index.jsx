@@ -9,7 +9,7 @@ const Footer = ({ itemMenu, menuItems, socialNetworks, section }) => {
     return (
       <a 
         key={ index }
-        className={ (section === item.title.toLowerCase()) ? styles.active : '' } 
+        className={ (section === item.title.toLowerCase().replace(/'/g, '')) ? styles.active : '' } 
         href={ item.url }
       >
         { item.title }
@@ -32,6 +32,18 @@ const Footer = ({ itemMenu, menuItems, socialNetworks, section }) => {
     )
   })
 
+  const byMe = (false) ? (
+    <div className={ styles.container_logos }>
+      <div className={ styles.text }>By</div>
+      <a href="mailto:pmorenopina@gmail.com">
+        <img 
+          src={ '/assets/images/ataraxia/logo_pmorenopina.png' } 
+          alt={ 'ΔTΔRΔXIΔ | MorenoPina' }            
+        />
+      </a>
+    </div>
+  ) : ''
+
   return (
     <div className={ styles.container_footer }>
       <div className={ styles.footer_bar }>
@@ -43,15 +55,7 @@ const Footer = ({ itemMenu, menuItems, socialNetworks, section }) => {
           { networksTag }
         </div>
       </div>
-      <div className={ styles.container_logos }>
-        <div className={ styles.text }>By</div>
-        <a href="mailto:pmorenopina@gmail.com">
-          <img 
-            src={ '/assets/images/ataraxia/logo_pmorenopina.png' } 
-            alt={ 'ΔTΔRΔXIΔ | MorenoPina' }            
-          />
-        </a>
-      </div>
+      { byMe }
     </div>
   )
 }
