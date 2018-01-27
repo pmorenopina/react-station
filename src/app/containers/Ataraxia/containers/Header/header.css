@@ -8,6 +8,7 @@
     z-index: 1000;
     display: flex;
     justify-content: center;
+    border-bottom: solid 0.1px #1c8fc7;
     .bar {
         display: flex;
         flex-direction: row;
