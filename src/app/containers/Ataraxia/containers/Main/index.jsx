@@ -154,15 +154,24 @@ class Main extends Component {
         <div className={ styles.container_dj }>
           <div className={ styles.container_grid }>
             <div className={ styles.description }>
-              Volvemos con fuerza para el inicio de este nuevo año 💪
+              <span>🎊🎊🎊ESPECIAL CARNAVAL🎊🎊🎊</span>
+              <br/>
+              Sábado 10 de Febrero, contaremos con un invitado especial desde TENERIFE, Yeray RM
+              <br/>
+              Un dj capaz de poner la sala patas arriba con sus sonidos de percusión acompañado de su conga electrónica. 
+              <br/>
+              Como productor tiene referencias en sellos como #A100Records o #GreenMono. 
+              <br/>              
+              Ha sido partícipe de fiestas en #Nooctua o #Kubik compartiendo cabina con djs de la talla de Cristian Varela, Wally Lopez o #Mirkoloko.
               <br/>
               <br/>
-              Ataraxia comienza con un set de los dj´s residentes el sábado 20 de Enero en CAFE LA PALMA
+              El carnaval está asegurado con nuestros residentes y el invitado para la ocasión en nuestra residencia mensual, CAFE LA PALMA.
               <br/>
+              <br/>
+              <span>📢ENTRADA GRATUITA📢</span>
               <br/>
               <span>Zona -> Malasaña (Metro Noviciado o San Bernardo)</span>
               <br/>
-              <span>Entrada -> GRATIS</span>
             </div>
             <div className={ styles.photo_container }>
               <img 
