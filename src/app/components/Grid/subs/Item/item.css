@@ -1,3 +1,4 @@
+@import '../../../../styles/base.css';
 
 .item_full {
     position: relative;
@@ -32,7 +33,7 @@
             font-weight: bold;
             margin-top: 10px;
             width: 100px;
-            background-color: #1c8fc7;
+            background-color: var(--main-color);
             text-decoration: none;
         }
     }
@@ -128,7 +129,7 @@
             font-weight: bold;
             margin-top: 50px;
             color: white;
-            background-color: #1c8fc7;
+            background-color: var(--main-color);
             text-decoration: none;            
         }
     }   

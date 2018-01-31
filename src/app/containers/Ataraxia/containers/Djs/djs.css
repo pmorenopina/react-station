@@ -1,3 +1,5 @@
+@import '../../../../styles/base.css';
+
 .container {
     margin-top: 100px;
 }
@@ -24,7 +26,7 @@
             font-weight: bold;
             line-height: 1;
             -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: #1c8fc7;
+            -webkit-text-stroke-color: var(--main-color);
             @media (min-width: 426px){
                 font-size: 45px;
             }

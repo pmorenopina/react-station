@@ -1,3 +1,5 @@
+@import '../../../../styles/base.css';
+
 .container {
     margin-top: 56px;
 }
@@ -142,7 +144,7 @@
             font-weight: bold;
             line-height: 1;
             -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: #1c8fc7;
+            -webkit-text-stroke-color: var(--main-color);
             @media (min-width: 426px){
                 font-size: 45px;
             }
@@ -214,7 +216,7 @@
                 padding: 0px 20px 0px 0px;
             }
             span {
-                color: #1c8fc7;
+                color: var(--main-color);
                 font-weight: bold;
             }
         }   
