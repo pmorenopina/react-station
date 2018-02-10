@@ -67,12 +67,6 @@ export class Ataraxia extends Component {
   }
 
   componentDidMount() {
-    if (this.state.section === 'home') {
-      window.addEventListener("load", () => {
-        window.initMap()
-      })
-    }
-
     this.checkIfCookiesAccepted()
   }
   

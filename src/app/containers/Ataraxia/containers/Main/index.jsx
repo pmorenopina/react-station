@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { scroller } from 'react-scroll' //Imports scroller mixin, can use as scroller.scrollTo()
 
-// Components 
+// Components
+import GoogleMap from 'google-map-react'
+import IconSVG from '../IconSVG'
 import GridComponent from '../../../../components/Grid'
 
 // Styles
@@ -20,6 +21,10 @@ class Main extends Component {
       counter: 0
     }
 
+    this.propsMaps = {
+      center: [40.426857, -3.707992],
+      zoom: 16,
+    }
   }
 
   componentDidMount() {
@@ -139,6 +144,7 @@ class Main extends Component {
             poster={ '/assets/videos/ataraxia/home-poster.png' }
             onPlay={ this.handlePlay }
             onVolumeChange={ this.handleVolume }
+            autoPlay={ true }
           >
             <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
           </video>
@@ -174,12 +180,24 @@ class Main extends Component {
               <br/>
             </div>
             <div className={ styles.photo_container }>
-              <img 
-                id={ 'mapFake' } 
-                src={ '/assets/images/ataraxia/location.png' }
-                alt={ 'ΔTΔRΔXIΔ | GoogleMaps' }                
-              />
-              <div id={ 'map' } />
+              <GoogleMap
+                bootstrapURLKeys={ { key: 'AIzaSyBmRzfJ2tXbBlaVpykm4extXfqRLfc9nFU' } }
+                center={ this.propsMaps.center }  
+                zoom={ this.propsMaps.zoom }
+              >
+                <div 
+                  className={ styles.icon_container }
+                  lat={ 40.426857 } 
+                  lng={ -3.707992 }
+                  $hover={ true }
+                >
+                  <IconSVG
+                    type={ 'map' } 
+                    icon={ 'location' }
+                    classNames={ styles.iconSVG }              
+                  />
+                </div>
+              </GoogleMap>
             </div>
           </div>
         </div>

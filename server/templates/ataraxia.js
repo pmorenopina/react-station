@@ -1,8 +1,6 @@
 export default function main(params) {
 
   let title = 'ΔTΔRΔXIΔ'
-  let scriptMaps = '<script></script>'
-  let scriptInitMaps = '<script></script>'
 
   if (params.routeMatch === '/events/' || params.routeMatch === '/events') {
     title += ' - Eventos'
@@ -10,37 +8,6 @@ export default function main(params) {
     title += ' - Djs'
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
     title += ' - Media'
-  } else {
-    scriptMaps = '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfHCHvMbM7oG2epkqveo4-12_IxElpzbw&callback=initMap"></script>'
-    scriptInitMaps = `
-    <script>
-      function initMapFuction() {
-        try {
-          var cafeLaPalma = { lat: 40.426857, lng: -3.707992 };
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
-            center: cafeLaPalma,
-            disableDefaultUI: true,
-            zoomControl: true,
-            scaleControl: true,
-            fullscreenControl: true,
-            clickableIcons: false          
-          });
-          var marker = new google.maps.Marker({
-            position: cafeLaPalma,
-            map: map,
-            draggable: false,
-            animation: google.maps.Animation.DROP
-          });
-          document.getElementById('mapFake').style.display = 'none';
-        } catch(err) {
-          document.getElementById('mapFake').style.display = 'block';    
-        }
-      }
-
-      window.initMap = initMapFuction;
-    </script>
-    `
   }
 
   return `
@@ -96,8 +63,6 @@ export default function main(params) {
     </head>
     <body>
       <div id="root">${ params.container }</div>
-      ${ scriptInitMaps }      
-      ${ scriptMaps } 
       ${ params.appScript }
       <div style='display:none;'>Project started by <a href="https://github.com/atSistemas/react-base" title="React-Base">React-Base</a></div>   
       <div style='display:none;'>Using library <a href="https://github.com/negomi/react-burger-menu" title="react-burger-menu">react-burger-menu</a> by negomi</div>         

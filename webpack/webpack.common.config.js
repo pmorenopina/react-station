@@ -21,8 +21,7 @@ export const entry = {
     'prop-types',
     'classnames',
     'react-router',
-    'isomorphic-fetch',
-    'google-map-react'
+    'isomorphic-fetch'
   ]
 }
 

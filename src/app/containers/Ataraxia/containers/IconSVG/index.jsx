@@ -6,6 +6,8 @@ import EventsIconSVG from './menu/events'
 import MediaIconSVG from './menu/media'
 import DjsIconSVG from './menu/djs'
 
+import LocationIconSVG from './map/location'
+
 const IconSVG = ({ type, icon, classNames }) => {
 
   let iconSVG = null
@@ -22,6 +24,10 @@ const IconSVG = ({ type, icon, classNames }) => {
     }
     else if (icon === 'media') {
       iconSVG = <MediaIconSVG classNames={ classNames } />
+    }
+  } else if (type === 'map') {
+    if (icon === 'location') {
+      iconSVG = <LocationIconSVG classNames={ classNames } />
     }
   }
 
