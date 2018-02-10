@@ -144,7 +144,6 @@ class Main extends Component {
             poster={ '/assets/videos/ataraxia/home-poster.png' }
             onPlay={ this.handlePlay }
             onVolumeChange={ this.handleVolume }
-            autoPlay={ true }
           >
             <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
           </video>
@@ -189,7 +188,6 @@ class Main extends Component {
                   className={ styles.icon_container }
                   lat={ 40.426857 } 
                   lng={ -3.707992 }
-                  $hover={ true }
                 >
                   <IconSVG
                     type={ 'map' } 
