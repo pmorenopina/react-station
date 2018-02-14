@@ -135,20 +135,8 @@ class Main extends Component {
       </div>
     )
 
-    return (
-      <div className={ styles.container }>
-        <div className={ styles.container_full_screen }>
-          <video 
-            ref={ (video) => { this.videoTag = video } }
-            preload= { 'auto' }
-            poster={ '/assets/videos/ataraxia/home-poster.png' }
-            onPlay={ this.handlePlay }
-            onVolumeChange={ this.handleVolume }
-          >
-            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
-          </video>
-          { iconPlayPause }
-        </div>
+    const mainEvent = (CONFIG.remember.length) ? (
+      <div className={ styles.container_main_event }>
         <div name={ 'main_event' } className={ styles.container_next_events }>
           <div className={ styles.title_container }>
             <div className={ styles.title } >NO TE</div>
@@ -199,6 +187,24 @@ class Main extends Component {
             </div>
           </div>
         </div>
+      </div>
+    ) : ''
+
+    return (
+      <div className={ styles.container }>
+        <div className={ styles.container_full_screen }>
+          <video 
+            ref={ (video) => { this.videoTag = video } }
+            preload= { 'auto' }
+            poster={ '/assets/videos/ataraxia/home-poster.png' }
+            onPlay={ this.handlePlay }
+            onVolumeChange={ this.handleVolume }
+          >
+            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
+          </video>
+          { iconPlayPause }
+        </div>
+        { mainEvent }
       </div>
     )
   }

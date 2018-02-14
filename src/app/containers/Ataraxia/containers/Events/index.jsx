@@ -14,7 +14,7 @@ export class Events extends Component {
   
   render() {
 
-    const nextEventGridTag = (CONFIG.events) ? (
+    const nextEventGridTag = (CONFIG.events && CONFIG.events[0].description) ? (
       <div className={ styles.container_next_events }>
         <div className={ styles.title_container }>
           <div className={ styles.title } >PRÓXIMOS</div>
