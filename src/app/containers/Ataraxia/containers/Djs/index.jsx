@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Components
+import IconSVG from '../IconSVG'
+
 // Styles
 import styles from './djs.css'
 
@@ -14,9 +17,10 @@ const Djs = ({ djs }) => {
           href={ network[Object.keys(network)] } 
           target={ '_blank' }
         >
-          <img 
-            src={ `/assets/icons/ataraxia/${ Object.keys(network) }.svg` } 
-            alt={ `ΔTΔRΔXIΔ | ${ Object.keys(network) }Icon` }
+          <IconSVG
+            type={ 'networks' } 
+            icon={ Object.keys(network)[0] }
+            classNames={ styles.iconSVG }              
           />
         </a>
       )

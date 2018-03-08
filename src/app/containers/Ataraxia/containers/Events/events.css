@@ -2,24 +2,32 @@
 
 .container {
     margin-top: 100px;
+    @media (min-width: 769px){
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    @media (min-width: 1025px){
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 .container_next_events{
     margin: 0 auto;
     margin-bottom: 80px;
+    padding: 0 10px;
+    @media (min-width: 426px){
+        padding: 0px;
+    }
+    @media (min-width: 769px){
+        padding: 0 20px;
+    }
     @media (min-width: 1025px){
         padding: 0;
-        max-width: 1025px;
+        max-width: 1024px;
     }
     .title_container {
-        padding-left: 0;
         margin: 30px 0;
-        @media (min-width: 769px){
-            padding-left: 20px;
-        }
-        @media (min-width: 1025px){
-            padding-left: 0;
-        }
     }
 }
 

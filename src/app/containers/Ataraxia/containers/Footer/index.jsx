@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Components
+import IconSVG from '../IconSVG'
+
 // Styles
 import styles from './footer.css'
 
@@ -24,9 +27,10 @@ const Footer = ({ itemMenu, menuItems, socialNetworks, section }) => {
         className={ (index === 0) ? (`${ styles.icon_social } ${ styles.first }`) : (styles.icon_social) } 
         href={ item.url } 
         target={ '_blank' }>
-        <img 
-          src={ item.icon }
-          alt={ `ΔTΔRΔXIΔ | ${ item.network }Icon` }              
+        <IconSVG
+          type={ 'networks' } 
+          icon={ item.network }
+          classNames={ styles.iconSVG }              
         />
       </a>
     )
@@ -47,7 +51,6 @@ const Footer = ({ itemMenu, menuItems, socialNetworks, section }) => {
   return (
     <div className={ styles.container_footer }>
       <div className={ styles.footer_bar }>
-        <div className={ styles.contact }>info@ataraxiaclub.com</div>
         <div className={ styles.container_menu }>
           { menuItemTag }
         </div>

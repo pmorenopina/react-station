@@ -15,7 +15,6 @@
     position: relative;
     display: flex;
     flex-direction: column;    
-    padding: 0 10px;
     margin: 0 auto;
     @media (min-width: 426px){
         display: none;

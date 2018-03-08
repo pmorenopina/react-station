@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classNames from 'classnames/bind'
 
 // Components
 import GoogleMap from 'google-map-react'
@@ -10,6 +11,8 @@ import styles from './main.css'
 
 // Config
 import CONFIG from '../../config.json'
+
+const cx = classNames.bind(styles)
 
 class Main extends Component {
 
@@ -102,35 +105,47 @@ class Main extends Component {
 
     const iconPlayPause = (this.state.playVideo === false) ? (
       <div className={ styles.container_play }>
-        <img 
-          className={ styles.iconPlay }
-          src={ '/assets/icons/play.svg' }
-          onClick={ this.handlePlayPauseVideo } 
+        <IconSVG
+          type={ 'controls' } 
+          icon={ 'play' }
+          classNames={ styles.iconPlay }
+          onClick={ this.handlePlayPauseVideo }                       
         />
-        <img 
-          className={ (this.state.counter >= 1) ? (`${ styles.iconExpand } ${ styles.active }`) : (styles.iconExpand) }
-          src={ '/assets/icons/expand-button.svg' }
+        <div className={ styles.iconLogo }>
+          <img 
+            alt={ 'ΔTΔRΔXIΔ | mainLogo' }              
+            src={ '/assets/images/ataraxia/ataraxia.png' } 
+          />
+        </div>
+        <IconSVG
+          type={ 'controls' } 
+          icon={ 'arrowdown' }
+          classNames={ (this.state.counter >= 1) ? (`${ styles.iconExpand } ${ styles.active }`) : (styles.iconExpand) }
         />
-        <img 
-          className={ (this.state.counter >= 2) ? (`${ styles.iconExpand_second } ${ styles.active }`) : (styles.iconExpand_second) }
-          src={ '/assets/icons/expand-button.svg' }
+        <IconSVG
+          type={ 'controls' } 
+          icon={ 'arrowdown' }
+          classNames={ (this.state.counter >= 2) ? (`${ styles.iconExpand_second } ${ styles.active }`) : (styles.iconExpand_second) }
         />
-        <img 
-          className={ (this.state.counter >= 3) ? (`${ styles.iconExpand_third } ${ styles.active }`) : (styles.iconExpand_third) }
-          src={ '/assets/icons/expand-button.svg' }
+        <IconSVG
+          type={ 'controls' } 
+          icon={ 'arrowdown' }
+          classNames={ (this.state.counter >= 3) ? (`${ styles.iconExpand_third } ${ styles.active }`) : (styles.iconExpand_third) }
         />
       </div>
     ) : (
       <div className={ styles.iconBarVolume }>
-        <img 
-          className={ styles.iconPause }      
-          src={ '/assets/icons/pause.svg' } 
-          onClick={ this.handlePlayPauseVideo }         
+        <IconSVG
+          type={ 'controls' } 
+          icon={ 'pause' }
+          classNames={ styles.iconPause }
+          onClick={ this.handlePlayPauseVideo }                       
         />
-        <img 
-          className={ styles.iconVolume }      
-          src={ (!this.state.mutedVideo) ? '/assets/icons/volume.svg' : '/assets/icons/mute.svg' } 
-          onClick={ this.handleMutedVideo }                   
+        <IconSVG
+          type={ 'controls' } 
+          icon={ (!this.state.mutedVideo) ? 'sound' : 'mute' }
+          classNames={ styles.iconVolume }      
+          onClick={ this.handleMutedVideo }                           
         />
       </div>
     )
@@ -147,24 +162,19 @@ class Main extends Component {
         <div className={ styles.container_dj }>
           <div className={ styles.container_grid }>
             <div className={ styles.description }>
-              <span>🎊🎊🎊ESPECIAL CARNAVAL🎊🎊🎊</span>
-              <br/>
-              Sábado 10 de Febrero, contaremos con un invitado especial desde TENERIFE, Yeray RM
-              <br/>
-              Un dj capaz de poner la sala patas arriba con sus sonidos de percusión acompañado de su conga electrónica. 
-              <br/>
-              Como productor tiene referencias en sellos como #A100Records o #GreenMono. 
-              <br/>              
-              Ha sido partícipe de fiestas en #Nooctua o #Kubik compartiendo cabina con djs de la talla de Cristian Varela, Wally Lopez o #Mirkoloko.
+              El próximo capítulo de esta sesión de música electrónica se presentará el el 24 de marzo
               <br/>
               <br/>
-              El carnaval está asegurado con nuestros residentes y el invitado para la ocasión en nuestra residencia mensual, CAFE LA PALMA.
+              <span>Rico Martinez - JavierdelaVega - Julio Martinez</span>
+              <br/>
+              Este es tu lugar para disfrutar de la mejor música electrónica un sábado en pleno corazón de Madrid, Malasaña.
               <br/>
               <br/>
-              <span>📢ENTRADA GRATUITA📢</span>
+              Lugar: <span>CAFE LA PALMA</span>
               <br/>
-              <span>Zona -> Malasaña (Metro Noviciado o San Bernardo)</span>
+              Metro: <span>"San Bernardo" o "Noviciado"</span>
               <br/>
+              Entrada: <span>GRATIS</span>
             </div>
             <div className={ styles.photo_container }>
               <GoogleMap
@@ -189,14 +199,19 @@ class Main extends Component {
         </div>
       </div>
     ) : ''
+    
+    const styleContainerTag = cx({
+      'container_full_screen': true,
+      'container_full_screen_not_only' : (CONFIG.remember.length) ? true : false
+    })
 
     return (
       <div className={ styles.container }>
-        <div className={ styles.container_full_screen }>
+        <div className={ styleContainerTag }>
           <video 
             ref={ (video) => { this.videoTag = video } }
             preload= { 'auto' }
-            poster={ '/assets/videos/ataraxia/home-poster.png' }
+            poster={ '/assets/videos/ataraxia/home-poster.jpg' }
             onPlay={ this.handlePlay }
             onVolumeChange={ this.handleVolume }
           >

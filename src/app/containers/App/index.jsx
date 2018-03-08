@@ -52,7 +52,6 @@ class App extends Component {
         <BurgerMenu 
           isMenuOpen={ this.state.isMenuOpen } 
           handlerBugerMenuState={ this.handlerBugerMenuState } 
-          contactInfo={ CONFIG.contactInfo }
           menuItems={ CONFIG.menuItems }
           socialNetworks={ CONFIG.socialNetworks }
           section={ (this.props.params.section) ? this.props.params.section : 'home' }

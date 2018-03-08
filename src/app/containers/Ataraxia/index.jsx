@@ -29,7 +29,9 @@ export class Ataraxia extends Component {
     this.state = {
       section: (this.props.params && this.props.params.section) ? (this.props.params.section) : 'home',
       isOpenMenu: false,
-      isCookieInfoOpen: false
+      isCookieInfoOpen: false,
+      isScrollToChangeColorHeader: false,
+      isScrollToChangeColorNetworks: false
     }
   }
 
@@ -52,7 +54,44 @@ export class Ataraxia extends Component {
       window.addEventListener('scroll', () => {
         if (document.documentElement.scrollTop >= 300) {
           this.cookiesAccepted()
-          window.removeEventListener('scroll', null)
+        }
+        else {
+          this.setState({
+            isScrollToChangeColorNetworks: false
+          })
+        }
+        if (document.documentElement.scrollTop >= 725) {
+          this.setState({
+            isScrollToChangeColorHeader: true
+          })
+        } 
+        else {
+          this.setState({
+            isScrollToChangeColorHeader: false
+          })
+        }
+      })
+    } else {
+      window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop >= 300) {
+          this.setState({
+            isScrollToChangeColorNetworks: true
+          })
+        } 
+        else {
+          this.setState({
+            isScrollToChangeColorNetworks: false
+          })
+        }
+        if (document.documentElement.scrollTop >= 725) {
+          this.setState({
+            isScrollToChangeColorHeader: true
+          })
+        } 
+        else {
+          this.setState({
+            isScrollToChangeColorHeader: false
+          })
         }
       })
     }
@@ -99,8 +138,11 @@ export class Ataraxia extends Component {
     return (
       <div className={ styles.ataraxia_container }>
         <Header 
+          section= { this.state.section } 
           socialNetworks={ CONFIG.socialNetworks }
-          toggleOpenCloseMenu={ toggleOpenCloseMenu } 
+          toggleOpenCloseMenu={ toggleOpenCloseMenu }
+          isScrollToChangeColorHeader={ this.state.isScrollToChangeColorHeader }
+          isScrollToChangeColorNetworks={ this.state.isScrollToChangeColorNetworks }
         />
         { bodyTag }
         <Footer 

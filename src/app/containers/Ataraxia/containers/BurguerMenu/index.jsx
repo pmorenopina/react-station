@@ -9,7 +9,7 @@ import styles from './menu.css'
 
 
 
-const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems, socialNetworks, section }) => {
+const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, menuItems, socialNetworks, section }) => {
 
   let stylesMenu = {
     bmMenuWrap: {
@@ -41,9 +41,10 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems,
         className={ (index === 0) ? (`${ styles.icon_social } ${ styles.first }`) : (styles.icon_social) } 
         href={ item.url } 
         target={ '_blank' }>
-        <img 
-          src={ item.icon }
-          alt={ `ΔTΔRΔXIΔ | ${ item.network }Icon` }              
+        <IconSVG
+          type={ 'networks' } 
+          icon={ item.network }
+          classNames={ styles.iconSVG }              
         />
       </a>
     )
@@ -54,7 +55,13 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems,
       styles={ stylesMenu }
       isOpen={ isMenuOpen }
       customBurgerIcon={ false }
-      customCrossIcon={ <img src={ '/assets/icons/close.svg' } /> }
+      customCrossIcon={ 
+        <IconSVG
+          type={ 'controls' } 
+          icon={ 'close' }
+          classNames={ styles.iconCloseSVG }              
+        />
+      }
       pageWrapId={ "page-wrap" } 
       outerContainerId={ "outer-container" } 
       menuClassName={ styles.bm_menu }
@@ -66,9 +73,6 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems,
           src={ '/assets/images/ataraxia/ataraxia.png' } 
         />
       </div>
-      <div className={ styles.container_menu_items }>
-        { menuItemTag }
-      </div> 
       <div className={ styles.container_logo }>
         <img 
           className={ styles.logo } 
@@ -76,11 +80,11 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, contactInfo, menuItems,
           alt={ 'ΔTΔRΔXIΔ | mainLogo' }              
         />
       </div>
+      <div className={ styles.container_menu_items }>
+        { menuItemTag }
+      </div> 
       <div className={ styles.container_networks }>
         { networksTag }
-      </div>
-      <div className={ styles.container_text }>
-        { contactInfo.email }
       </div>
     </Menu>
   )

@@ -8,6 +8,8 @@ export default function main(params) {
     title += ' - Djs'
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
     title += ' - Media'
+  } else if (params.routeMatch === '/contact/' || params.routeMatch === '/contact') {
+    title += ' - Contacto'
   }
 
   return `

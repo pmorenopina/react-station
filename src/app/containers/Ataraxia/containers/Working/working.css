@@ -1,7 +1,6 @@
 .container_working {
-    height: calc(100vh - 120px - 56px);
+    height: calc(100vh - 54px);
     background-color: black;
-    margin-top: 56px;
     display: flex;
     flex-direction: column;
     justify-content: center;
