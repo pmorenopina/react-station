@@ -54,6 +54,9 @@ export class Ataraxia extends Component {
       window.addEventListener('scroll', () => {
         if (document.documentElement.scrollTop >= 300) {
           this.cookiesAccepted()
+          this.setState({
+            isScrollToChangeColorNetworks: true
+          })
         }
         else {
           this.setState({
