@@ -117,10 +117,12 @@
         text-align: justify;
         font-size: 14px;
         font-weight: 500;
+        padding-left: 10px;
+        padding-right: 10px; 
         @media (min-width: 426px){
             font-size: 16px;
         }
-        @media (min-width: 1025px){
+        @media (min-width: 769px){
             padding: 20px 0;
         }
     }
