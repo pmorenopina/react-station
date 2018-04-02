@@ -1,15 +1,8 @@
 {
   "remember": [
-    {
-      "description": "",
-      "landscape": "/assets/images/ataraxia/flyers/032018/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/032018/portrait.jpg",
-      "date": "24/03/2018",
-      "location": "Café La Palma",
-      "city": "Madrid, España"
-    }
   ],
   "events": [
+    {},
     {
       "description": "24/03/2018",
       "landscape": "/assets/images/ataraxia/flyers/032018/landscape.jpg",
