@@ -162,12 +162,13 @@ class Main extends Component {
         <div className={ styles.container_dj }>
           <div className={ styles.container_grid }>
             <div className={ styles.description }>
-              El próximo capítulo de esta sesión de música electrónica se presentará el el 24 de marzo
+              <span>CUMPLIMOS UN AÑO</span>
               <br/>
               <br/>
-              <span>Rico Martinez - JavierdelaVega - Julio Martinez</span>
+              Para nuestro primer aniversario tenemos el placer de invitar a <span>Take Another</span> residente de SAKE CLUB.
+              <span>Sábado 21 de Abril</span> será una noche para recordar todo lo que hemos caminado juntos durante el año.
               <br/>
-              Este es tu lugar para disfrutar de la mejor música electrónica un sábado en pleno corazón de Madrid, Malasaña.
+              💿 Regalaremos CD a todos los asistentes 💿
               <br/>
               <br/>
               Lugar: <span>CAFE LA PALMA</span>
