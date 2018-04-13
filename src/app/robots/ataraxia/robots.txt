@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: 
 
-Sitemap: https://www.ataraxiaclub.com/sitemap.xml
+Sitemap: https://ataraxiaclub.com/sitemap.xml

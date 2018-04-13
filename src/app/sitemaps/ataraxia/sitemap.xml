@@ -4,22 +4,22 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
     <url>
-        <loc>https://www.ataraxiaclub.com/</loc>
+        <loc>https://ataraxiaclub.com/</loc>
         <lastmod>2017-04-12T22:29:20+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://www.ataraxiaclub.com/events/</loc>
+        <loc>https://ataraxiaclub.com/events/</loc>
         <lastmod>2017-04-12T22:29:20+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://www.ataraxiaclub.com/djs/</loc>
+        <loc>https://ataraxiaclub.com/djs/</loc>
         <lastmod>2017-04-12T22:29:20+00:00</lastmod>
         <priority>0.80</priority>
         </url>
     <url>
-    <loc>https://www.ataraxiaclub.com/media/</loc>
+    <loc>https://ataraxiaclub.com/media/</loc>
         <lastmod>2017-04-12T22:29:20+00:00</lastmod>
         <priority>0.80</priority>
     </url>
