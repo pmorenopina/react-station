@@ -20,7 +20,7 @@ class Main extends Component {
     super(props)
     this.state = {
       playVideo: false,
-      mutedVideo: false,
+      mutedVideo: true,
       counter: 0
     }
 
@@ -206,6 +206,31 @@ class Main extends Component {
       'container_full_screen_not_only' : (CONFIG.remember.length) ? true : false
     })
 
+    const styleFeed = {
+      border:'none',
+      overflow:'hidden',
+      width: '100%'
+    }
+
+    const instagramFeed = (
+      <div className={ styles.container_main_feed }>
+        <div className={ styles.container_feed }>
+          <div className={ styles.title_container }>
+            <div className={ styles.title } >INSTAGRAM</div>
+            <div className={ styles.title } >FEED</div>
+          </div>
+          <iframe
+            src={ "https://snapwidget.com/embed/535934" } 
+            className={ "snapwidget-widget" } 
+            allowTransparency={ "true" } 
+            frameBorder={ "0" } 
+            scrolling={ "no" }
+            style={ styleFeed }
+          />
+        </div>
+      </div>
+    )
+
     return (
       <div className={ styles.container }>
         <div className={ styleContainerTag }>
@@ -215,12 +240,14 @@ class Main extends Component {
             poster={ '/assets/videos/ataraxia/home-poster.jpg' }
             onPlay={ this.handlePlay }
             onVolumeChange={ this.handleVolume }
+            muted={ this.state.mutedVideo }
           >
             <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
           </video>
           { iconPlayPause }
         </div>
         { mainEvent }
+        { instagramFeed }
       </div>
     )
   }

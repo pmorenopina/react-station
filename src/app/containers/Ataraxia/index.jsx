@@ -4,6 +4,7 @@ import cookies from 'browser-cookies'
 
 // Containers 
 import Cookies from './containers/Cookies'
+import Contact from './containers/Contact'
 import Header from './containers/Header'
 import Footer from './containers/Footer'
 import Events from './containers/Events'
@@ -123,10 +124,12 @@ export class Ataraxia extends Component {
         bodyTag = <Events />
       } else if (this.props.params.section === 'djs') {
         bodyTag = <Djs djs={ CONFIG.djs } />
-      } else if (this.props.params.section === 'media') {
+      } /*else if (this.props.params.section === 'media') {
         bodyTag = <Working />
-      } else if (this.props.params.section === 'cookies') {
+      }*/ else if (this.props.params.section === 'cookies') {
         bodyTag = <Cookies />
+      } else if (this.props.params.section === 'contact') {
+        bodyTag = <Contact />
       } else {
         bodyTag = (
           <Working />

@@ -12,7 +12,7 @@ export const resolve = common.resolve
 export const entry = {
   app: common.clientPath,
   vendor: common.entry.vendor
-};
+}
 
 export const output = {
   path: common.assetsPath,

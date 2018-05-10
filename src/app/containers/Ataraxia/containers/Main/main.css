@@ -11,7 +11,8 @@
     right: 0;
     overflow: hidden;
     z-index: 1;
-    min-height: calc(100vh - 54px);
+    /*min-height: calc(100vh - 54px);*/
+    min-height: calc(100vh);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -260,6 +261,7 @@
         .photo_container {
             width: 100%;
             height: 400px;
+            box-shadow: 2px 2px 5px black;
             @media (min-width: 769px){
                 width: 50%;
                 height: unset;
@@ -271,6 +273,46 @@
                 .iconSVG {
                     fill: var(--main-color) !important;
                     width: 50px;
+                }
+            }
+        }
+    }
+}
+
+.container_main_feed {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (min-width: 426px){
+        padding: 0;
+    }
+    @media (min-width: 769px){
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    } 
+    .container_feed{
+        margin: 0 auto;
+        @media (min-width: 1025px){
+            padding: 0;
+            max-width: 1025px;
+        }
+        .title_container {
+            padding-left: 0;
+            margin: 30px 0;
+            .title{
+                font-size: 30px;
+                text-align: center;
+                font-weight: bold;
+                line-height: 1;
+                @media (min-width: 426px){
+                    font-size: 45px;
+                }
+                @media (min-width: 769px){
+                    font-size: 60px;
+                    text-align: left;
                 }
             }
         }

@@ -4,6 +4,7 @@ import { PropTypes } from 'prop-types'
 import ArrowDownIconSVG from './controls/arrowdown'
 import BeatportIconSVG from './networks/beatport'
 import CloseIconSVG from './controls/close'
+import ContactIconSVG from './menu/contact'
 import DjsIconSVG from './menu/djs'
 import EventsIconSVG from './menu/events'
 import FacebookIconSVG from './networks/facebook'
@@ -36,6 +37,9 @@ const IconSVG = ({ type, icon, classNames, onClick }) => {
     }
     else if (icon === 'media') {
       iconSVG = <MediaIconSVG classNames={ classNames } />
+    }
+    else if (icon === 'contact') {
+      iconSVG = <ContactIconSVG classNames={ classNames } />
     }
   } 
   else if (type === 'map') {

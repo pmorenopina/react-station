@@ -76,7 +76,6 @@
     "google-map-react": "0.29.0",
     "ignore-styles": "5.0.1",
     "immutable": "3.8.2",
-    "isomorphic-fetch": "2.2.1",
     "istanbul": "0.4.5",
     "jsdom": "11.4.0",
     "mocha": "4.0.1",
