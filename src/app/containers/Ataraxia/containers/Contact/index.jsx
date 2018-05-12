@@ -33,7 +33,6 @@ class Contact extends Component {
         fetch("https://139.162.220.87:8600/submitEmail", {
           method: 'POST',
           headers: {
-            'Accept': 'application/json',
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
@@ -41,8 +40,7 @@ class Contact extends Component {
             sendfrom: emailValue,
             name: nameValue,
             text: textValue
-          }),
-          mode: 'no-cors'
+          })
         }).then((response) => {
           if (response.statusCode === "200" || 200) {
             alert('Correo enviado. ¡Muchas gracias por contactar con nosotros!')
