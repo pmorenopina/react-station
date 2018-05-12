@@ -32,12 +32,13 @@ export class Ataraxia extends Component {
       isOpenMenu: false,
       isCookieInfoOpen: false,
       isScrollToChangeColorHeader: false,
-      isScrollToChangeColorNetworks: false
+      isScrollToChangeColorNetworks: false,
+      cookiesAccepted: false
     }
   }
 
   checkIfCookiesAccepted = () => {
-    const cookiesUUID = cookies.get('uuid')
+    const cookiesUUID = cookies.get('_uuid')
 
     if (!cookiesUUID) {
       let allCookies = cookies.all()
@@ -47,7 +48,7 @@ export class Ataraxia extends Component {
           cookies.erase(cookieName)
         }
       }
-
+      
       this.setState({
         isCookieInfoOpen: true
       })
@@ -75,6 +76,9 @@ export class Ataraxia extends Component {
         }
       })
     } else {
+      this.setState({
+        cookiesAccepted: true
+      })
       window.addEventListener('scroll', () => {
         if (document.documentElement.scrollTop >= 300) {
           this.setState({
@@ -101,8 +105,15 @@ export class Ataraxia extends Component {
   }
 
   cookiesAccepted = () => {
-    cookies.set('uuid', Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1), {expires: 365})
+    cookies.set('_uuid', Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1), {expires: 365})
 
+    this.setState({
+      isCookieInfoOpen: false,
+      cookiesAccepted: true
+    })
+  }
+
+  cookiesCanceled = () => {
     this.setState({
       isCookieInfoOpen: false
     })
@@ -114,7 +125,7 @@ export class Ataraxia extends Component {
   
 
   render () {
-    const { isCookieInfoOpen } = this.state
+    const { isCookieInfoOpen, cookiesAccepted } = this.state
     const { toggleOpenCloseMenu } = this.props
     let bodyTag = ''
 
@@ -136,7 +147,7 @@ export class Ataraxia extends Component {
       }
     } else {
       bodyTag = (
-        <Main cookiesAccepted={ !isCookieInfoOpen }/>
+        <Main cookiesAccepted={ cookiesAccepted }/>
       )
     }
 
@@ -158,6 +169,7 @@ export class Ataraxia extends Component {
         <CookiesInfo 
           isCookieInfoOpen={ isCookieInfoOpen } 
           cookiesAccepted={ this.cookiesAccepted }
+          cookiesCanceled={ this.cookiesCanceled }
         />
       </div>
     )

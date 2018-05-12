@@ -25,6 +25,7 @@
             align-items: center;
             margin-bottom: 10px;
             margin-top: 10px;
+            flex-wrap: wrap;
             @media (min-width: 769px){
                 flex: 1;                
             }

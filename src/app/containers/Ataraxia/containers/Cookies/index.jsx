@@ -1,9 +1,21 @@
 import React from 'react'
+import cookies from 'browser-cookies'
 
 // Styles
 import styles from './cookies.css'
 
 const Cookies = () => {
+  const denyCookies = () => {  
+    let allCookies = cookies.all()
+    
+    for (let cookieName in allCookies) {
+      if (allCookies.hasOwnProperty(cookieName)) {
+        cookies.erase(cookieName)
+      }
+    }
+    
+  }
+  
   return (
     <div className={ styles.container_cookies }>
       <div className={ styles.title_container }>
@@ -11,6 +23,16 @@ const Cookies = () => {
         <div className={ styles.title } >"COOKIES"</div>
       </div>
       <div className={ styles.description }>
+        ¿Deseas denegar las cookies de tu navegador para este sitio web?
+        <br/>
+        <button
+          onClick={ () => denyCookies() }
+          className={ styles.deny }
+        >
+        Denegar cookies
+        </button>
+        <br/>
+        <br/>
         ¿Qué son las cookies? Una cookie es un fichero que se descarga en tu ordenador, tablet, móvil u otro terminal (en adelante, equipo) cuando accedes a nuestra web. Las cookies nos permiten almacenar y recuperar información sobre tus hábitos de navegación o del equipo desde donde accedes en general de forma anónima y dependiendo de la información que contengan, para reconocerte como usuario o cliente.
         <br/>
         <br/>
@@ -28,32 +50,28 @@ const Cookies = () => {
         Cookies de análisis: Son aquéllas que bien tratadas por nosotros o por terceros, nos permiten cuantificar el número de visitas y el uso que hacen los usuarios de nuestra aplicación con la finalidad de hacer una medición y análisis estadístico de su utilización para corregir las deficiencias que detectemos y facilitar el uso de nuestra web o aplicación.
         <br/>        
         <br/>
-        Si lo deseas puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración de las opciones del navegador instalado en tu ordenador o desde las opciones de privacidad del equipo desde el que nos vistas, en caso que no permitas la instalación de cookies en su navegador es posible que no puedas acceder a alguna de las secciones de nuestra web.
-        Por ejemplo, puedes encontrar información sobre cómo hacerlo en el caso que uses como navegador:
-        <br/>        
-        <br/>
-        Firefox desde <a href={ 'http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-web' } target={ '_blank' }>aquí</a>.
-        <br/>
-        Chrome desde <a href={ 'http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647' } target={ '_blank' }>aquí</a>.
-        <br/>
-        Explorer desde <a href={ 'http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647' } target={ '_blank' }>aquí</a>.
-        <br/>
-        Safari desde <a href={ 'http://support.apple.com/kb/ph5042' } target={ '_blank' }>aquí</a>.
-        <br/>
-        Opera desde <a href={ 'http://help.opera.com/Windows/11.50/es-ES/cookies.html' } target={ '_blank' }>aquí</a>.
-        <br/>
-        <br/>
-        Si lo deseas puedes ver los videos desarrollados por la Agencia Española de Protección de Datos con la finalidad de explicar cómo configurar las opciones de privacidad desde diferentes plataformas y equipos.<a href={ 'http://www.agpd.es/portalwebAGPD/CanalDelCiudadano/protegetuprivacidad/index-ides-idphp.php' } target={ '_blank' }> Aquí</a>
-        <br/>
+        Al utilizar nuestra web y aceptar el consentimiento se descargan en tu equipo las cookies propias que detallamos a continuación.
         <br/>
         Cookies propias
         <br/>
-        Al utilizar nuestra web se descargan en tu equipo las cookies propias que detallamos a continuación.
+        _uuid: Almacena el identificador random del usuario, para conocer si ha aceptado elconsentimiento de cookies.
+        <br/>
+        __cfduid: Se utiliza para identificar clientes detrás de una dirección IP compartida y aplicar configuraciones de seguridad al cliente.
         <br/>
         <br/>
-        __cfdui: Almacena al usuario para evitar ataques al servicio.
+        Cookies de terceros
         <br/>
-        uuid: Almacena el identificador del usuario para customizar el contenido servido.
+        Cloudflare:
+        <br/>
+        __cfduid: Se utiliza para identificar clientes detrás de una dirección IP compartida y aplicar configuraciones de seguridad al cliente.
+        <br/>
+        Snapwidget: 
+        <br/>
+        __cfduid: Se utiliza para identificar clientes detrás de una dirección IP compartida y aplicar configuraciones de seguridad al cliente.
+        <br/>
+        _ga: Asigna al visitante un ID único que se utiliza para seguir el uso del sitio web.
+        <br/>
+        _gid: Registra una identificación única utilizada para rastrear estadísticas sobre cómo el visitante usa el sitio web.
         <br/>
         <br/>
         Además si interactúas con el contenido de nuestro Sitio Web también pueden establecerse cookies de terceros (por ejemplo, al pulsar botones de redes sociales o visionar vídeos alojados en otro sitio web). 
@@ -66,8 +84,6 @@ const Cookies = () => {
         Youtube, consultar el siguiente <a href={ 'https://support.google.com/youtube/answer/2801895' } target={ '_blank' }>enlace</a>.
         <br/>
         Instagram, consultar el siguiente <a href={ 'https://www.instagram.co/about/legal/privacy/?hl=es' } target={ '_blank' }>enlace</a>.
-        <br/>
-        Cloudflare, consultar el siguiente <a href={ 'https://www.cloudflare.com/cookie-policy/' } target={ '_blank' }>enlace</a>.
       </div>
     </div>
   )

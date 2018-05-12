@@ -53,6 +53,11 @@ const Footer = ({ itemMenu, menuItems, socialNetworks, section }) => {
       <div className={ styles.footer_bar }>
         <div className={ styles.container_menu }>
           { menuItemTag }
+          <a 
+            href={ '/cookies/' }
+          >
+            COOKIES POLICY
+          </a>
         </div>
         <div className={ styles.social_networks }>
           { networksTag }

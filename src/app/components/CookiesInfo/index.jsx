@@ -1,25 +1,36 @@
 import React from 'react'
+import IconSVG from '../../containers/Ataraxia/containers/IconSVG'
 import { PropTypes } from 'prop-types'
 
 // Styles
 import styles from './cookiesInfo.css'
 
-const CookiesInfo = ({ isCookieInfoOpen, cookiesAccepted }) => {
+const CookiesInfo = ({ isCookieInfoOpen, cookiesAccepted, cookiesCanceled }) => {
 
   const cookiesInfoTag = (isCookieInfoOpen) ? (
     <div className={ styles.contanier_cookieInfo }>
-      <span>Usamos cookies para personalizar su experiencia. Si sigue navegando estará aceptando su uso.</span>
-      <a href="/cookies/" 
-        target={ "_blank" } 
-        className={ `${ styles.info } ${ styles.first }` }
-      >
-        Más información
-      </a>
+      <span>Este sitio utiliza cookies y otras tecnologías de seguimiento para ayudar con la navegación y su capacidad para proporcionar comentarios, analizar el uso de nuestros productos y servicios, ayudar con nuestros esfuerzos promocionales y de marketing, y proporcionar contenido de terceros.      
+        <a href="/cookies/" 
+          target={ "_blank" } 
+          className={ styles.moreInfo }
+        >
+          Más información
+        </a>
+      </span>
       <a
         onClick={ () => cookiesAccepted() } 
-        className={ styles.info }
+        className={ styles.accept }
       >
-        OK
+        Aceptar
+      </a>
+      <a
+        onClick={ () => cookiesCanceled() } 
+      >
+        <IconSVG
+          type={ 'controls' } 
+          icon={ 'close' }
+          classNames={ styles.iconCloseSVG }              
+        />
       </a>
     </div>
   ) : ''
