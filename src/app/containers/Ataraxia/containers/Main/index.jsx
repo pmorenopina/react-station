@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames/bind'
+import cookies from 'browser-cookies'
 
 // Components
 import GoogleMap from 'google-map-react'
@@ -21,16 +22,21 @@ class Main extends Component {
     this.state = {
       playVideo: false,
       mutedVideo: true,
-      counter: 0
+      counter: 0,
+      videoMounted: false,
+      scriptLoaded: false,
     }
 
     this.propsMaps = {
       center: [40.426857, -3.707992],
       zoom: 16,
     }
+
+    this.isLoadedScript = false
   }
 
   componentDidMount() {
+    this.changeStateVideoMounted()
     this.videoTag.play()
     
     this.videoTag.addEventListener("ended", () => {
@@ -44,15 +50,29 @@ class Main extends Component {
     
     setInterval(() => {
       if (this.state.counter > 3) {
-        this.setState({
-          counter: 1
-        })
+        this.counterReset()
       } else {
-        this.setState({
-          counter: this.state.counter + 1
-        })
+        this.counterAdd()
       }
     }, 400)
+  }
+
+  counterReset = () => {
+    this.setState({
+      counter: 0
+    })
+  }
+
+  counterAdd = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+  }
+
+  changeStateVideoMounted = () => {
+    this.setState({
+      videoMounted: true
+    })
   }
 
   handlePlayPauseVideo = () => {
@@ -209,10 +229,11 @@ class Main extends Component {
     const styleFeed = {
       border:'none',
       overflow:'hidden',
-      width: '100%'
+      width: '100%',
+      height: '100%'
     }
 
-    const instagramFeed = (
+    const instagramFeed = (this.state.isLoadedScript) ? (
       <div className={ styles.container_main_feed }>
         <div className={ styles.container_feed }>
           <div className={ styles.title_container }>
@@ -222,14 +243,37 @@ class Main extends Component {
           <iframe
             src={ "https://snapwidget.com/embed/535934" } 
             className={ "snapwidget-widget" } 
-            allowTransparency={ "true" } 
             frameBorder={ "0" } 
             scrolling={ "no" }
             style={ styleFeed }
           />
         </div>
       </div>
-    )
+    ) : null
+
+    if (this.state.videoMounted && !this.isLoadedScript && this.props.cookiesAccepted) {
+      let code = "https://snapwidget.com/js/snapwidget.js"
+      try {
+        let s = document.createElement('script')
+        s.setAttribute('src', code)     
+        document.body.appendChild(s)
+        this.isLoadedScript = true
+        setTimeout(() => {
+          this.setState({
+            isLoadedScript: true
+          })
+        }, 200)
+      } catch (e) {
+        this.isLoadedScript = true
+        setTimeout(() => {
+          this.setState({
+            isLoadedScript: true
+          })
+        }, 200)
+      }
+    }
+
+
 
     return (
       <div className={ styles.container }>

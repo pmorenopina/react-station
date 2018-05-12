@@ -60,13 +60,6 @@ export default function main(params) {
     `
   }
 
-  let instagramWidgetScript = ''
-  if (params.routeMatch === '/' || params.routeMatch === '/') {
-    instagramWidgetScript = `
-      <script src="https://snapwidget.com/js/snapwidget.js"></script>
-    `
-  }
-
   return `
   <!doctype html>
   <html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -133,7 +126,6 @@ export default function main(params) {
       </style>
       ${ params.vendorScript }
       ${ params.style }
-      ${ instagramWidgetScript }
     </head>
     <body>
       <div id="root">${ params.container }</div>
