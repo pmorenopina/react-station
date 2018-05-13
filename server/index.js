@@ -3,8 +3,6 @@ require ('newrelic')
 require('babel-core/register')
 const base = require('../src/base').default
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
-
 require('css-modules-require-hook')({
   rootDir: './',
   mode: 'local',

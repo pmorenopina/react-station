@@ -8,7 +8,6 @@ const devStatics = [
   {route: '/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
   {route: '/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')},
   {route: '/google8d64cfb74512a9c0.html', dir: path.join(__dirname, '../../src/app/google/ataraxia/google.html')},
-  {route: '/.well-known/acme-challenge/GdSd7x34obUAID3k4lK9l4kftcrEfhRjopvJSM0wb4M', dir: path.join(__dirname, '../../src/app/ssl/ataraxia/index')},    
   {route: '/', dir: path.join(__dirname, '../../src/app')}
 ]
 
@@ -17,7 +16,6 @@ const prodStatics = [
   {route: '/assets', dir: path.join(__dirname, '../../dist/assets')},
   {route: '/robots.txt', dir: path.join(__dirname, '../../src/app/robots/ataraxia/robots.txt')},
   {route: '/google8d64cfb74512a9c0.html', dir: path.join(__dirname, '../../src/app/google/ataraxia/google.html')},    
-  {route: '/.well-known/acme-challenge/GdSd7x34obUAID3k4lK9l4kftcrEfhRjopvJSM0wb4M', dir: path.join(__dirname, '../../src/app/ssl/ataraxia/index')},    
   {route: '/sitemap.xml', dir: path.join(__dirname, '../../src/app/sitemaps/ataraxia/sitemap.xml')}
 ]
 

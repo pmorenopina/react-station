@@ -30,14 +30,14 @@ class Contact extends Component {
       alert('Por favor, rellena correctamente el campo "TEXTO" con un mínimo de 140 caracteres.')
     } else {
       try {
-        fetch("https://139.162.220.87:9000/submitEmail", {
+        fetch("https://sendmailapi.herokuapp.com/submitEmail", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
             sendto: 'info@ataraxiaclub.com',
-            sendfrom: emailValue,
+            sendfrom: 'info@ataraxiaclub.com',
             name: nameValue,
             text: textValue
           })
