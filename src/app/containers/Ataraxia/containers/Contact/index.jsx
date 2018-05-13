@@ -30,7 +30,7 @@ class Contact extends Component {
       alert('Por favor, rellena correctamente el campo "TEXTO" con un mínimo de 140 caracteres.')
     } else {
       try {
-        fetch("https://139.162.220.87:8600/submitEmail", {
+        fetch("https://139.162.220.87:9000/submitEmail", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
