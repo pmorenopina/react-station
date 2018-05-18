@@ -170,6 +170,26 @@ class Main extends Component {
       </div>
     )
 
+    const googleMapTag = (this.props.cookiesAccepted) ? (
+      <GoogleMap
+        bootstrapURLKeys={ { key: 'AIzaSyBmRzfJ2tXbBlaVpykm4extXfqRLfc9nFU' } }
+        center={ this.propsMaps.center }  
+        zoom={ this.propsMaps.zoom }
+      >
+        <div 
+          className={ styles.icon_container }
+          lat={ 40.426857 } 
+          lng={ -3.707992 }
+        >
+          <IconSVG
+            type={ 'map' } 
+            icon={ 'location' }
+            classNames={ styles.iconSVG }              
+          />
+        </div>
+      </GoogleMap>
+    ) : ''
+
     const mainEvent = (CONFIG.remember.length) ? (
       <div className={ styles.container_main_event }>
         <div name={ 'main_event' } className={ styles.container_next_events }>
@@ -182,39 +202,22 @@ class Main extends Component {
         <div className={ styles.container_dj }>
           <div className={ styles.container_grid }>
             <div className={ styles.description }>
-              <span>CUMPLIMOS UN AÑO</span>
               <br/>
+              <span>¡Volvemos con más ganas que nunca!</span>
               <br/>
-              Para nuestro primer aniversario tenemos el placer de invitar a <span>Take Another</span> residente de SAKE CLUB.
-              <span>Sábado 21 de Abril</span> será una noche para recordar todo lo que hemos caminado juntos durante el año.
+              Después del éxito del primer aniversario, comenzamos nueva etapa en Ataraxia con más diversión, buena música y muchas sorpresas que irás descubriendo.
               <br/>
-              💿 Regalaremos CD a todos los asistentes 💿
+              Para esta ocasión contaremos como invitado a 7thDimension
               <br/>
               <br/>
               Lugar: <span>CAFE LA PALMA</span>
               <br/>
-              Metro: <span>"San Bernardo" o "Noviciado"</span>
+              Metro: <span>San Bernardo / Noviciado</span>
               <br/>
               Entrada: <span>GRATIS</span>
             </div>
             <div className={ styles.photo_container }>
-              <GoogleMap
-                bootstrapURLKeys={ { key: 'AIzaSyBmRzfJ2tXbBlaVpykm4extXfqRLfc9nFU' } }
-                center={ this.propsMaps.center }  
-                zoom={ this.propsMaps.zoom }
-              >
-                <div 
-                  className={ styles.icon_container }
-                  lat={ 40.426857 } 
-                  lng={ -3.707992 }
-                >
-                  <IconSVG
-                    type={ 'map' } 
-                    icon={ 'location' }
-                    classNames={ styles.iconSVG }              
-                  />
-                </div>
-              </GoogleMap>
+              { googleMapTag }
             </div>
           </div>
         </div>
@@ -281,12 +284,12 @@ class Main extends Component {
           <video 
             ref={ (video) => { this.videoTag = video } }
             preload= { 'auto' }
-            poster={ '/assets/videos/ataraxia/home-poster.jpg' }
+            poster={ '/assets/videos/ataraxia/home-poster-2.jpg' }
             onPlay={ this.handlePlay }
             onVolumeChange={ this.handleVolume }
             muted={ this.state.mutedVideo }
           >
-            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video.mp4' } />
+            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video-2.mp4' } />
           </video>
           { iconPlayPause }
         </div>

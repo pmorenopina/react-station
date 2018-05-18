@@ -1,10 +1,30 @@
 {
   "remember": [
-    
+    {
+      "description": "",
+      "landscape": "/assets/images/ataraxia/flyers/062018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/062018/portrait.jpg",
+      "date": "09/06/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    }
   ],
   "events": [
     {
-      
+      "description": "09/06/2018",
+      "landscape": "/assets/images/ataraxia/flyers/062018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/062018/portrait.jpg",
+      "date": "09/06/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
+      "description": "",
+      "landscape": "/assets/images/ataraxia/flyers/042018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/042018/portrait.jpg",
+      "date": "21/04/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
     },
     {
       "description": "24/03/2018",

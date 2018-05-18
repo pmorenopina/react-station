@@ -109,6 +109,8 @@ export default function main(params) {
       <link rel="icon" type="image/png" sizes="96x96" href="https://ataraxiaclub.com/assets/favicon/ataraxia/favicon-96x96.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="https://ataraxiaclub.com/assets/favicon/ataraxia/favicon-16x16.png" /> 
 
+      <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+
       ${ jsonLD }
 
       <style type="text/css">

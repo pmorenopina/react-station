@@ -25,15 +25,15 @@
         .title_container {
             margin: 30px 0;
             .title{
-                font-size: 30px;
+                font-size: 40px;
                 text-align: center;
                 font-weight: bold;
                 line-height: 1;
                 @media (min-width: 426px){
-                    font-size: 45px;
+                    font-size: 55px;
                 }
                 @media (min-width: 769px){
-                    font-size: 60px;
+                    font-size: 70px;
                     text-align: left;
                 }
             }
@@ -62,7 +62,7 @@
                     margin: 30px 0;
                 }
                 .title{
-                    font-size: 25px;
+                    font-size: 30px;
                     text-align: center;
                     font-weight: bold;
                     line-height: 1;
@@ -116,12 +116,12 @@
         .description {
             padding: 20px 0px 0px 0px;
             text-align: justify;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 500;
             padding-left: 10px;
             padding-right: 10px; 
             @media (min-width: 426px){
-                font-size: 16px;
+                font-size: 20px;
             }
             @media (min-width: 769px){
                 padding: 20px 0;
