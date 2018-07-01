@@ -19,6 +19,8 @@ import PlayIconSVG from './controls/play'
 import SoundIconSVG from './controls/sound'
 import YoutubeIconSVG from './networks/youtube'
 
+import AtaraxiaLogoIconSVG from './ataraxia/logo'
+
 import LocationIconSVG from './map/location'
 
 const IconSVG = ({ type, icon, classNames, onClick }) => {
@@ -85,6 +87,10 @@ const IconSVG = ({ type, icon, classNames, onClick }) => {
     }
     else if (icon === 'sound') {
       iconSVG = <SoundIconSVG classNames={ classNames } onClick={ onClick } />
+    }
+  } else if (type === 'ataraxia') {
+    if (icon === 'logo') {
+      iconSVG = <AtaraxiaLogoIconSVG classNames={ classNames } />
     }
   }
 

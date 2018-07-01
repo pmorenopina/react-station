@@ -33,7 +33,7 @@ export class Ataraxia extends Component {
       isCookieInfoOpen: false,
       isScrollToChangeColorHeader: false,
       isScrollToChangeColorNetworks: false,
-      cookiesAccepted: false
+      isCookiesAccepted: false
     }
   }
 
@@ -52,56 +52,44 @@ export class Ataraxia extends Component {
       this.setState({
         isCookieInfoOpen: true
       })
-
-      window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop >= 300) {
-          this.setState({
-            isScrollToChangeColorNetworks: true
-          })
+    } else if (cookiesUUID === 'canceled') {
+      let allCookies = cookies.all()
+      
+      for (let cookieName in allCookies) {
+        if(cookieName !== '_uuid') {
+          if (allCookies.hasOwnProperty(cookieName)) {
+            cookies.erase(cookieName)
+          }
         }
-        else {
-          this.setState({
-            isScrollToChangeColorNetworks: false
-          })
-        }
-        if (document.documentElement.scrollTop >= 725) {
-          this.setState({
-            isScrollToChangeColorHeader: true
-          })
-        } 
-        else {
-          this.setState({
-            isScrollToChangeColorHeader: false
-          })
-        }
-      })
+      }
     } else {
       this.setState({
-        cookiesAccepted: true
-      })
-      window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop >= 300) {
-          this.setState({
-            isScrollToChangeColorNetworks: true
-          })
-        } 
-        else {
-          this.setState({
-            isScrollToChangeColorNetworks: false
-          })
-        }
-        if (document.documentElement.scrollTop >= 725) {
-          this.setState({
-            isScrollToChangeColorHeader: true
-          })
-        } 
-        else {
-          this.setState({
-            isScrollToChangeColorHeader: false
-          })
-        }
+        isCookiesAccepted: true
       })
     }
+
+    window.addEventListener('scroll', () => {
+      if (document.documentElement.scrollTop >= 300) {
+        this.setState({
+          isScrollToChangeColorNetworks: true
+        })
+      }
+      else {
+        this.setState({
+          isScrollToChangeColorNetworks: false
+        })
+      }
+      if (document.documentElement.scrollTop >= 725) {
+        this.setState({
+          isScrollToChangeColorHeader: true
+        })
+      } 
+      else {
+        this.setState({
+          isScrollToChangeColorHeader: false
+        })
+      }
+    })
   }
 
   cookiesAccepted = () => {
@@ -109,14 +97,16 @@ export class Ataraxia extends Component {
 
     this.setState({
       isCookieInfoOpen: false,
-      cookiesAccepted: true
+      isCookiesAccepted: true
     })
   }
 
   cookiesCanceled = () => {
     this.setState({
-      isCookieInfoOpen: false
+      isCookieInfoOpen: false,
+      isCookiesAccepted: false
     })
+    cookies.set('_uuid', 'canceled', {expires: 1})
   }
 
   componentDidMount() {
@@ -125,7 +115,7 @@ export class Ataraxia extends Component {
   
 
   render () {
-    const { isCookieInfoOpen, cookiesAccepted } = this.state
+    const { isCookieInfoOpen, isCookiesAccepted } = this.state
     const { toggleOpenCloseMenu } = this.props
     let bodyTag = ''
 
@@ -147,7 +137,18 @@ export class Ataraxia extends Component {
       }
     } else {
       bodyTag = (
-        <Main cookiesAccepted={ cookiesAccepted }/>
+        <Main cookiesAccepted={ isCookiesAccepted }/>
+      )
+    }
+
+    let cookiesInfoTag = null
+    if (this.props.params.section !== 'cookies') {
+      cookiesInfoTag = (
+        <CookiesInfo 
+          isCookieInfoOpen={ isCookieInfoOpen } 
+          cookiesAccepted={ this.cookiesAccepted }
+          cookiesCanceled={ this.cookiesCanceled }
+        />
       )
     }
 
@@ -166,11 +167,7 @@ export class Ataraxia extends Component {
           socialNetworks={ CONFIG.socialNetworks }                  
           section= { this.state.section } 
         />
-        <CookiesInfo 
-          isCookieInfoOpen={ isCookieInfoOpen } 
-          cookiesAccepted={ this.cookiesAccepted }
-          cookiesCanceled={ this.cookiesCanceled }
-        />
+        { cookiesInfoTag }
       </div>
     )
   }

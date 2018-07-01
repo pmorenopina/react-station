@@ -9,29 +9,28 @@ const CookiesInfo = ({ isCookieInfoOpen, cookiesAccepted, cookiesCanceled }) => 
 
   const cookiesInfoTag = (isCookieInfoOpen) ? (
     <div className={ styles.contanier_cookieInfo }>
-      <span>Este sitio utiliza cookies y otras tecnologías de seguimiento para ayudar con la navegación y su capacidad para proporcionar comentarios, analizar el uso de nuestros productos y servicios, ayudar con nuestros esfuerzos promocionales y de marketing, y proporcionar contenido de terceros.      
-        <a href="/cookies/" 
-          target={ "_blank" } 
-          className={ styles.moreInfo }
+      <div className={ styles.container }>
+        <span>Las cookies nos ayudan a personalizar la navegación especialmente para ti y algunas son imprescindibles para que nuestro sitio web funcione. Las cookies también nos permiten mostrar ofertas y promociones personalizadas, tanto dentro como fuera de nuestro sitio web.     
+          <a href="/cookies/" 
+            target={ "_blank" } 
+            className={ styles.moreInfo }
+          >
+            Más información
+          </a>
+        </span>
+        <a 
+          onClick={ () => cookiesCanceled() } 
+          className={ styles.cancel }
         >
-          Más información
+        Denegar todas las cookies
         </a>
-      </span>
-      <a
-        onClick={ () => cookiesAccepted() } 
-        className={ styles.accept }
-      >
-        Aceptar
-      </a>
-      <a
-        onClick={ () => cookiesCanceled() } 
-      >
-        <IconSVG
-          type={ 'controls' } 
-          icon={ 'close' }
-          classNames={ styles.iconCloseSVG }              
-        />
-      </a>
+        <a
+          onClick={ () => cookiesAccepted() } 
+          className={ styles.accept }
+        >
+          Aceptar
+        </a>
+      </div>
     </div>
   ) : ''
 

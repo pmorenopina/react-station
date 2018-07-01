@@ -74,10 +74,10 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, menuItems, socialNetwor
         />
       </div>
       <div className={ styles.container_logo }>
-        <img 
-          className={ styles.logo } 
-          src={ '/assets/icons/ataraxia/logo.svg' } 
-          alt={ 'ΔTΔRΔXIΔ | mainLogo' }              
+        <IconSVG
+          type={ 'ataraxia' } 
+          icon={ 'logo' }
+          classNames={ styles.logo }              
         />
       </div>
       <div className={ styles.container_menu_items }>

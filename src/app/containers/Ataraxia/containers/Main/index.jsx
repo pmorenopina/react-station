@@ -203,17 +203,19 @@ class Main extends Component {
           <div className={ styles.container_grid }>
             <div className={ styles.description }>
               <br/>
-              <span>¡Volvemos con más ganas que nunca!</span>
+              <span>CLOSING ATARAXIA JULIO 2018</span>
               <br/>
-              Después del éxito del primer aniversario, comenzamos nueva etapa en Ataraxia con más diversión, buena música y muchas sorpresas que irás descubriendo.
+              Última fiesta antes del verano🌴
               <br/>
-              Para esta ocasión contaremos como invitado a 7thDimension
+              Para el cierre de temporada, contaremos con un b2b muy cañero formado por <span>Cristian Cardenas</span> y <span>Luismy Jimenez</span>
+              <br/>
+              En la warm-up 21Reason abrirá con un set elegante de Deep-House.
+              <br/>
+              Todo esto acompañado de nuestros residentes Javier De La Vega & Julio MartineZ.
               <br/>
               <br/>
               Lugar: <span>CAFE LA PALMA</span>
-              <br/>
               Metro: <span>San Bernardo / Noviciado</span>
-              <br/>
               Entrada: <span>GRATIS</span>
             </div>
             <div className={ styles.photo_container }>
@@ -284,12 +286,12 @@ class Main extends Component {
           <video 
             ref={ (video) => { this.videoTag = video } }
             preload= { 'auto' }
-            poster={ '/assets/videos/ataraxia/home-poster-2.jpg' }
+            poster={ '/assets/videos/ataraxia/home-poster-3.jpg' }
             onPlay={ this.handlePlay }
             onVolumeChange={ this.handleVolume }
             muted={ this.state.mutedVideo }
           >
-            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video-2.mp4' } />
+            <source type={ "video/mp4" } src={ '/assets/videos/ataraxia/home-video-3.mp4' } />
           </video>
           { iconPlayPause }
         </div>

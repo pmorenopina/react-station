@@ -8,15 +8,19 @@
     width: 100%;
     padding: 5px;
     background-color: black;
-    color: white;
-    font-size: 0.9em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    line-height: 16px;
     span {
-        padding: 0 10px 10px 10px;
+        padding: 10px 10px;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        line-height: 18px;
     }
     .moreInfo {
         text-decoration: none;
@@ -26,20 +30,20 @@
         margin-left: 10px;
     }
     .accept {
-        border-radius: 5px;
+        border-radius: 25px;
         padding: 10px;
         text-decoration: none;
         font-weight: bold;                        
         color: white;
         background-color: var(--main-color);
         cursor: pointer;
-        margin-right: 80px;
+        width: 70px;
+        text-align: center;
     }
-    .iconCloseSVG {
-        position: relative;
+    .cancel {
+        color: var(--main-color);
+        font-weight: bold;
         cursor: pointer;
-        fill: white;
-        right: 25px;
-        width: 25px;
+        margin-right: 50px;
     }
 }

@@ -2,32 +2,32 @@ export default function main(params) {
 
   let title = ''
   if (params.routeMatch === '/events/' || params.routeMatch === '/events') {
-    title = 'Eventos | ΔTΔRΔXIΔ'
+    title = 'Eventos | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/djs/' || params.routeMatch === '/djs') {
-    title = 'Djs | ΔTΔRΔXIΔ'
+    title = 'Djs | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
-    title = 'Media | ΔTΔRΔXIΔ'
+    title = 'Media | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/contact/' || params.routeMatch === '/contact') {
-    title = 'Contacto | ΔTΔRΔXIΔ'
+    title = 'Contacto | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/cookies/' || params.routeMatch === '/cookies') {
-    title = 'Cookies | ΔTΔRΔXIΔ'
+    title = 'Cookies | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/' || params.routeMatch === '/') {
-    title = 'ΔTΔRΔXIΔ'
+    title = 'ΔTΔRΔXIΔ - Ataraxia Club'
   }
 
   let description = ''
   if (params.routeMatch === '/events/' || params.routeMatch === '/events') {
-    description = 'Entradas e información de eventos | ΔTΔRΔXIΔ'
+    description = 'Entradas e información de eventos | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/djs/' || params.routeMatch === '/djs') {
-    description = 'Conoce toda la información sobre nuestros residentes | ΔTΔRΔXIΔ'
+    description = 'Conoce toda la información sobre nuestros residentes | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
-    description = 'Reportajes visuales sobre nuestro recorrido con todos vosotros | ΔTΔRΔXIΔ'
+    description = 'Reportajes visuales sobre nuestro recorrido con todos vosotros | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/contact/' || params.routeMatch === '/contact') {
-    description = 'Información de contacto | ΔTΔRΔXIΔ'
+    description = 'Información de contacto | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/cookies/' || params.routeMatch === '/cookies') {
-    description = 'Política de privacidad y aviso de cookies | ΔTΔRΔXIΔ'
+    description = 'Política de privacidad y aviso de cookies | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/' || params.routeMatch === '/') {
-    description = 'Sesión de música electrónica alojada en Madrid. Entradas e información de eventos | ΔTΔRΔXIΔ'
+    description = 'Sesión de música electrónica alojada en Madrid. Entradas e información de eventos | ΔTΔRΔXIΔ - Ataraxia Club'
   }
 
   let url = ''
@@ -53,7 +53,7 @@ export default function main(params) {
         "@context": "http://www.schema.org",
         "@type": "WebSite",
         "name": "Ataraxia",
-        "alternateName": "ΔTΔRΔXIΔ",
+        "alternateName": "Ataraxia Club",
         "url": "https://ataraxiaclub.com"
       }
       </script>
@@ -75,7 +75,7 @@ export default function main(params) {
       <meta property="og:title" content="${ title }" />
       <meta property="og:description" content="${ description }" />
       <meta property="og:url" content="${ url }" />
-      <meta property="og:site_name" content="ΔTΔRΔXIΔ" />
+      <meta property="og:site_name" content="ΔTΔRΔXIΔ - Ataraxia Club" />
       <meta property="article:publisher" content="https://www.facebook.com/ataraxiaclub/" />
       <meta property="og:image" content="https://ataraxiaclub.com/assets/favicon/ataraxia/apple-icon-180x180.png" />
       <meta name="twitter:card" content="summary_large_image" />
