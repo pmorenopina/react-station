@@ -31,7 +31,7 @@ import GmailIconSVG from './networks/gmail'
 import InstagramIconSVG from './networks/instagram' 
 import YoutubeIconSVG from './networks/youtube'
 
-// IconSVG Definition Component
+// IconSVG Component Definition
 const IconSVG = ({ type, icon, className, onClick }) => {
 
   let iconSVG = null
