@@ -2,7 +2,7 @@ import React from 'react'
 
 // Components
 import { elastic as Menu } from 'react-burger-menu'
-import IconSVG from '../IconSVG'
+import IconSVG from 'components/IconSVG'
 
 // Styles
 import styles from './menu.css'

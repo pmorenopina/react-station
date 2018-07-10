@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames/bind'
 
 // Components
-import IconSVG from '../IconSVG'
+import IconSVG from 'components/IconSVG'
 
 // Styles
 import styles from './header.css'

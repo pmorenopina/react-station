@@ -56,7 +56,7 @@ export class Ataraxia extends Component {
       let allCookies = cookies.all()
       
       for (let cookieName in allCookies) {
-        if(cookieName !== '_uuid') {
+        if (cookieName !== '_uuid') {
           if (allCookies.hasOwnProperty(cookieName)) {
             cookies.erase(cookieName)
           }

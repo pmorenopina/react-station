@@ -1,5 +1,4 @@
 import React from 'react'
-import IconSVG from '../../containers/Ataraxia/containers/IconSVG'
 import { PropTypes } from 'prop-types'
 
 // Styles

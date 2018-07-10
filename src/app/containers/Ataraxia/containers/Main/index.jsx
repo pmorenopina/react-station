@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import classNames from 'classnames/bind'
-import cookies from 'browser-cookies'
 
 // Components
 import GoogleMap from 'google-map-react'
-import IconSVG from '../IconSVG'
+import IconSVG from 'components/IconSVG'
 import GridComponent from '../../../../components/Grid'
 
 // Styles
