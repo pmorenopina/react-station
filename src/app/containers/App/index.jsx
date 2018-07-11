@@ -1,8 +1,9 @@
+// Libs
 import { PropTypes } from 'prop-types'
 import React, { Component } from 'react'
 
 // Containers
-import BurgerMenu from '../Ataraxia/containers/BurguerMenu'
+import BurgerMenu from 'ataraxiaContainers/BurguerMenu'
 
 // Styles 
 import styles from './app.css'

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // Components 
-import GridComponent from '../../../../components/Grid'
+import GridComponent from 'components/Grid'
 
 // Config
 import CONFIG from '../../config.json'

@@ -67,6 +67,9 @@ export const resolve = {
     'styles': path.resolve(__dirname, '../src/app/styles'),
     'mocks': path.resolve(__dirname, '../server/api/mocks'),
     'containers': path.resolve(__dirname, '../src/app/containers'),
+    'ataraxiaComponents': path.resolve(__dirname, '../src/app/containers/Ataraxia/components'),
+    'ataraxiaContainers': path.resolve(__dirname, '../src/app/containers/Ataraxia/containers'),
+    'ataraxiaHelpers': path.resolve(__dirname, '../src/app/containers/Ataraxia/helpers'),
     'components': path.resolve(__dirname, '../src/app/components')
   }
 }

@@ -4,9 +4,9 @@ import { PropTypes } from 'prop-types'
 // Styles
 import styles from './cookiesInfo.css'
 
-const CookiesInfo = ({ isCookieInfoOpen, cookiesAccepted, cookiesCanceled }) => {
+const CookiesInfo = ({ isCookieAccepted, cookiesAccepted, cookiesCanceled }) => {
 
-  const cookiesInfoTag = (isCookieInfoOpen) ? (
+  const cookiesInfoTag = (isCookieAccepted === 0) ? (
     <div className={ styles.contanier_cookieInfo }>
       <div className={ styles.container }>
         <span>Las cookies nos ayudan a personalizar la navegación especialmente para ti y algunas son imprescindibles para que nuestro sitio web funcione. Las cookies también nos permiten mostrar ofertas y promociones personalizadas, tanto dentro como fuera de nuestro sitio web.     

@@ -4,7 +4,7 @@ import classNames from 'classnames/bind'
 // Components
 import GoogleMap from 'google-map-react'
 import IconSVG from 'components/IconSVG'
-import GridComponent from '../../../../components/Grid'
+import GridComponent from 'components/Grid'
 
 // Styles
 import styles from './main.css'

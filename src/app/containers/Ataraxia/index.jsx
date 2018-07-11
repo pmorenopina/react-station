@@ -1,183 +1,156 @@
-import { PropTypes } from 'prop-types'
+// Libs
 import React, { Component } from 'react'
+import { PropTypes } from 'prop-types'
 import cookies from 'browser-cookies'
 
 // Containers 
-import Cookies from './containers/Cookies'
-import Contact from './containers/Contact'
-import Header from './containers/Header'
-import Footer from './containers/Footer'
-import Events from './containers/Events'
-import Main from './containers/Main'
-import Djs from './containers/Djs'
-import Working from './containers/Working'
+import Cookies from 'ataraxiaContainers/Cookies'
+import Contact from 'ataraxiaContainers/Contact'
+import Header from 'ataraxiaContainers/Header'
+import Footer from 'ataraxiaContainers/Footer'
+import Events from 'ataraxiaContainers/Events'
+import Main from 'ataraxiaContainers/Main'
+import Djs from 'ataraxiaContainers/Djs'
+import Working from 'ataraxiaContainers/Working'
 
 // Components
-import CookiesInfo from '../../components/CookiesInfo'
+import CookiesInfo from 'components/CookiesInfo'
+
+// Helpers
+import { getScrollColorHeaderBlack, getScrollColorNetworksBlack } from 'ataraxiaHelpers/scroll'
+import getCookiesAlertAccepted from 'ataraxiaHelpers/cookies'
 
 // Config
-import CONFIG from './config.json'
+import GLOBAL_CONFIG from './config.json'
 
 // Styles
 import styles from './ataraxia.css'
 
-// Poner propTypes
-
+// Ataraxia Component Definition
 export class Ataraxia extends Component {
-
   constructor(props) {
     super(props)
     this.state = {
-      section: (this.props.params && this.props.params.section) ? (this.props.params.section) : 'home',
-      isOpenMenu: false,
-      isCookieInfoOpen: false,
-      isScrollToChangeColorHeader: false,
-      isScrollToChangeColorNetworks: false,
+      colorHeaderBlack: false,
+      colorNetworksBlack: false,
       isCookiesAccepted: false
     }
   }
 
-  checkIfCookiesAccepted = () => {
-    const cookiesUUID = cookies.get('_uuid')
-
-    if (!cookiesUUID) {
-      let allCookies = cookies.all()
-      
-      for (let cookieName in allCookies) {
-        if (allCookies.hasOwnProperty(cookieName)) {
-          cookies.erase(cookieName)
-        }
-      }
-      
-      this.setState({
-        isCookieInfoOpen: true
-      })
-    } else if (cookiesUUID === 'canceled') {
-      let allCookies = cookies.all()
-      
-      for (let cookieName in allCookies) {
-        if (cookieName !== '_uuid') {
-          if (allCookies.hasOwnProperty(cookieName)) {
-            cookies.erase(cookieName)
-          }
-        }
-      }
-    } else {
-      this.setState({
-        isCookiesAccepted: true
-      })
-    }
-
-    window.addEventListener('scroll', () => {
-      if (document.documentElement.scrollTop >= 300) {
-        this.setState({
-          isScrollToChangeColorNetworks: true
-        })
-      }
-      else {
-        this.setState({
-          isScrollToChangeColorNetworks: false
-        })
-      }
-      if (document.documentElement.scrollTop >= 725) {
-        this.setState({
-          isScrollToChangeColorHeader: true
-        })
-      } 
-      else {
-        this.setState({
-          isScrollToChangeColorHeader: false
-        })
-      }
-    })
-  }
-
-  cookiesAccepted = () => {
-    cookies.set('_uuid', Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1), {expires: 365})
-
+  // Cookies Alert Acepted
+  handleCookiesAccepted = () => {
     this.setState({
-      isCookieInfoOpen: false,
       isCookiesAccepted: true
     })
+    cookies.set('_uuid', Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1), {expires: 365})
   }
 
-  cookiesCanceled = () => {
+  // Cookies Alert Canceled
+  handleCookiesCanceled = () => {
     this.setState({
-      isCookieInfoOpen: false,
       isCookiesAccepted: false
     })
     cookies.set('_uuid', 'canceled', {expires: 1})
   }
 
   componentDidMount() {
-    this.checkIfCookiesAccepted()
+    // Cookies Alert GDPR Logic
+    this.controlCookiesAlert()
+
+    // Scroll Event Color
+    window.addEventListener('scroll', () => {
+      this.controlSrollColor()
+    })
+  }
+
+  // Set state to control cookies alert
+  controlCookiesAlert = () => {
+    this.setState({
+      isCookiesAccepted: getCookiesAlertAccepted()
+    })
+  }
+
+  // Set state to control black color to header & networks
+  controlSrollColor = () => {
+    this.setState({
+      colorHeaderBlack: getScrollColorHeaderBlack(),
+      colorNetworksBlack: getScrollColorNetworksBlack()
+    })
   }
   
-
   render () {
-    const { isCookieInfoOpen, isCookiesAccepted } = this.state
-    const { toggleOpenCloseMenu } = this.props
-    let bodyTag = ''
+    const { colorHeaderBlack, colorNetworksBlack, isCookiesAccepted } = this.state
+    const { toggleOpenCloseMenu, params } = this.props
+    let bodyTag = null
+    let cookiesInfoTag = null
 
-    if (this.props.params && this.props.params.section) {
-      if (this.props.params.section === 'events') {
-        bodyTag = <Events />
-      } else if (this.props.params.section === 'djs') {
-        bodyTag = <Djs djs={ CONFIG.djs } />
-      } /*else if (this.props.params.section === 'media') {
-        bodyTag = <Working />
-      }*/ else if (this.props.params.section === 'cookies') {
-        bodyTag = <Cookies />
-      } else if (this.props.params.section === 'contact') {
-        bodyTag = <Contact />
-      } else {
-        bodyTag = (
-          <Working />
-        )
+    // Cookies Alert GDPR
+    cookiesInfoTag = (
+      <CookiesInfo 
+        isCookieAccepted={ isCookiesAccepted } 
+        cookiesAccepted={ this.handleCookiesAccepted }
+        cookiesCanceled={ this.handleCookiesCanceled }
+      />
+    )
+
+    // Routing Ataraxia
+    if (params && params.section) {
+      switch (params.section) {
+        case 'contact':
+          bodyTag = <Contact />
+          break
+        case 'cookies':
+          cookiesInfoTag = null
+          bodyTag = <Cookies />
+          break
+        case 'djs':
+          bodyTag = <Djs djs={ GLOBAL_CONFIG.djs } />
+          break
+        case 'events':
+          bodyTag = <Events />
+          break
+        /*case 'media':
+          break*/
+        default:
+          bodyTag = <Working />
+          break
       }
     } else {
-      bodyTag = (
-        <Main cookiesAccepted={ isCookiesAccepted }/>
-      )
-    }
-
-    let cookiesInfoTag = null
-    if (this.props.params.section !== 'cookies') {
-      cookiesInfoTag = (
-        <CookiesInfo 
-          isCookieInfoOpen={ isCookieInfoOpen } 
-          cookiesAccepted={ this.cookiesAccepted }
-          cookiesCanceled={ this.cookiesCanceled }
-        />
-      )
+      bodyTag = <Main cookiesAccepted={ isCookiesAccepted }/>
     }
 
     return (
       <div className={ styles.ataraxia_container }>
         <Header 
-          section= { this.state.section } 
-          socialNetworks={ CONFIG.socialNetworks }
+          colorHeaderBlack={ colorHeaderBlack }
+          colorNetworksBlack={ colorNetworksBlack }
+          section= { (params.section) ? params.section : 'home' } 
+          shoppingActive={ GLOBAL_CONFIG.shoppingActive }
+          socialNetworks={ GLOBAL_CONFIG.socialNetworks }
           toggleOpenCloseMenu={ toggleOpenCloseMenu }
-          isScrollToChangeColorHeader={ this.state.isScrollToChangeColorHeader }
-          isScrollToChangeColorNetworks={ this.state.isScrollToChangeColorNetworks }
         />
         { bodyTag }
         <Footer 
-          menuItems={ CONFIG.menuItems }
-          socialNetworks={ CONFIG.socialNetworks }                  
-          section= { this.state.section } 
+          menuItems={ GLOBAL_CONFIG.menuItems }
+          socialNetworks={ GLOBAL_CONFIG.socialNetworks }                  
+          section= { (params.section) ? params.section : 'home' } 
         />
         { cookiesInfoTag }
       </div>
     )
   }
-
-  static propTypes = {
-    params: PropTypes.object,
-    isCookieInfoOpen: PropTypes.bool,
-    toggleOpenCloseMenu: PropTypes.func
-  }
 }
 
+// Ataraxia PropTypes
+Ataraxia.propTypes = {
+  toggleOpenCloseMenu: PropTypes.func,
+  params: PropTypes.object
+}
+
+// Ataraxia DefaultProps
+Ataraxia.defaultProps = {
+  toggleOpenCloseMenu: null,
+  params: null
+}
 
 export default Ataraxia
