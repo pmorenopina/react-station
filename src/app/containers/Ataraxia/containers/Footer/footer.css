@@ -71,8 +71,10 @@
             @media (min-width: 769px){
                 display: none;
             }
+            :not(:first-child) {
+                margin-left: 20px;  
+            }
             .icon_social {
-                margin-left: 20px;
                 width: 30px;
                 height: 30px;
                 fill: white;
@@ -84,7 +86,7 @@
                 &:hover {
                     fill: var(--main-color);
                 }
-                .iconSVG {
+                svg {
                     width: 100%;
                     height: 100%;
                 }
