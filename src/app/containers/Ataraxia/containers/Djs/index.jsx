@@ -26,23 +26,15 @@ const Djs = ({ djs }) => {
       )
     })
 
-    const mainTitle = (index === 0) ? (
-      <div className={ styles.title_container }>
-        <div className={ styles.title } >DJ'S</div>
-        <div className={ styles.title } >RESIDENTES</div>
-      </div>
-    ) : ''
-
     return (        
-      <div 
+      <section 
         key={ index }
         className={ styles.container_dj }
       >
-        { mainTitle }
         <div className={ (Math.abs(index % 2) == 1) ? (`${ styles.container_grid } ${ styles.reverse }`) : (styles.container_grid) }>
           <div className={ styles.title_container }>
-            <div className={ styles.title }>{ item.name.toUpperCase() }</div>
-            <div className={ styles.title }>{ item.surname.toUpperCase() }</div>
+            <h2 className={ styles.title }>{ item.name.toUpperCase() }</h2>
+            <h2 className={ styles.title }>{ item.surname.toUpperCase() }</h2>
             <div className={ styles.social_networks }>
               { networksTag }
             </div>
@@ -50,22 +42,23 @@ const Djs = ({ djs }) => {
           <div className={ styles.photo_container }>
             <img 
               src={ item.photo } 
-              alt={ `ΔTΔRΔXIΔ | ${ item.name } ${ item.surname }` }
+              alt={ `ΔTΔRΔXIΔ - Ataraxia Club | ${ item.name } ${ item.surname }` }
             />
           </div>
         </div>
-        <div 
-          className={ styles.description } 
-          dangerouslySetInnerHTML={ { __html: item.description } } 
+        <p 
+          className={ styles.description }
+          dangerouslySetInnerHTML= { { __html: item.description } }
         />
-      </div>
+      </section>
     )
   })
 
   return (
-    <div className={ styles.container }>
+    <main className={ styles.container }>
+      <h1 className={ styles.titleMain }>RESIDENT DJS</h1>
       { residentTag }
-    </div>
+    </main>
   )
 }
 

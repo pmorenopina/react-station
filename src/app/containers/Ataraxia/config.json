@@ -2,116 +2,165 @@
   "shoppingActive": false,
   "remember": [
     {
-      "description": "14/07/2018",
-      "landscape": "/assets/images/ataraxia/flyers/072018/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/072018/portrait.jpg",
-      "date": "14/07/2018",
+      "name": "Ataraxia Club - October 2018",
+      "description": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. </br>Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ.</br></br>With this line up, Ataraxia promises to continue offering us a quality night.</br></br>For reasons unrelated to Ataraxia, this saturday, October 13, we will not be able to count on Pedro Rodríguez in our ranks.</br>But calm! The night is guaranteed by our resident djs.</br>Sorry for bothering you",
+      "descriptionJSON": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ. With this line up, Ataraxia promises to continue offering us a quality night",
+      "landscape": "/assets/images/ataraxia/flyers/102018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/102018/portrait.jpg",
+      "date": "13/10/2018",
+      "endDate": "14/10/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
   ],
   "events": [
     {
-      "description": "14/07/2018",
+      "name": "Ataraxia Club - October 2018",
+      "description": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ. With this line up, Ataraxia promises to continue offering us a quality night",
+      "landscape": "/assets/images/ataraxia/flyers/102018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/102018/portrait.jpg",
+      "date": "13/10/2018",
+      "endDate": "14/10/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
+      "name": "Ataraxia Club - September 2018",
+      "description": "",
+      "landscape": "/assets/images/ataraxia/flyers/092018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/092018/portrait.jpg",
+      "date": "08/09/2018",
+      "endDate": "09/09/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
+      "name": "Ataraxia Club - July 2018",
+      "description": "",
       "landscape": "/assets/images/ataraxia/flyers/072018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/072018/portrait.jpg",
       "date": "14/07/2018",
+      "endDate": "15/07/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
-      "description": "09/06/2018",
+      "name": "Ataraxia Club - June 2018",
+      "description": "",
       "landscape": "/assets/images/ataraxia/flyers/062018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/062018/portrait.jpg",
       "date": "09/06/2018",
+      "endDate": "10/06/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
-      "description": "21/04/2018",
+      "name": "Ataraxia Club - April 2018",
+      "description": "",
       "landscape": "/assets/images/ataraxia/flyers/042018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/042018/portrait.jpg",
       "date": "21/04/2018",
+      "endDate": "22/04/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
-      "description": "24/03/2018",
+      "name": "Ataraxia Club - March 2018",
+      "description": "",
       "landscape": "/assets/images/ataraxia/flyers/032018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/032018/portrait.jpg",
       "date": "24/03/2018",
+      "endDate": "25/03/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - February 2018",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/022018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/022018/portrait.jpg",
       "date": "10/02/2018",
+      "endDate": "11/02/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - January 2018",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/012018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/012018/portrait.jpg",
       "date": "20/01/2018",
+      "endDate": "21/01/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - December 2017",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/122017/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/122017/portrait.jpg",
       "date": "24/12/2017",
+      "endDate": "25/12/2017",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - November 2017",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/112017/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/112017/portrait.jpg",
       "date": "18/11/2017",
+      "endDate": "19/11/2017",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - October 2017",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/102017/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/102017/portrait.jpg",
       "date": "28/10/2017",
+      "endDate": "29/10/2017",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - September 2017",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/092017/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/092017/portrait.jpg",
       "date": "23/09/2017",
+      "endDate": "24/09/2017",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - July 2017",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/072017/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/072017/portrait.jpg",
       "date": "01/07/2017",
+      "endDate": "02/07/2017",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - May 2017",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/052017/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/052017/portrait.jpg",
       "date": "18/05/2017",
+      "endDate": "19/05/2017",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
     {
+      "name": "Ataraxia Club - April 2018",
       "description": "",
       "landscape": "/assets/images/ataraxia/flyers/042017/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/042017/portrait.jpg",
       "date": "06/04/2017",
+      "endDate": "07/04/2017",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
@@ -120,30 +169,16 @@
     {
       "resident": [
         {
-          "name": "Rico",
-          "surname": "Martinez",
-          "description": "Vinculado a la música electrónica desde 1996.<br/>Ha pasado por diferentes etapas logrando grandes éxitos. Premiado en 2006 con un “Dj Mag” y nominado varias veces por la revista Dj One “Mejor Dj de su categoría Dj Oners”.<br/>            Como Dj ha actuado de residente por algunas de las mejores salas del levante español, hasta llegar a su residencia más emblemática en 2004, “Pachá Torrevieja”. No iba a conformarse sólo por el este peninsular, Fabrik, La Riviera, Non, Itzela, Teatro Dolce Vita son algunas de las salas por las que ha dejado huella Rico Martinez.<br/>Como productor ha lanzado más de 100 referencias en los últimos años, por sellos de medio mundo: “Kubu Music”, “Factomanía”, “Sk Supreme”, “Beedroom Muzik”, “Natura Viva”, “Loko Motion”, “Soulman Music”, “Tech You Very Much”, “Deux Minds Records”, “Dark Side”, “Techaway”, “Datagroove” y “Tres14music” entre otros.<br/>En el último año se ha convertido en uno de los estandartes del Deep/Tech español colocándose dentro de los 100 mejores productores. Sus tracks son sinónimo de top y éxito en pista.",
-          "photo": "/assets/images/ataraxia/djs/rico_martinez.jpg",
-          "networks": [
-            {
-              "facebook": "https://www.facebook.com/ricomartinezdj"
-            },
-            {
-              "beatport": "https://www.beatport.com/artist/rico-martinez/104454"
-            }
-          ]
-        },
-        {
           "name": "Javier",
           "surname": "de la Vega",
           "description": "Nacido en España, con más de 10 años de experiencia a sus espaldas como Dj, este madrileño, empezó a los 14 años de edad a introducirse en el mundo del disc-jockey. Dos años mas tarde ya estaba actuando ante el público en una de las famosas discotecas de Madrid, Pachá.<br/>Siempre ha estado a la vanguardia dentro de la electrónica, desde el hard‐dance y el progressive house en sus comienzos, hasta el tech house y deep house más selecto que distingue sus sets en la actualidad.<br/>Caracterizado por un estilo de groove y bass divertido, mezclado con cortes vocales underground y tropicales. Un estilo propio con mucho carácter con el que transmite al público su propia personalidad.<br/>Ha tenido la oportunidad de traspasar fronteras madrileñas en ciudades como Ávila, Guadalajara, Segovia, Ciudad Real, Toledo o la misma isla de Ibiza.<br/>Pasando por salas de renombre como FABRIK ”Supermartxé”, LA RIVIERA “Reverse”, “Tech In da House” o la sala GROOVE, así como clubs de música electrónica “Mini Club”, “Xoow”, “Angels” “Air Mad Music”, Pirandello, Avalon…<br/>Promotor y Dj Residente de la sesión “ATARAXIA” afincada en “Café La Palma”. También ha formado parte de varios festivales en España: “Amazing Summer Festival”(Ciudad Real), “Concept Festival” (Toledo), “Xtravaganzza” y “Bay Day”. Ha compartido cabina con artistas de la talla de Cristian Varela, Dj Nano, Vitalic, Eric Sneo, Felix Krocher, Uner, Marcos In Dub, Raul Mezcolanza, Oscar Aguilera, Ismael Rivas, Charles Ramirez, Freeman, Danny Leblack, Karretero, Kike Medina o Pedro Rodríguez.<br/>Para alguien de la capacidad de Javier, pinchar en España desde una edad temprana inevitablemente lo conduciría a la producción.",
-          "photo": "/assets/images/ataraxia/djs/javier_de_la_vega.jpg",          
+          "photo": "/assets/images/ataraxia/djs/javier_de_la_vega.jpg",
           "networks": [
             {
               "facebook": "https://www.facebook.com/javierdelavega.1990"
             },
-            { 
-              "beatport": "https://www.beatport.com/artist/javier-de-la-vega/636438" 
+            {
+              "beatport": "https://www.beatport.com/artist/javier-de-la-vega/636438"
             }
           ]
         },
@@ -151,7 +186,7 @@
           "name": "Julio",
           "surname": "MartineZ",
           "description": "Nacido en Madrid. A sus 18 años empezó a introducirse en el mundo de la música electrónica. Todo empezó en la sesión “Danzoo” cuando descubrió que esa era su pasión.<br/>Se introdujo como Dj pinchando en las raves más multitudinarias de Madrid. Sus sets se caracterizan por un groove oscuro. Dinamismo y soltura son algunos adjetivos que definen a Julio en cabina. Los temas “retro” versionados al tech actual combinado con un bass potente hacen del artista una ecuación que fluye en pista a la perfección.<br/>Años más tarde comenzó a introducirse en el mundo de la producción musical dónde ha estado y sigue trabajando en la sombra para pulir el sonido que quiere mostrar al mundo. Poco tiempo después lanzó sus primeros tracks por el sello de “Sells Muzik”.<br/>Julio Martinez sigue trabajando fuerte en el sector de la producción para plasmar que su proyecto va adquiriendo más profesionalidad.<br/>Dj residente de la sesión ATARAXIA en “Café La Palma”, la sala “Groove”, o el festival de Ciudad Real “Bay Day” son algunos de los sitios donde Julio ha ido dejando su huella.",
-          "photo": "/assets/images/ataraxia/djs/julio_martinez.jpg",          
+          "photo": "/assets/images/ataraxia/djs/julio_martinez.jpg",
           "networks": [
             {
               "facebook": "https://www.facebook.com/julio.martinezdelgado.5"
@@ -162,9 +197,7 @@
           ]
         }
       ],
-      "guests": [
-
-      ]
+      "guests": []
     }
   ],
   "socialNetworks": [
@@ -191,23 +224,18 @@
   ],
   "menuItems": [
     {
-      "title": "HOME",
+      "title": "Home",
       "url": "/",
       "icon": "/assets/icons/home-button.svg"
     },
     {
-      "title": "EVENTS",
+      "title": "Events",
       "url": "/events/",
       "icon": "/assets/icons/rate-star-button.svg"
     },
     {
-      "title": "DJ'S",
+      "title": "Dj's",
       "url": "/djs/",
-      "icon": "/assets/icons/play-arrow.svg"
-    },
-    {
-      "title": "CONTACT",
-      "url": "/contact/",
       "icon": "/assets/icons/play-arrow.svg"
     }
   ],

@@ -17,14 +17,12 @@ import Working from 'ataraxiaContainers/Working'
 import CookiesInfo from 'components/CookiesInfo'
 
 // Helpers
-import { getScrollColorHeaderBlack, getScrollColorNetworksBlack } from 'ataraxiaHelpers/scroll'
+import { getScrollColorHeaderBlack } from 'ataraxiaHelpers/scroll'
 import getCookiesAlertAccepted from 'ataraxiaHelpers/cookies'
+import insertFbAnalytics from 'ataraxiaHelpers/analytics/fb'
 
 // Config
 import GLOBAL_CONFIG from './config.json'
-
-// Styles
-import styles from './ataraxia.css'
 
 // Ataraxia Component Definition
 export class Ataraxia extends Component {
@@ -32,7 +30,6 @@ export class Ataraxia extends Component {
     super(props)
     this.state = {
       colorHeaderBlack: false,
-      colorNetworksBlack: false,
       isCookiesAccepted: false
     }
   }
@@ -42,7 +39,7 @@ export class Ataraxia extends Component {
     this.setState({
       isCookiesAccepted: true
     })
-    cookies.set('_uuid', Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1), {expires: 365})
+    cookies.set('_uuid', Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1), { expires: 365 })
   }
 
   // Cookies Alert Canceled
@@ -50,7 +47,7 @@ export class Ataraxia extends Component {
     this.setState({
       isCookiesAccepted: false
     })
-    cookies.set('_uuid', 'canceled', {expires: 1})
+    cookies.set('_uuid', 'canceled', { expires: 1 })
   }
 
   componentDidMount() {
@@ -74,22 +71,29 @@ export class Ataraxia extends Component {
   controlSrollColor = () => {
     this.setState({
       colorHeaderBlack: getScrollColorHeaderBlack(),
-      colorNetworksBlack: getScrollColorNetworksBlack()
     })
   }
-  
-  render () {
-    const { colorHeaderBlack, colorNetworksBlack, isCookiesAccepted } = this.state
+
+
+
+  render() {
+    const { colorHeaderBlack, isCookiesAccepted } = this.state
     const { toggleOpenCloseMenu, params } = this.props
     let bodyTag = null
     let cookiesInfoTag = null
 
+    // Inserts scripts analytivs
+    const analyticsTag = (isCookiesAccepted) ? (
+      insertFbAnalytics()
+    ) : null
+
     // Cookies Alert GDPR
     cookiesInfoTag = (
-      <CookiesInfo 
-        isCookieAccepted={ isCookiesAccepted } 
-        cookiesAccepted={ this.handleCookiesAccepted }
-        cookiesCanceled={ this.handleCookiesCanceled }
+      <CookiesInfo
+        key={3}
+        isCookieAccepted={isCookiesAccepted}
+        cookiesAccepted={this.handleCookiesAccepted}
+        cookiesCanceled={this.handleCookiesCanceled}
       />
     )
 
@@ -97,47 +101,47 @@ export class Ataraxia extends Component {
     if (params && params.section) {
       switch (params.section) {
         case 'contact':
-          bodyTag = <Contact />
+          bodyTag = <Contact key={1} />
           break
         case 'cookies':
           cookiesInfoTag = null
-          bodyTag = <Cookies />
+          bodyTag = <Cookies key={1} />
           break
         case 'djs':
-          bodyTag = <Djs djs={ GLOBAL_CONFIG.djs } />
+          bodyTag = <Djs key={1} djs={GLOBAL_CONFIG.djs} />
           break
         case 'events':
-          bodyTag = <Events />
+          bodyTag = <Events key={1} />
           break
         /*case 'media':
           break*/
         default:
-          bodyTag = <Working />
+          bodyTag = <Working key={1} />
           break
       }
     } else {
-      bodyTag = <Main cookiesAccepted={ isCookiesAccepted }/>
+      bodyTag = <Main cookiesAccepted={isCookiesAccepted} />
     }
 
-    return (
-      <div className={ styles.ataraxia_container }>
-        <Header 
-          colorHeaderBlack={ colorHeaderBlack }
-          colorNetworksBlack={ colorNetworksBlack }
-          section= { (params.section) ? params.section : 'home' } 
-          shoppingActive={ GLOBAL_CONFIG.shoppingActive }
-          socialNetworks={ GLOBAL_CONFIG.socialNetworks }
-          toggleOpenCloseMenu={ toggleOpenCloseMenu }
-        />
-        { bodyTag }
-        <Footer 
-          menuItems={ GLOBAL_CONFIG.menuItems }
-          socialNetworks={ GLOBAL_CONFIG.socialNetworks }                  
-          section= { (params.section) ? params.section : 'home' } 
-        />
-        { cookiesInfoTag }
-      </div>
-    )
+    return ([
+      <Header
+        key={0}
+        colorHeaderBlack={colorHeaderBlack}
+        section={(params.section) ? params.section : 'home'}
+        shoppingActive={GLOBAL_CONFIG.shoppingActive}
+        socialNetworks={GLOBAL_CONFIG.socialNetworks}
+        toggleOpenCloseMenu={toggleOpenCloseMenu}
+      />,
+      bodyTag,
+      <Footer
+        key={2}
+        menuItems={GLOBAL_CONFIG.menuItems}
+        socialNetworks={GLOBAL_CONFIG.socialNetworks}
+        section={(params.section) ? params.section : 'home'}
+      />,
+      cookiesInfoTag,
+      analyticsTag
+    ])
   }
 }
 

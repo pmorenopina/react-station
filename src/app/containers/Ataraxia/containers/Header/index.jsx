@@ -14,10 +14,10 @@ import styles from './header.css'
 const cx = classNames.bind(styles)
 
 // Header Component Definition
-const Header = ({ colorHeaderBlack, colorNetworksBlack, section, shoppingActive, socialNetworks, toggleOpenCloseMenu }) => {
+const Header = ({ colorHeaderBlack, section, shoppingActive, socialNetworks, toggleOpenCloseMenu }) => {
   const styleIconClass = cx({
     icon_social: true,
-    black : ((section !== 'home') || colorNetworksBlack)
+    black : false
   })
 
   const styleHeaderClass = cx({
@@ -27,7 +27,7 @@ const Header = ({ colorHeaderBlack, colorNetworksBlack, section, shoppingActive,
 
   const styleSocialClass = cx({
     container_social: true,
-    black : ((section !== 'home') || colorNetworksBlack)
+    black : false
   })
 
   const networksTag = (socialNetworks && socialNetworks.length) ? (
@@ -38,43 +38,45 @@ const Header = ({ colorHeaderBlack, colorNetworksBlack, section, shoppingActive,
   ) : null
   const shoppingIconTag = (shoppingActive) ? (<ShoppingCart />) : null
 
-  return ([
-    <nav
-      key={ 0 }
-      className={ styleHeaderClass }
-    >
-      <div 
-        className={ styles.bar_left }
-        onClick={ toggleOpenCloseMenu }           
+  return (
+    <header className={ styles.container }>
+      <nav
+        key={ 0 }
+        className={ styleHeaderClass }
       >
-        <IconSVG
-          type={ 'controls' } 
-          icon={ 'open' }
-          className={ styles.icon_menu }    
-        />
-        <span>MENU</span>
-      </div>
-      <a 
-        className={ styles.container_logo } 
-        href={ '/' }
+        <div 
+          className={ styles.bar_left }
+          onClick={ toggleOpenCloseMenu }           
+        >
+          <IconSVG
+            type={ 'controls' } 
+            icon={ 'open' }
+            className={ styles.icon_menu }    
+          />
+          <span>MENU</span>
+        </div>
+        <a 
+          className={ styles.container_logo } 
+          href={ '/' }
+        >
+          <img 
+            className={ styles.logo } 
+            src={ '/assets/icons/ataraxia/logo.svg' } 
+            alt={ 'ΔTΔRΔXIΔ - Ataraxia Club | mainLogo' }              
+          />
+        </a> 
+        { shoppingIconTag }
+      </nav>
+      <nav 
+        key={ 1 }
+        className={ styles.container_header_vertical } 
       >
-        <img 
-          className={ styles.logo } 
-          src={ '/assets/icons/ataraxia/logo.svg' } 
-          alt={ 'ΔTΔRΔXIΔ | mainLogo' }              
-        />
-      </a> 
-      { shoppingIconTag }
-    </nav>,
-    <nav 
-      key={ 1 }
-      className={ styles.container_header_vertical } 
-    >
-      <div className={ styleSocialClass }>
-        { networksTag }
-      </div>
-    </nav>
-  ])
+        <div className={ styleSocialClass }>
+          { networksTag }
+        </div>
+      </nav>
+    </header>
+  )
 }
 
 // Header PropTypes

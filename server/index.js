@@ -1,5 +1,3 @@
-require ('newrelic')
-
 require('babel-core/register')
 const base = require('../src/base').default
 

@@ -15,13 +15,10 @@ export class Events extends Component {
   render() {
 
     const nextEventGridTag = (CONFIG.events && CONFIG.events[0].description) ? (
-      <div className={ styles.container_next_events }>
-        <div className={ styles.title_container }>
-          <div className={ styles.title } >PRÓXIMOS</div>
-          <div className={ styles.title } >EVENTOS</div>
-        </div>
+      <section className={ styles.container_next_events }>
+        <h1 className={ styles.title }>NEXT EVENT</h1>
         <GridComponent key={ 0 } elements={ [CONFIG.events[0]] } oneElement= { true } />
-      </div>
+      </section>
     ) : ''
 
     let lastEventsGridTag = ''
@@ -46,21 +43,18 @@ export class Events extends Component {
         }
       })
       lastEventsGridTag = (
-        <div className={ styles.container_last_events }>
-          <div className={ styles.title_container }>
-            <div className={ styles.title } >EVENTOS</div>
-            <div className={ styles.title } >PASADOS</div>
-          </div>
+        <section className={ styles.container_last_events }>
+          <h1 className={ styles.title }>LAST EVENTS</h1>
           { arrayGridItemsTag }
-        </div>
+        </section>
       )
     }
 
     return (
-      <div className={ styles.container }>
+      <main className={ styles.container }>
         { nextEventGridTag }
         { lastEventsGridTag }
-      </div>
+      </main>
     )
   }
 }

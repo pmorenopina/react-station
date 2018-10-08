@@ -1,12 +1,18 @@
 @import '../../../../styles/base.css';
 
+.container {
+	position: fixed;
+	top: 0;
+	z-index: 50;
+}
+
 .container_header {
 	position: fixed;
 	background-color: rgba(0,0,0,0.2);
 	height: 56px;
 	width: 100%;
-	z-index: 50;
 	display: flex;
+	z-index: 50;
 	&.black {
 			background-color: black;
 			border-bottom: solid .1px var(--main-color);

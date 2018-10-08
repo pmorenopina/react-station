@@ -19,72 +19,67 @@ const BurgerMenu = ({ isMenuOpen, handlerBugerMenuState, menuItems, socialNetwor
 
   const menuItemTag = menuItems.map((item, index) => {
     return (
-      <a 
-        key={ index }
-        href={ item.url }
-        className={ (section === item.title.toLowerCase().replace(/'/g, '')) ? styles.active : '' }
+      <a
+        key={index}
+        href={item.url}
+        className={(section === item.title.toLowerCase().replace(/'/g, '')) ? styles.active : ''}
       >
-        <IconSVG
-          type={ 'menu' } 
-          icon={ item.title.toLowerCase().replace(/'/g, '') }
-          classNames={ styles.iconSVG }              
-        />
-        <span>{ item.title }</span>
+        <h2>{item.title}</h2>
       </a>
     )
   })
 
   const networksTag = socialNetworks.map((item, index) => {
     return (
-      <a 
-        key={ index }
-        className={ (index === 0) ? (`${ styles.icon_social } ${ styles.first }`) : (styles.icon_social) } 
-        href={ item.url } 
-        target={ '_blank' }>
+      <a
+        key={index}
+        className={(index === 0) ? (`${styles.icon_social} ${styles.first}`) : (styles.icon_social)}
+        href={item.url}
+        target={'_blank'}>
         <IconSVG
-          type={ 'networks' } 
-          icon={ item.network }
-          classNames={ styles.iconSVG }              
+          type={'networks'}
+          icon={item.network}
+          classNames={styles.iconSVG}
         />
       </a>
     )
   })
 
   return (
-    <Menu 
-      styles={ stylesMenu }
-      isOpen={ isMenuOpen }
-      customBurgerIcon={ false }
-      customCrossIcon={ 
+    <Menu
+      styles={stylesMenu}
+      isOpen={isMenuOpen}
+      customBurgerIcon={false}
+      customCrossIcon={
         <IconSVG
-          type={ 'controls' } 
-          icon={ 'close' }
-          classNames={ styles.iconCloseSVG }              
+          type={'controls'}
+          icon={'close'}
+          classNames={styles.iconCloseSVG}
         />
       }
-      pageWrapId={ "page-wrap" } 
-      outerContainerId={ "outer-container" } 
-      menuClassName={ styles.bm_menu }
-      onStateChange={ handlerBugerMenuState }
+      pageWrapId={"page-wrap"}
+      outerContainerId={"outer-container"}
+      menuClassName={styles.bm_menu}
+      onStateChange={handlerBugerMenuState}
     >
-      <div className={ styles.container_icon }>
-        <img 
-          alt={ 'ΔTΔRΔXIΔ | mainLogo' }              
-          src={ '/assets/images/ataraxia/ataraxia.png' } 
+      <div className={styles.container_icon}>
+        <img
+          alt={'ΔTΔRΔXIΔ - Ataraxia Club | mainLogo'}
+          src={'/assets/images/ataraxia/ataraxia.png'}
         />
       </div>
-      <div className={ styles.container_logo }>
+      <div className={styles.container_logo}>
         <IconSVG
-          type={ 'ataraxia' } 
-          icon={ 'logo' }
-          classNames={ styles.logo }              
+          type={'ataraxia'}
+          icon={'logo'}
+          classNames={styles.logo}
         />
       </div>
-      <div className={ styles.container_menu_items }>
-        { menuItemTag }
-      </div> 
-      <div className={ styles.container_networks }>
-        { networksTag }
+      <div className={styles.container_menu_items}>
+        {menuItemTag}
+      </div>
+      <div className={styles.container_networks}>
+        {networksTag}
       </div>
     </Menu>
   )

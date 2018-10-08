@@ -6,5 +6,5 @@ export default function renderContainer(renderProps) {
 
   return renderToString(
     <RouterContext { ...renderProps } />
-  );
+  )
 }
