@@ -3,7 +3,8 @@ import CONFIG from 'app/containers/Ataraxia/config.json'
 export default function getJsonLd(section) {
   let json = null
   switch (section) {
-    case '/djs', '/djs/':
+    case '/djs':
+    case '/djs/':
       json = `
         <script type='application/ld+json'> 
           {
@@ -37,7 +38,8 @@ export default function getJsonLd(section) {
       </script>
       `
       break
-    case '/events', '/events/':
+    case '/events':
+    case '/events/':
       let arrayEvents = CONFIG.events.map((item) => {
         return `
           <script type='application/ld+json'> 

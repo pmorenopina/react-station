@@ -2,18 +2,28 @@
   "shoppingActive": false,
   "remember": [
     {
-      "name": "Ataraxia Club - October 2018",
-      "description": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. </br>Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ.</br></br>With this line up, Ataraxia promises to continue offering us a quality night.</br></br>For reasons unrelated to Ataraxia, this saturday, October 13, we will not be able to count on Pedro Rodríguez in our ranks.</br>But calm! The night is guaranteed by our resident djs.</br>Sorry for bothering you",
-      "descriptionJSON": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ. With this line up, Ataraxia promises to continue offering us a quality night",
-      "landscape": "/assets/images/ataraxia/flyers/102018/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/102018/portrait.jpg",
-      "date": "13/10/2018",
-      "endDate": "14/10/2018",
+      "name": "Ataraxia Club - November 2018",
+      "description": "Non stop!!</br>In the next week we will start again to offer you the penultimate party of this year.</br></br>This November we will be joined by Abel Suárez and Omar Ortíz in a b2b that promises to give you elegance and freshness in the floor.</br></br>They will be accompanied by our resident djs Javier de la Vega & Julio MartineZ with his groove and bass rhythm.",
+      "descriptionJSON": "Non stop! In the next week we will start again to offer you the penultimate party of this year. This November we will be joined by Abel Suárez and Omar Ortíz in a b2b that promises to give you elegance and freshness in the floor. They will be accompanied by our resident djs Javier de la Vega & Julio MartineZ with his groove and bass rhythm.",
+      "landscape": "/assets/images/ataraxia/flyers/112018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/112018/portrait.jpg",
+      "date": "03/11/2018",
+      "endDate": "04/11/2018",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
   ],
   "events": [
+    {
+      "name": "Ataraxia Club - November 2018",
+      "description": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ. With this line up, Ataraxia promises to continue offering us a quality night",
+      "landscape": "/assets/images/ataraxia/flyers/112018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/112018/portrait.jpg",
+      "date": "03/11/2018",
+      "endDate": "04/11/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
     {
       "name": "Ataraxia Club - October 2018",
       "description": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ. With this line up, Ataraxia promises to continue offering us a quality night",

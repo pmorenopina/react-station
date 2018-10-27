@@ -67,7 +67,7 @@ export const module = {
 }
 
 export const plugins = [
-  new webpack.DefinePlugin({'process.env': { NODE_ENV: JSON.stringify('production')}}),
+  new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } }),
   new webpack.DllReferencePlugin({
     context: path.join(__dirname),
     manifest: require('../dist/dlls/vendor-manifest.json')
@@ -79,6 +79,6 @@ export const plugins = [
   }),
   new copyWebpackPlugin([{ from: 'src/app/assets', to: '../assets' }]),
   new webpack.NoEmitOnErrorsPlugin(),
-  new webpack.optimize.UglifyJsPlugin({compressor: { warnings: false }, output: { comments: false }}),
+  new webpack.optimize.UglifyJsPlugin({ compressor: { warnings: false }, output: { comments: false } }),
   new ExtractTextPlugin({ filename: 'styles.[contenthash].css', allChunks: true })
 ].concat(common.plugins)
