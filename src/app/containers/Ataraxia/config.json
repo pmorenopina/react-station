@@ -2,11 +2,11 @@
   "shoppingActive": false,
   "remember": [
     {
-      "name": "Ataraxia Club - November 2018",
-      "description": "Non stop!!</br>In the next week we will start again to offer you the penultimate party of this year.</br></br>This November we will be joined by Abel Suárez and Omar Ortíz in a b2b that promises to give you elegance and freshness in the floor.</br></br>They will be accompanied by our resident djs Javier de la Vega & Julio MartineZ with his groove and bass rhythm.",
-      "descriptionJSON": "Non stop! In the next week we will start again to offer you the penultimate party of this year. This November we will be joined by Abel Suárez and Omar Ortíz in a b2b that promises to give you elegance and freshness in the floor. They will be accompanied by our resident djs Javier de la Vega & Julio MartineZ with his groove and bass rhythm.",
-      "landscape": "/assets/images/ataraxia/flyers/112018/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/112018/portrait.jpg",
+      "name": "Ataraxia Club - Diciembre 2018 - December 2018 | @ataraxia_club",
+      "description": "Last party of the year!</br></br>We will close with two guests who are bursting it in the Canary Islands.</br>YRM: 1994 Music and signed by Low Groove Records, where he has entered the top 100 of Beatport with his latest EP, 'La Pasadena'. This Dj and producer has been promoted on track by djs of the likes of Latmun and Dennis Cruz. It is a sure guarantee that he will make us dance with his class and staging accompanied by Bwotah, a promising young dj from the island, who aims high after her passing parties with Hangover.</br></br>With them will be our musical pillars, Javier de la Vega and Julio Martínez.</br>A night that promises to dismiss the year at the height it deserves.",
+      "descriptionJSON": "Last party of the year!We will close with two guests who are bursting it in the Canary Islands.YRM: 1994 Music and signed by Low Groove Records, where he has entered the top 100 of Beatport with his latest EP, 'La Pasadena'. This Dj and producer has been promoted on track by djs of the likes of Latmun and Dennis Cruz. It is a sure guarantee that he will make us dance with his class and staging accompanied by Bwotah, a promising young dj from the island, who aims high after her passing parties with Hangover.With them will be our musical pillars, Javier de la Vega and Julio Martínez. A night that promises to dismiss the year at the height it deserves. ¡Última fiesta del año! Cerraremos con dos invitados que están reventandolo en las Islas Canarias. YRM: 1994 Music y fichado por Low Groove Records, donde ha entrado en el top100 de Beatport con su último EP, 'La Pasadena'. Este Dj y productor ha sido promocionado en pista por djs de la talla de Latmun y Dennis cruz. Es garantía segura de que nos hará bailar con su clase y puesta en escena acompañado de Bwotah, una joven promesa de la isla, que apunta alto tras su paso haciendo fiestas con Hangover. Con ellos estarán nuestros pilares musicales, Javier de la Vega y Julio Martínez. Una noche que promete despedir el año a la altura que se merece.",
+      "landscape": "/assets/images/ataraxia/flyers/122018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/122018/portrait.jpg",
       "date": "03/11/2018",
       "endDate": "04/11/2018",
       "location": "Café La Palma",
@@ -15,7 +15,17 @@
   ],
   "events": [
     {
-      "name": "Ataraxia Club - November 2018",
+      "name": "Ataraxia Club - Diciembre 2018 - December 2018 | @ataraxia_club",
+      "description": "Last party of the year!We will close with two guests who are bursting it in the Canary Islands.YRM: 1994 Music and signed by Low Groove Records, where he has entered the top 100 of Beatport with his latest EP, 'La Pasadena'. This Dj and producer has been promoted on track by djs of the likes of Latmun and Dennis Cruz. It is a sure guarantee that he will make us dance with his class and staging accompanied by Bwotah, a promising young dj from the island, who aims high after her passing parties with Hangover.With them will be our musical pillars, Javier de la Vega and Julio Martínez. A night that promises to dismiss the year at the height it deserves. ¡Última fiesta del año! Cerraremos con dos invitados que están reventandolo en las Islas Canarias. YRM: 1994 Music y fichado por Low Groove Records, donde ha entrado en el top100 de Beatport con su último EP, 'La Pasadena'. Este Dj y productor ha sido promocionado en pista por djs de la talla de Latmun y Dennis cruz. Es garantía segura de que nos hará bailar con su clase y puesta en escena acompañado de Bwotah, una joven promesa de la isla, que apunta alto tras su paso haciendo fiestas con Hangover. Con ellos estarán nuestros pilares musicales, Javier de la Vega y Julio Martínez. Una noche que promete despedir el año a la altura que se merece.",
+      "landscape": "/assets/images/ataraxia/flyers/122018/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/122018/portrait.jpg",
+      "date": "07/12/2018",
+      "endDate": "08/12/2018",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
+      "name": "Ataraxia Club - Noviembre 2018 - November 2018 | @ataraxia_club",
       "description": "Non stop! In the next week we will start again to offer you the penultimate party of this year. This November we will be joined by Abel Suárez and Omar Ortíz in a b2b that promises to give you elegance and freshness in the floor. They will be accompanied by our resident djs Javier de la Vega & Julio MartineZ with his groove and bass rhythm.",
       "landscape": "/assets/images/ataraxia/flyers/112018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/112018/portrait.jpg",
@@ -25,7 +35,7 @@
       "city": "Madrid, España"
     },
     {
-      "name": "Ataraxia Club - October 2018",
+      "name": "Ataraxia Club - Octubre 2018 - October 2018",
       "description": "For this occasion, Ataraxia will have with Pedro Rodríguez, a well-known DJ in the electronic music scene in Madrid. Promoter and resident of the session The Mini-club in the Bash room. He will be accompanied by our residents Javier de la Vega and Julio MartineZ. With this line up, Ataraxia promises to continue offering us a quality night",
       "landscape": "/assets/images/ataraxia/flyers/102018/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/102018/portrait.jpg",
