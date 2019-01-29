@@ -179,7 +179,7 @@ class Main extends Component {
             />
           </div>
           <div className={styles.description}>
-            <h2 className={styles.title}>ATARAXIA JANUARY 2019</h2>
+            <h2 className={styles.title}>ATARAXIA FEBRUARY 2019</h2>
             <p dangerouslySetInnerHTML={{ __html: CONFIG.remember[0].description }} />
           </div>
         </div>

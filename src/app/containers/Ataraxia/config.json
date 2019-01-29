@@ -2,21 +2,31 @@
   "shoppingActive": false,
   "remember": [
     {
-      "name": "Ataraxia Club - Enero 2019 - January 2019 | @ataraxia_club",
-      "description": "See you in 2019!!</br></br>Saturday January 12 with Javier De La Vega and Julio Martinez Delgado.</br>In the warm-up will come with us DjAmpu.</br></br>You are invited to entry to Ataraxia's world",
-      "descriptionJSON": "See you in 2019!! Saturday January 12 with Javier De La Vega and Julio Martinez Delgado. In the warm-up will come with us DjAmpu. You are invited to entry to Ataraxia's world",
-      "landscape": "/assets/images/ataraxia/flyers/012019/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/012019/portrait.jpg",
-      "date": "11/01/2019",
-      "endDate": "12/01/2019",
+      "name": "Ataraxia Club - Febrero 2019 - February 2019 | @ataraxia_club",
+      "description": "We return with the charged batteries. </br></br>As a guest, come back with us, Seventh Dimension. </br>After his passage in June, he left very good feelings, that's why he is one of the first to repeat. </br></br>Javier De La Vega & Julio MartineZ they will follow the musical line that defines them, 'Groove & Bass'.",
+      "descriptionJSON": "We return with the charged batteries. As a guest, come back with us, Seventh Dimension. After his passage in June, he left very good feelings, that's why he is one of the first to repeat. Javier De La Vega & Julio MartineZ they will follow the musical line that defines them, 'Groove & Bass'.",
+      "landscape": "/assets/images/ataraxia/flyers/022019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/022019/portrait.jpg",
+      "date": "15/02/2019",
+      "endDate": "16/02/2019",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
   ],
   "events": [
     {
+      "name": "Ataraxia Club - Febrero 2019 - February 2019 | @ataraxia_club",
+      "description": "We return with the charged batteries. As a guest, come back with us, Seventh Dimension. After his passage in June, he left very good feelings, that's why he is one of the first to repeat. Javier De La Vega & Julio MartineZ they will follow the musical line that defines them, 'Groove & Bass'.",
+      "landscape": "/assets/images/ataraxia/flyers/022019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/022019/portrait.jpg",
+      "date": "15/02/2019",
+      "endDate": "16/02/2019",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
       "name": "Ataraxia Club - Enero 2019 - January 2019 | @ataraxia_club",
-      "description": "Last party of the year!We will close with two guests who are bursting it in the Canary Islands.YRM: 1994 Music and signed by Low Groove Records, where he has entered the top 100 of Beatport with his latest EP, 'La Pasadena'. This Dj and producer has been promoted on track by djs of the likes of Latmun and Dennis Cruz. It is a sure guarantee that he will make us dance with his class and staging accompanied by Bwotah, a promising young dj from the island, who aims high after her passing parties with Hangover.With them will be our musical pillars, Javier de la Vega and Julio Martínez. A night that promises to dismiss the year at the height it deserves. ¡Última fiesta del año! Cerraremos con dos invitados que están reventandolo en las Islas Canarias. YRM: 1994 Music y fichado por Low Groove Records, donde ha entrado en el top100 de Beatport con su último EP, 'La Pasadena'. Este Dj y productor ha sido promocionado en pista por djs de la talla de Latmun y Dennis cruz. Es garantía segura de que nos hará bailar con su clase y puesta en escena acompañado de Bwotah, una joven promesa de la isla, que apunta alto tras su paso haciendo fiestas con Hangover. Con ellos estarán nuestros pilares musicales, Javier de la Vega y Julio Martínez. Una noche que promete despedir el año a la altura que se merece.",
+      "description": "See you in 2019!! Saturday January 12 with Javier De La Vega and Julio Martinez Delgado. In the warm-up will come with us DjAmpu. You are invited to entry to Ataraxia's world",
       "landscape": "/assets/images/ataraxia/flyers/012019/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/012019/portrait.jpg",
       "date": "11/01/2019",
