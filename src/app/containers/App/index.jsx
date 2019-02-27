@@ -15,7 +15,7 @@ class App extends Component {
 
   static propTypes = {
     children: PropTypes.object.isRequired
-  }
+  };
 
   constructor(props) {
     super(props)
@@ -28,19 +28,19 @@ class App extends Component {
     this.setState({
       isMenuOpen: isMenuOpen
     })
-  }
+  };
 
-  handlerBugerMenuState = (state) => {
+  handlerBurgerMenuState = (state) => {
     if (state.isOpen) {
-      document.getElementsByTagName('html')[0].style.overflow = 'hidden'
+      document.getElementsByTagName('html')[0].style.overflow = 'hidden';
       document.getElementsByTagName('body')[0].style.overflow = 'hidden'         
     } else {
-      document.getElementsByTagName('html')[0].style.overflow = ''      
+      document.getElementsByTagName('html')[0].style.overflow = '';
       document.getElementsByTagName('body')[0].style.overflow = ''         
     }
 
     this.toggleOpenCloseMenu(state.isOpen)
-  }
+  };
 
   render() {
     const children = this.props.children
@@ -52,7 +52,7 @@ class App extends Component {
       <div id={ 'outer-container' } className={ styles.outer_container }>
         <BurgerMenu 
           isMenuOpen={ this.state.isMenuOpen } 
-          handlerBugerMenuState={ this.handlerBugerMenuState } 
+          handlerBugerMenuState={ this.handlerBurgerMenuState }
           menuItems={ CONFIG.menuItems }
           socialNetworks={ CONFIG.socialNetworks }
           section={ (this.props.params.section) ? this.props.params.section : 'home' }

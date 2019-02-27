@@ -2,18 +2,28 @@
   "shoppingActive": false,
   "remember": [
     {
-      "name": "Ataraxia Club - Febrero 2019 - February 2019 | @ataraxia_club",
-      "description": "We return with the charged batteries. </br></br>As a guest, come back with us, Seventh Dimension. </br>After his passage in June, he left very good feelings, that's why he is one of the first to repeat. </br></br>Javier De La Vega & Julio MartineZ they will follow the musical line that defines them, 'Groove & Bass'.",
-      "descriptionJSON": "We return with the charged batteries. As a guest, come back with us, Seventh Dimension. After his passage in June, he left very good feelings, that's why he is one of the first to repeat. Javier De La Vega & Julio MartineZ they will follow the musical line that defines them, 'Groove & Bass'.",
-      "landscape": "/assets/images/ataraxia/flyers/022019/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/022019/portrait.jpg",
-      "date": "16/02/2019",
-      "endDate": "17/02/2019",
+      "name": "Ataraxia Club - Marzo 2019 - March 2019 | @ataraxia_club",
+      "description": "We continue!!</br></br>In the month of March will come a special guest, Danny Leblack.</br>Creator of parties like 'Now Underground Club'. Young Dj and producer of the Madrid music scene, already more than twenty years dedicated to the world of music. </br></br>These night, Javier de la Vega and Julio Martinez will melt into a b2b with the essence of Ataraxia, groove & bass.",
+      "descriptionJSON": "We continue!! In the month of March will come a special guest, Danny Leblack. Creator of parties like 'Now Underground Club'. Young Dj and producer of the Madrid music scene, already more than twenty years dedicated to the world of music. These night, Javier de la Vega and Julio Martinez will melt into a b2b with the essence of Ataraxia, groove & bass.",
+      "landscape": "/assets/images/ataraxia/flyers/032019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/032019/portrait.jpg",
+      "date": "02/03/2019",
+      "endDate": "03/03/2019",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
   ],
   "events": [
+    {
+      "name": "Ataraxia Club - Marzo 2019 - March 2019 | @ataraxia_club",
+      "description": "We continue!! In the month of March will come a special guest, Danny Leblack. Creator of parties like 'Now Underground Club'. Young Dj and producer of the Madrid music scene, already more than twenty years dedicated to the world of music. These night, Javier de la Vega and Julio Martinez will melt into a b2b with the essence of Ataraxia, groove & bass.",
+      "landscape": "/assets/images/ataraxia/flyers/032019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/032019/portrait.jpg",
+      "date": "02/03/2019",
+      "endDate": "03/03/2019",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
     {
       "name": "Ataraxia Club - Febrero 2019 - February 2019 | @ataraxia_club",
       "description": "We return with the charged batteries. As a guest, come back with us, Seventh Dimension. After his passage in June, he left very good feelings, that's why he is one of the first to repeat. Javier De La Vega & Julio MartineZ they will follow the musical line that defines them, 'Groove & Bass'.",
