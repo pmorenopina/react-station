@@ -3,17 +3,27 @@
   "remember": [
     {
       "name": "Ataraxia Club - Marzo 2019 - March 2019 | @ataraxia_club",
-      "description": "We continue!!</br></br>In the month of March will come a special guest, Danny Leblack.</br>Creator of parties like 'Now Underground Club'. Young Dj and producer of the Madrid music scene, already more than twenty years dedicated to the world of music. </br></br>These night, Javier de la Vega and Julio Martinez will melt into a b2b with the essence of Ataraxia, groove & bass.",
-      "descriptionJSON": "We continue!! In the month of March will come a special guest, Danny Leblack. Creator of parties like 'Now Underground Club'. Young Dj and producer of the Madrid music scene, already more than twenty years dedicated to the world of music. These night, Javier de la Vega and Julio Martinez will melt into a b2b with the essence of Ataraxia, groove & bass.",
-      "landscape": "/assets/images/ataraxia/flyers/032019/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/032019/portrait.jpg",
-      "date": "02/03/2019",
-      "endDate": "03/03/2019",
+      "description": "Ataraxia Club is celebrating, 2 years full of enthusiasm, work and sacrifice.<br/>This brand of electronic music works to expand its borders with a concept of alternative party, leaving the conventionality in the posters, infusing an atypical atmosphere where good energy is breathed on the dancefloor and a musical line taken care of by its resident dj's, Javier de la Vega & Julio Martinez.<br/><br/>Saturday, April 6, comes loaded with exciting surprises that will make a different and special night at CAFE LA PALMA 🎁.<br/>This day we will have Underground Calling as guests for the occasion. An explosive duo that is characterized by raising the energy of the track to its maximum exponent. His sets have become a waste of judgment and emotion. Currently, they are focused on the publication of two of their latest tracks; 'Pussy' that will soon be released on the label 'NoreligionLab' and 'Fifa' on 'Distorsion'.<br/><br/>A quality line-up to celebrate that this project aims high, where good music is assured.",
+      "descriptionJSON": "Ataraxia Club is celebrating, 2 years full of enthusiasm, work and sacrifice. This brand of electronic music works to expand its borders with a concept of alternative party, leaving the conventionality in the posters, infusing an atypical atmosphere where good energy is breathed on the dancefloor and a musical line taken care of by its resident dj's, Javier de la Vega & Julio Martinez. Saturday, April 6, comes loaded with exciting surprises that will make a different and special night at CAFE LA PALMA 🎁. This day we will have Underground Calling as guests for the occasion. An explosive duo that is characterized by raising the energy of the track to its maximum exponent. His sets have become a waste of judgment and emotion. Currently, they are focused on the publication of two of their latest tracks; 'Pussy' that will soon be released on the label 'NoreligionLab' and 'Fifa' on 'Distorsion'. A quality line-up to celebrate that this project aims high, where good music is assured.",
+      "landscape": "/assets/images/ataraxia/flyers/042019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/042019/portrait.jpg",
+      "date": "06/04/2019",
+      "endDate": "07/04/2019",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
   ],
   "events": [
+    {
+      "name": "Ataraxia Club - Abril 2019 - April 2019 | @ataraxia_club",
+      "description": "Ataraxia Club is celebrating, 2 years full of enthusiasm, work and sacrifice. This brand of electronic music works to expand its borders with a concept of alternative party, leaving the conventionality in the posters, infusing an atypical atmosphere where good energy is breathed on the dancefloor and a musical line taken care of by its resident dj's, Javier de la Vega & Julio Martinez. Saturday, April 6, comes loaded with exciting surprises that will make a different and special night at CAFE LA PALMA 🎁. This day we will have Underground Calling as guests for the occasion. An explosive duo that is characterized by raising the energy of the track to its maximum exponent. His sets have become a waste of judgment and emotion. Currently, they are focused on the publication of two of their latest tracks; 'Pussy' that will soon be released on the label 'NoreligionLab' and 'Fifa' on 'Distorsion'. A quality line-up to celebrate that this project aims high, where good music is assured.",
+      "landscape": "/assets/images/ataraxia/flyers/042019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/042019/portrait.jpg",
+      "date": "06/04/2019",
+      "endDate": "07/04/2019",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
     {
       "name": "Ataraxia Club - Marzo 2019 - March 2019 | @ataraxia_club",
       "description": "We continue!! In the month of March will come a special guest, Danny Leblack. Creator of parties like 'Now Underground Club'. Young Dj and producer of the Madrid music scene, already more than twenty years dedicated to the world of music. These night, Javier de la Vega and Julio Martinez will melt into a b2b with the essence of Ataraxia, groove & bass.",
