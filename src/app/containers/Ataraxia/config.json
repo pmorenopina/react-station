@@ -2,25 +2,35 @@
   "shoppingActive": false,
   "remember": [
     {
-      "name": "Ataraxia Club - Mayo 2019 - May 2019 | @ataraxia_club",
+      "name": "Ataraxia Club - Junio 2019 - June 2019 | @ataraxia_club",
       "description": "After two years, Ataraxia is still working to offer an alternative quality party.</br></br>For this month of May, the guest DJ will come from the Canary Islands, Andrés Meier.</br>It is a young Spanish promise with German roots recently signed by 'Be One Records Limited'.</br></br>The pillars of this project will be with him, Javier de la Vega & Julio Martinez.",
       "descriptionJSON": "After two years, Ataraxia is still working to offer an alternative quality party. For this month of May, the guest DJ will come from the Canary Islands, Andrés Meier. It is a young Spanish promise with German roots recently signed by 'Be One Records Limited'. The pillars of this project will be with him, Javier de la Vega & Julio Martinez.",
-      "landscape": "/assets/images/ataraxia/flyers/052019/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/052019/portrait.jpg",
-      "date": "10/05/2019",
-      "endDate": "11/05/2019",
+      "landscape": "/assets/images/ataraxia/flyers/062019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/062019/portrait.jpg",
+      "date": "15/06/2019",
+      "endDate": "16/06/2019",
       "location": "Café La Palma",
       "city": "Madrid, España"
     }
   ],
   "events": [
     {
+      "name": "Ataraxia Club - Junio 2019 - June 2019 | @ataraxia_club",
+      "description": "After two years, Ataraxia is still working to offer an alternative quality party. For this month of May, the guest DJ will come from the Canary Islands, Andrés Meier. It is a young Spanish promise with German roots recently signed by 'Be One Records Limited'. The pillars of this project will be with him, Javier de la Vega & Julio Martinez.",
+      "landscape": "/assets/images/ataraxia/flyers/062019/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/062019/portrait.jpg",
+      "date": "15/06/2019",
+      "endDate": "16/06/2019",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
       "name": "Ataraxia Club - Mayo 2019 - May 2019 | @ataraxia_club",
       "description": "After two years, Ataraxia is still working to offer an alternative quality party. For this month of May, the guest DJ will come from the Canary Islands, Andrés Meier. It is a young Spanish promise with German roots recently signed by 'Be One Records Limited'. The pillars of this project will be with him, Javier de la Vega & Julio Martinez.",
       "landscape": "/assets/images/ataraxia/flyers/052019/landscape.jpg",
       "portrait": "/assets/images/ataraxia/flyers/052019/portrait.jpg",
-      "date": "06/04/2019",
-      "endDate": "07/04/2019",
+      "date": "11/05/2019",
+      "endDate": "12/05/2019",
       "location": "Café La Palma",
       "city": "Madrid, España"
     },
