@@ -50,10 +50,46 @@ export class Events extends Component {
       )
     }
 
+    let specialEventsGridTag = ''
+    if (CONFIG.special_events && CONFIG.special_events.length >= 1) {
+      let arrayGridItems = []
+      const arrayGridSpecialItemsTag = CONFIG.special_events.map((item, index) => {
+        if (index !== 0) {
+          arrayGridItems.push(item)
+          if (arrayGridItems.length === 4) {
+            let elements = arrayGridItems
+            arrayGridItems = []
+            return (
+              <GridComponent key={ index } elements={ elements } />
+            )
+          } else if (CONFIG.special_events.length === (index + 1)) {
+            let elements = arrayGridItems
+            arrayGridItems = []
+            return (
+              <GridComponent key={ index } elements={ elements } />
+            )
+          }
+        } else {
+          arrayGridItems.push(item)
+          let elements = arrayGridItems
+          return (
+            <GridComponent key={ index } elements={ elements } />
+          )        
+        }
+      })
+      specialEventsGridTag = (
+        <section className={ styles.container_last_events }>
+          <h1 className={ styles.title }>SPECIAL EVENTS</h1>
+          { arrayGridSpecialItemsTag }
+        </section>
+      )
+    }
+
     return (
       <main className={ styles.container }>
         { nextEventGridTag }
         { lastEventsGridTag }
+        { specialEventsGridTag }
       </main>
     )
   }
