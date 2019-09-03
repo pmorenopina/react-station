@@ -19,17 +19,17 @@ export default function main(params) {
 
   let description = ''
   if (params.routeMatch === '/events/' || params.routeMatch === '/events') {
-    description = 'Tickets and events information | ΔTΔRΔXIΔ - Ataraxia Club'
+    description = 'Tickets e información de eventos'
   } else if (params.routeMatch === '/djs/' || params.routeMatch === '/djs') {
-    description = 'Learn all the information about our residents | ΔTΔRΔXIΔ - Ataraxia Club'
+    description = 'Lee más información sobre nuestros residentes'
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
-    description = 'Reportajes visuales sobre nuestro recorrido con todos vosotros | ΔTΔRΔXIΔ - Ataraxia Club'
+    description = 'Reportajes visuales sobre nuestro recorrido con todos vosotros'
   } else if (params.routeMatch === '/contact/' || params.routeMatch === '/contact') {
-    description = 'Contact information | ΔTΔRΔXIΔ - Ataraxia Club'
+    description = 'Información de contacto'
   } else if (params.routeMatch === '/cookies/' || params.routeMatch === '/cookies') {
-    description = 'Privacy policy and cookie notice | ΔTΔRΔXIΔ - Ataraxia Club'
+    description = 'Aviso de cookies y política de privacidad de datos'
   } else if (params.routeMatch === '/' || params.routeMatch === '/') {
-    description = 'Electronic music session settled in Madrid. Tickets and events information | ΔTΔRΔXIΔ - Ataraxia Club'
+    description = 'Sesión de música electrónica situada en Madrid. Tickets e información de eventos'
   }
 
   let url = ''

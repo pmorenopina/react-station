@@ -172,11 +172,21 @@ class Main extends Component {
         <h1 className={styles.title}>NEXT EVENT</h1>
         <div className={styles.content}>
           <div className={styles.degradatedBrackground} >
-            <img
-              className={styles.imageEvent}
-              src={CONFIG.remember[0].portrait}
-              alt={`${CONFIG.remember[0].name}`}
-            />
+            {(CONFIG.remember[0].type && CONFIG.remember[0].type === 'video') ? (
+              <video
+                className={styles.imageEvent}
+                autoPlay={true}
+                src={CONFIG.remember[0].video}
+                preload={'auto'}
+                poster={CONFIG.remember[0].portrait}
+              />
+            ) : (
+                <img
+                  className={styles.imageEvent}
+                  src={CONFIG.remember[0].portrait}
+                  alt={`${CONFIG.remember[0].name}`}
+                />)
+            }
           </div>
           <div className={styles.description}>
             <h2 className={styles.title}>OPENING - 14 SEPT 2019</h2>

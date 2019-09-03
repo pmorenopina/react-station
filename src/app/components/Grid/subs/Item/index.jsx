@@ -70,11 +70,22 @@ class Item extends Component {
 
     const portraitMobile = (!fourElements) ? (
       <div className={styles.item_full_mobile}>
-        <img
-          className={styles.item_img}
-          src={item['portrait']}
-          alt={`${item.name}`}
-        />
+        {(item.type && item.type === 'video') ? (
+          <video
+            className={styles.item_img}
+            autoPlay={true}
+            src={item['video']}
+            preload={'auto'}
+            poster={item['portrait']}
+          />
+        ) : (
+            <img
+              className={styles.item_img}
+              src={item['portrait']}
+              alt={`${item.name}`}
+            />)
+        }
+
         <div className={styles.info_container}>
           <div className={styles.date}>{item.date}</div>
           <div className={styles.location}>{item.location}</div>

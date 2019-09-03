@@ -84,17 +84,18 @@ export default function getJsonLd(section) {
             "description": "Electronic music session settled in Madrid. Tickets and events information.",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Calle de la Palma 62",
+              "streetAddress": "Calle Orense 12-14",
               "addressLocality": "Madrid",
               "addressRegion": "Madrid",
-              "postalCode": "28015"
+              "postalCode": "28020",
+              "addressCountry": "Spain"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "40.4268572",
-              "longitude": "-3.7079921"
+              "latitude": "40.4492904",
+              "longitude": "-3.6955797"
             },
-            "openingHours": "Sa 01:00-03:30"
+            "openingHours": "Sa 00:00-06:00"
           }
         </script>
         <script type='application/ld+json'> 
@@ -108,14 +109,13 @@ export default function getJsonLd(section) {
             "endDate": "${ CONFIG.remember[0].endDate.replace(/\//g, '-')}T03:30",
             "location": {
               "@type": "Place",
-              "name": "Cafe La Palma",
-              "sameAs": "http://www.cafelapalma.com/",
+              "name": "O14",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Calle de la Palma 62",
+                "streetAddress": "Calle Orense 12-14",
                 "addressLocality": "Madrid",
                 "addressRegion": "Madrid",
-                "postalCode": "28015",
+                "postalCode": "28020",
                 "addressCountry": "Spain"
               }
             }
