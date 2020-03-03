@@ -189,7 +189,7 @@ class Main extends Component {
             }
           </div>
           <div className={styles.description}>
-            <h2 className={styles.title}>OPENING - 14 SEPT 2019</h2>
+            <h2 className={styles.title}>ATARAXIA REPUBLIK - 21 MAR 2020</h2>
             <p dangerouslySetInnerHTML={{ __html: CONFIG.remember[0].description }} />
           </div>
         </div>
@@ -288,12 +288,12 @@ class Main extends Component {
           <video
             ref={(video) => { this.videoTag = video }}
             preload={'auto'}
-            poster={'/assets/videos/ataraxia/home-poster-4.jpg'}
+            poster={'/assets/videos/ataraxia/home-poster-5.jpg'}
             onPlay={this.handlePlay}
             onVolumeChange={this.handleVolume}
             muted={this.state.mutedVideo}
           >
-            <source type={"video/mp4"} src={'/assets/videos/ataraxia/home-video-4.mp4'} />
+            <source type={"video/mp4"} src={'/assets/videos/ataraxia/home-video-5.mp4'} />
           </video>
           {iconPlayPause}
         </section>
