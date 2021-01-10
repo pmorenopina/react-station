@@ -41,7 +41,8 @@ export default function getJsonLd(section) {
     case '/events':
     case '/events/':
       let arrayEvents = CONFIG.events.map((item) => {
-        return `
+        if(item.name) {
+          return `
           <script type='application/ld+json'> 
             {
               "@context": "http://www.schema.org",
@@ -67,6 +68,7 @@ export default function getJsonLd(section) {
             }
           </script>
         `
+        }
       })
 
       json = arrayEvents.join("")
@@ -96,29 +98,6 @@ export default function getJsonLd(section) {
               "longitude": "-3.6955797"
             },
             "openingHours": "Sa 00:00-06:00"
-          }
-        </script>
-        <script type='application/ld+json'> 
-          {
-            "@context": "http://www.schema.org",
-            "@type": "DanceEvent",
-            "name": "${ CONFIG.remember[0].name}",
-            "url": "https://ataraxiaclub.com",
-            "description": "${ CONFIG.remember[0].descriptionJSON}",
-            "startDate": "${ CONFIG.remember[0].date.replace(/\//g, '-')}T23:55",
-            "endDate": "${ CONFIG.remember[0].endDate.replace(/\//g, '-')}T03:30",
-            "location": {
-              "@type": "Place",
-              "name": "O14",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Calle Orense 12-14",
-                "addressLocality": "Madrid",
-                "addressRegion": "Madrid",
-                "postalCode": "28020",
-                "addressCountry": "Spain"
-              }
-            }
           }
         </script>
       `

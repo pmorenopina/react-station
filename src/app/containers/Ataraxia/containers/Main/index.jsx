@@ -167,7 +167,7 @@ class Main extends Component {
         </div>
       )
 
-    const nextEvent = (CONFIG.remember.length) ? (
+    const nextEvent = (CONFIG.remember.length > 0) ? (
       <section className={styles.container_nextEvent}>
         <h1 className={styles.title}>NEXT EVENT</h1>
         <div className={styles.content}>
@@ -245,43 +245,6 @@ class Main extends Component {
       height: '100%'
     }
 
-    const instagramFeed = (this.state.isLoadedScript) ? (
-      <section className={styles.container_main_feed}>
-        <div className={styles.container_feed}>
-          <h1 className={styles.title}>INSTAGRAM FEED</h1>
-          <iframe
-            src={"https://snapwidget.com/embed/535934"}
-            className={"snapwidget-widget"}
-            frameBorder={"0"}
-            scrolling={"no"}
-            style={styleFeed}
-          />
-        </div>
-      </section>
-    ) : null
-
-    if (this.state.videoMounted && !this.isLoadedScript && this.props.cookiesAccepted) {
-      let code = "https://snapwidget.com/js/snapwidget.js"
-      try {
-        let s = document.createElement('script')
-        s.setAttribute('src', code)
-        document.body.appendChild(s)
-        this.isLoadedScript = true
-        setTimeout(() => {
-          this.setState({
-            isLoadedScript: true
-          })
-        }, 200)
-      } catch (e) {
-        this.isLoadedScript = true
-        setTimeout(() => {
-          this.setState({
-            isLoadedScript: true
-          })
-        }, 200)
-      }
-    }
-
     return (
       <main className={styles.container}>
         <section className={styleContainerTag}>
@@ -299,7 +262,6 @@ class Main extends Component {
         </section>
         {nextEvent}
         {whoAre}
-        {instagramFeed}
       </main>
     )
   }
