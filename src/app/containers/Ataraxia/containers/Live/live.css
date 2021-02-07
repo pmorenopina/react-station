@@ -39,12 +39,19 @@
             height: 560px;
         }
     }
+    .notAvailable {
+        display: flex;
+        justify-content: center;
+    }
     .disclaimer {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 50px;
         p {
             margin: 0;
+        }
+        a {
+            color: #7d36d4;
         }
     }
 }

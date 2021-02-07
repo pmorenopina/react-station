@@ -306,9 +306,9 @@
     }
   ],
   "live": {
-    "url": "https://www.youtube.com/embed/pxltemZvAqc",
-    "media": "https://www.youtube.com/watch?v=pxltemZvAqc",
-    "chat_url": "https://www.youtube.com/live_chat?v=pxltemZvAqc&embed_domain="
+    "url_mock": "https://www.youtube.com/embed/pxltemZvAqc",
+    "media_mock": "https://www.youtube.com/watch?v=pxltemZvAqc",
+    "chat_mock": "https://www.youtube.com/live_chat?v=pxltemZvAqc&embed_domain="
   },
   "socialNetworks": [
     {
@@ -346,6 +346,11 @@
     {
       "title": "Dj's",
       "url": "/djs/",
+      "icon": "/assets/icons/play-arrow.svg"
+    },
+    {
+      "title": "Live",
+      "url": "/live/",
       "icon": "/assets/icons/play-arrow.svg"
     }
   ],
