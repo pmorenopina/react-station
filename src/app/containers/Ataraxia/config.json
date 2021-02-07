@@ -306,9 +306,9 @@
     }
   ],
   "live": {
-    "url_mock": "https://www.youtube.com/embed/Mnkoqyyfmjs",
-    "media_mock": "https://www.youtube.com/watch?v=Mnkoqyyfmjs",
-    "chat_mock": "https://www.youtube.com/live_chat?v=Mnkoqyyfmjs&embed_domain="
+    "url": "https://www.youtube.com/embed/Mnkoqyyfmjs",
+    "media": "https://www.youtube.com/watch?v=Mnkoqyyfmjs",
+    "chat": "https://www.youtube.com/live_chat?v=Mnkoqyyfmjs&embed_domain="
   },
   "socialNetworks": [
     {
