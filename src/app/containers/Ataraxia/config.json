@@ -308,7 +308,7 @@
   "live": {
     "url": "https://www.youtube.com/embed/Mnkoqyyfmjs",
     "media": "https://www.youtube.com/watch?v=Mnkoqyyfmjs",
-    "chat": "https://www.youtube.com/live_chat?v=Mnkoqyyfmjs&embed_domain="
+    "chat_url": "https://www.youtube.com/live_chat?v=Mnkoqyyfmjs&embed_domain="
   },
   "socialNetworks": [
     {
