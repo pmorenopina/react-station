@@ -1,0 +1,57 @@
+@import '../../../../styles/base.css';
+
+.container {
+    margin: 0 auto;
+    min-height: calc(100vh - 91px);
+    @media (min-width: 1024px){
+        padding: 0;
+        max-width: 1024px;
+        min-height: calc(100vh - 41px);
+    }
+    .container_live{
+        display: flex;
+        justify-content: center;
+    }
+    .container_live_chat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 1024px){
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            .chat {
+                margin-top: 14px;
+            }
+        }
+    }
+    .live {
+        width: 100vw;
+        max-width: 560px;
+        height: 315px;
+    }
+    .chat {
+        width: 100vw;
+        max-width: 560px;
+        height: 560px;
+    }
+    .disclaimer {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.titleMain {
+    padding-top: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    @media (min-width: 1024px){
+        justify-content: left;
+    }
+}

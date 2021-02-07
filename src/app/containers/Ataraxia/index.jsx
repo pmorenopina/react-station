@@ -9,6 +9,7 @@ import Contact from 'ataraxiaContainers/Contact'
 import Header from 'ataraxiaContainers/Header'
 import Footer from 'ataraxiaContainers/Footer'
 import Events from 'ataraxiaContainers/Events'
+import Live from 'ataraxiaContainers/Live'
 import Main from 'ataraxiaContainers/Main'
 import Djs from 'ataraxiaContainers/Djs'
 import Working from 'ataraxiaContainers/Working'
@@ -112,6 +113,9 @@ export class Ataraxia extends Component {
           break
         case 'events':
           bodyTag = <Events key={1} />
+          break
+        case 'live':
+          bodyTag = <Live key={1} live={GLOBAL_CONFIG.live} />
           break
         /*case 'media':
           break*/

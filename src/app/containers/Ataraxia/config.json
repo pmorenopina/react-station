@@ -305,6 +305,11 @@
       "guests": []
     }
   ],
+  "live": {
+    "url": "https://www.youtube.com/embed/pF6GmdjB2E0",
+    "media": "https://www.youtube.com/watch?v=pF6GmdjB2E0",
+    "chat_url": "https://www.youtube.com/live_chat?v=pF6GmdjB2E0&embed_domain=localhost"
+  },
   "socialNetworks": [
     {
       "network": "facebook",
