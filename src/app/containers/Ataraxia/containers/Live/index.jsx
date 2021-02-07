@@ -47,7 +47,7 @@ class Live extends Component {
         ) : null}
       </div>
     ) : (
-        <h2>Broadcast currently not available</h2>
+        <h3 className={styles.notAvailable}>Broadcast currently not available</h3>
       )
 
     const disclaimerTag = (live && live.url) ? (
