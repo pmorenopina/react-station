@@ -31,9 +31,13 @@
         height: 315px;
     }
     .chat {
-        width: 100vw;
-        max-width: 560px;
-        height: 560px;
+        display: none;
+        @media (min-width: 1024px){
+            display: block;
+            width: 100vw;
+            max-width: 560px;
+            height: 560px;
+        }
     }
     .disclaimer {
         text-align: center;
