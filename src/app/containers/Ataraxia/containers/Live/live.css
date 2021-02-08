@@ -55,7 +55,7 @@
         }
     }
 
-    .container {
+    .containerCountdown {
         margin: 0 auto;
         text-align: center;
     }
@@ -70,13 +70,14 @@
         list-style-type: none;
         padding: 1em;
         text-transform: uppercase;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #FD43FE;
     }
     
     li span {
         display: block;
         font-size: 4.5rem;
-    }
-    
+    }    
     
     @media all and (max-width: 768px) {
         li {
