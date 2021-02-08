@@ -99,8 +99,8 @@ class Live extends Component {
     ) : null
 
     const countDown = (live && live.countDown) ? (
-      <div className={styles.container}>
-        <div id="countdown">
+      <div className={styles.containerCountdown}>
+        <div id="container">
           <ul>
             <li><span id="days"></span>days</li>
             <li><span id="hours"></span>Hours</li>
