@@ -11,6 +11,8 @@ export default function main(params) {
     title = 'Media | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/contact/' || params.routeMatch === '/contact') {
     title = 'Contacto | ΔTΔRΔXIΔ - Ataraxia Club'
+  } else if (params.routeMatch === '/live/' || params.routeMatch === '/live') {
+    title = 'Live | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/cookies/' || params.routeMatch === '/cookies') {
     title = 'Cookies | ΔTΔRΔXIΔ - Ataraxia Club'
   } else if (params.routeMatch === '/' || params.routeMatch === '/') {
@@ -24,6 +26,8 @@ export default function main(params) {
     description = 'Lee más información sobre nuestros residentes'
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
     description = 'Reportajes visuales sobre nuestro recorrido con todos vosotros'
+  } else if (params.routeMatch === '/live/' || params.routeMatch === '/live') {
+    description = 'Disfruta de nuestras sesiones de música en directo'
   } else if (params.routeMatch === '/contact/' || params.routeMatch === '/contact') {
     description = 'Información de contacto'
   } else if (params.routeMatch === '/cookies/' || params.routeMatch === '/cookies') {
@@ -39,6 +43,8 @@ export default function main(params) {
     url = 'https://ataraxiaclub.com/djs/'
   } else if (params.routeMatch === '/media/' || params.routeMatch === '/media') {
     url = 'https://ataraxiaclub.com/media/'
+  } else if (params.routeMatch === '/live/' || params.routeMatch === '/live') {
+    url = 'https://ataraxiaclub.com/live/'
   } else if (params.routeMatch === '/contact/' || params.routeMatch === '/contact') {
     url = 'https://ataraxiaclub.com/contact/'
   } else if (params.routeMatch === '/cookies/' || params.routeMatch === '/cookies') {
