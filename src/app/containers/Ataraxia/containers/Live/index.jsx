@@ -91,7 +91,7 @@ class Live extends Component {
       <h3 className={styles.notAvailable}>{live.notAvailable}</h3>
     ) : null
 
-    const disclaimerTag = (live && live.url) ? (
+    const disclaimerTag = (live && live.url && live.media) ? (
       <div className={styles.disclaimer}>
         <p>Do you have playback problems? Do you want to follow the live with the chat? Go directly to <a href={live.media} target="_blank">Youtube</a></p>
         <p>¿Tienes problemas con la reproducción? ¿Quieres seguir la retransmisión con el chat? Ir directamente a <a href={live.media} target="_blank">Youtube</a></p>
