@@ -306,11 +306,11 @@
     }
   ],
   "live": {
-    "url_mock": "https://www.youtube.com/embed/3UPQhjLDvgw",
-    "media_mock": "https://www.youtube.com/watch?v=3UPQhjLDvgw",
-    "chat_url_mock": "https://www.youtube.com/live_chat?v=3UPQhjLDvgw&embed_domain=",
+    "url": "https://www.youtube.com/embed/duH9lfA7bwc",
+    "media": "https://www.youtube.com/watch?v=duH9lfA7bwc",
+    "chat_url": "https://www.youtube.com/live_chat?v=duH9lfA7bwc&embed_domain=",
     "notAvailable_mock": "Broadcast currently not available",
-    "countDown": {
+    "countDown_mock": {
       "text": "13/03/2021 - 18:30 (Madrid, Spain)",
       "time": "Mar 13, 2021 18:30:00"
     }
