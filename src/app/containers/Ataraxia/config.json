@@ -306,9 +306,9 @@
     }
   ],
   "live": {
-    "url": "https://www.youtube.com/embed/duH9lfA7bwc",
-    "media": "https://www.youtube.com/watch?v=duH9lfA7bwc",
-    "chat_url": "https://www.youtube.com/live_chat?v=duH9lfA7bwc&embed_domain=",
+    "url": "https://www.youtube.com/embed/cy0ur5anU7o",
+    "media": "https://www.youtube.com/watch?v=cy0ur5anU7o",
+    "chat_url": "https://www.youtube.com/live_chat?v=cy0ur5anU7o&embed_domain=",
     "notAvailable_mock": "Broadcast currently not available",
     "countDown_mock": {
       "text": "13/03/2021 - 18:30 (Madrid, Spain)",
