@@ -1,20 +1,48 @@
 {
-  "shoppingActive": false,
+  "shoppingActive": true,
   "remember": [
+    {
+      "name": "Ataraxia Club - Marzo 2022 - March 2022 | @ataraxia_club",
+      "description": "Familia, ataraxicamente estamos retornando la nave a Café La Palma 🛸</br>Después de un largo periodo volvemos al nido del que aprendimos a volar🦇</br>Marcad la fecha porque el 11 de Febrero venimos con mucha ilusión de disfrutar como solemos hacer💣💨</br></br>🟣 Para esta noche tan especial tendremos un invitado de lujo del panorama nacional. YRM llega a Madrid para hacernos vibrar con sus temas que están pegando en gran parte del mundo, publicando en sellos como Material Series, Hood Politics Records o Nervous Records para este 2023💥</br></br>🔵 Los capitanes de la nave, Javier de la Vega & Julio Martinez la base del proyecto, tendrán ocasión de poder ofreceros todo el arsenal musical que envuelve y engloba esta fiesta👁</br></br>🎟 Ya están disponibles las entradas anticipadas</br></br>Recordar que ya estamos all night long 🌃</br></br>📍Calle la Palma 62, Madrid</br>🚆San Bernardo o Noviciado</br>🎫Anticipada 11€ + copa</br>🚪En Taquilla: 13€ + copa hasta las 02:00 y 16€ + copa a partir de las 02:00</br>",
+      "landscape": "/assets/images/ataraxia/flyers/022023/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/022023/portrait.jpg",
+      "video": "/assets/images/ataraxia/flyers/022023/video.mp4",
+      "date": "11/02/2023",
+      "endDate": "12/02/2023",
+      "type": "video",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    }
   ],
   "events": [
     {
+      "name": "Ataraxia Club - Marzo 2022 - March 2022 | @ataraxia_club",
+      "description": "Familia, ataraxicamente estamos retornando la nave a Café La Palma. Después de un largo periodo volvemos al nido del que aprendimos a volar. Marcad la fecha porque el 11 de Febrero venimos con mucha ilusión de disfrutar como solemos hacer. Para esta noche tan especial tendremos un invitado de lujo del panorama nacional. YRM llega a Madrid para hacernos vibrar con sus temas que están pegando en gran parte del mundo, publicando en sellos como Material Series Hood Politics Records o Nervous Records para este 2023. Los capitanes de la nave, Javier de la Vega & Julio Martinez la base del proyecto, tendrán ocasión de poder ofreceros todo el arsenal musical que envuelve y engloba esta fiesta.",
+      "landscape": "/assets/images/ataraxia/flyers/022023/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/022023/portrait.jpg",
+      "date": "11/02/2023",
+      "endDate": "12/02/2023",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
+    {
+      "name": "Ataraxia Club - Marzo 2022 - March 2022 | @ataraxia_club",
+      "description": "Last party to dismiss this season and make way for the summer. The guys from the Arizonica Music label will be in charge of bringing freshness and happy rhythms to our session. A pack made up of Abel Suárez, Omar Ortiz and Pabel Son. Dj's and producers with years of experience decided to launch the creation of the label to share with the world that they have much to contribute. Together with our djs residents Javier de la Vega and Julio MartineZ we will put the finishing touch to a very good season where we have been able to enjoy many artists and live incomparable night.",
+      "landscape": "/assets/images/ataraxia/flyers/032022/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/032022/portrait.jpg",
+      "date": "17/03/2022",
+      "endDate": "18/03/2022",
+      "location": "Sala Hangar 48",
+      "city": "Madrid, España"
     },
     {
       "name": "Ataraxia Club - Septiembre 2019 - September 2019 | @ataraxia_club",
       "description": "Last party to dismiss this season and make way for the summer. The guys from the Arizonica Music label will be in charge of bringing freshness and happy rhythms to our session. A pack made up of Abel Suárez, Omar Ortiz and Pabel Son. Dj's and producers with years of experience decided to launch the creation of the label to share with the world that they have much to contribute. Together with our djs residents Javier de la Vega and Julio MartineZ we will put the finishing touch to a very good season where we have been able to enjoy many artists and live incomparable night.",
       "landscape": "/assets/images/ataraxia/flyers/092019/landscape.jpg",
-      "video": "/assets/images/ataraxia/flyers/092019/video.mp4",
       "portrait": "/assets/images/ataraxia/flyers/092019/portrait.jpg",
-      "type": "video",
       "date": "14/09/2019",
       "endDate": "15/09/2019",
-      "location": "Ø14 - Calle Orense 12-14",
+      "location": "Ø14",
       "city": "Madrid, España"
     },
     {

@@ -176,6 +176,7 @@ class Main extends Component {
               <video
                 className={styles.imageEvent}
                 autoPlay={true}
+                loop={true}
                 src={CONFIG.remember[0].video}
                 preload={'auto'}
                 poster={CONFIG.remember[0].portrait}
@@ -189,7 +190,7 @@ class Main extends Component {
             }
           </div>
           <div className={styles.description}>
-            <h2 className={styles.title}>ATARAXIA REPUBLIK - 21 MAR 2020</h2>
+            <h2 className={styles.title}>ATARAXIA CLUB - 11 FEB 2023</h2>
             <p dangerouslySetInnerHTML={{ __html: CONFIG.remember[0].description }} />
           </div>
         </div>
@@ -251,6 +252,7 @@ class Main extends Component {
           <video
             ref={(video) => { this.videoTag = video }}
             preload={'auto'}
+            loop={true}
             poster={'/assets/videos/ataraxia/home-poster-5.jpg'}
             onPlay={this.handlePlay}
             onVolumeChange={this.handleVolume}
