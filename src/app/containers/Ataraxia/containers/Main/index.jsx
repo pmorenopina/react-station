@@ -9,6 +9,7 @@ import styles from './main.css'
 
 // Config
 import CONFIG from '../../config.json'
+import ShoppingCart from '../../components/ShoppingCart'
 
 const cx = classNames.bind(styles)
 
@@ -190,8 +191,9 @@ class Main extends Component {
             }
           </div>
           <div className={styles.description}>
-            <h2 className={styles.title}>ATARAXIA CLUB - 11 FEB 2023</h2>
+            <h2 className={styles.title}>ATARAXIA CLUB - 09 MAR 2024</h2>
             <p dangerouslySetInnerHTML={{ __html: CONFIG.remember[0].description }} />
+            <ShoppingCart/>
           </div>
         </div>
       </section>

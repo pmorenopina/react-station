@@ -1,20 +1,30 @@
 {
-  "shoppingActive": true,
+  "shoppingActive": false,
   "remember": [
     {
-      "name": "Ataraxia Club - Marzo 2022 - March 2022 | @ataraxia_club",
-      "description": "Familia, ataraxicamente estamos retornando la nave a Café La Palma 🛸</br>Después de un largo periodo volvemos al nido del que aprendimos a volar🦇</br>Marcad la fecha porque el 11 de Febrero venimos con mucha ilusión de disfrutar como solemos hacer💣💨</br></br>🟣 Para esta noche tan especial tendremos un invitado de lujo del panorama nacional. YRM llega a Madrid para hacernos vibrar con sus temas que están pegando en gran parte del mundo, publicando en sellos como Material Series, Hood Politics Records o Nervous Records para este 2023💥</br></br>🔵 Los capitanes de la nave, Javier de la Vega & Julio Martinez la base del proyecto, tendrán ocasión de poder ofreceros todo el arsenal musical que envuelve y engloba esta fiesta👁</br></br>🎟 Ya están disponibles las entradas anticipadas</br></br>Recordar que ya estamos all night long 🌃</br></br>📍Calle la Palma 62, Madrid</br>🚆San Bernardo o Noviciado</br>🎫Anticipada 11€ + copa</br>🚪En Taquilla: 13€ + copa hasta las 02:00 y 16€ + copa a partir de las 02:00</br>",
-      "landscape": "/assets/images/ataraxia/flyers/022023/landscape.jpg",
-      "portrait": "/assets/images/ataraxia/flyers/022023/portrait.jpg",
+      "name": "Ataraxia Club - Marzo 2024 - March 2024 | @ataraxia_club",
+      "description": "Un nuevo aire llega a Ataraxia con nueva localización y un line- up rompedor para no dejar de bailar en toda la noche.</br></br>BIZEN LOPEZ, A&R del sello MUSE y creador del sello SIBIL.LA MUSIC viene desde Mallorca para ofrecernos un set auténtico, su estilo como disk jockey se apoya en el Techno, Tech House y Minimal con influencias dub, junto con un poderoso groove personal, perfecto para la pista de baile.</br>JAVI PARRA, Fundador del sello MIMETIC MUSIC, mezclando ritmos Tech House frescos y dinámicos con sonidos minimaleros y dando cierta oscuridad y contundencia, puro ritmo de club con el que ha dado su propio estilo en exclusiva a la marca ON CLUB durante muchos años.</br>YVER, el nuevo aka de The River, viene pisando fuerte. Dreambeach y A Summer Story son algunos festivales en lo que Javi ha participado. Ha compartido cabina con artistas como Paco Osuna, Loco Dice, Solomun, Adam Beyer o Joseph Capriati. </br>Nuestros residentes JAVIER DE LA VEGA & JULIO MARTINEZ la base del proyecto, tendrán ocasión de poder ofreceros todo el arsenal musical que envuelve y engloba esta fiesta. </br>CRISTIAN CARDENAS e INSANIS completan el cartel.</br></br></br>Para conseguir tu entrada mándanos un DM por Instagram con tu nombre y apellidos.</br>AFORO LIMITADO A 100 PERSONAS",
+      "landscape": "/assets/images/ataraxia/flyers/032024/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/032024/portrait.jpg",
       "video": "/assets/images/ataraxia/flyers/022023/video.mp4",
-      "date": "11/02/2023",
-      "endDate": "12/02/2023",
-      "type": "video",
-      "location": "Café La Palma",
+      "date": "09/03/2023",
+      "endDate": "10/03/2023",
+      "type": "image",
+      "location": "Mimetic Music Lab",
       "city": "Madrid, España"
     }
   ],
   "events": [
+    {
+      "name": "Ataraxia Club - Marzo 2024 - March 2024 | @ataraxia_club",
+      "description": "Un nuevo aire llega a Ataraxia con nueva localización y un line- up rompedor para no dejar de bailar en toda la noche",
+      "landscape": "/assets/images/ataraxia/flyers/032024/landscape.jpg",
+      "portrait": "/assets/images/ataraxia/flyers/032024/portrait.jpg",
+      "date": "09/03/2023",
+      "endDate": "10/03/2023",
+      "location": "Café La Palma",
+      "city": "Madrid, España"
+    },
     {
       "name": "Ataraxia Club - Marzo 2022 - March 2022 | @ataraxia_club",
       "description": "Familia, ataraxicamente estamos retornando la nave a Café La Palma. Después de un largo periodo volvemos al nido del que aprendimos a volar. Marcad la fecha porque el 11 de Febrero venimos con mucha ilusión de disfrutar como solemos hacer. Para esta noche tan especial tendremos un invitado de lujo del panorama nacional. YRM llega a Madrid para hacernos vibrar con sus temas que están pegando en gran parte del mundo, publicando en sellos como Material Series Hood Politics Records o Nervous Records para este 2023. Los capitanes de la nave, Javier de la Vega & Julio Martinez la base del proyecto, tendrán ocasión de poder ofreceros todo el arsenal musical que envuelve y engloba esta fiesta.",

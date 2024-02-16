@@ -9,7 +9,7 @@ const ShoppingCart = () => {
   return (
     <a 
       className={ styles.container_cart } 
-      href={ 'https://dice.fm/event/9xa69-ataraxia-javier-de-la-vega-julio-martnez-yrm-11th-feb-caf-la-palma-madrid-tickets' }
+      href={ 'https://www.instagram.com/ataraxia_club/' }
       target={ '_blank' }
     >
       <div className={ styles.backcart }>
@@ -18,7 +18,7 @@ const ShoppingCart = () => {
           src={ '/assets/icons/shopping-cart.svg' } 
           alt={ 'ΔTΔRΔXIΔ | cartLogo' }              
         />
-        <span>TICKETS</span>
+        <span>DM INSTAGRAM - TICKETS</span>
       </div>
     </a> 
   )
